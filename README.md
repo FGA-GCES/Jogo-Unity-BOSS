@@ -20,7 +20,7 @@ Following the clues left in each of these items, it will quickly become visible 
 The game will be in 2D, developed on the Unity platform using the C# programming language.
 For visual production, we will use original artwork created in the Aseprite software, and also, if necessary, we will use free artwork from other authors.
 
-## . . . 
+## . . .
 
 # Equipe e Produto
 
@@ -30,14 +30,14 @@ Baseado no conceito de colaboração, a equipe do BOSS, em conjunto com o progra
 
 # História
 
-Na cidade de Ogama as coisas são como são e ninguém discorda de nenhuma das regras. 
-A principal delas: Mulheres não tem direito ao ensino superior. 
-Para Sofia isso sempre foi motivo de incômodo, mas nunca viu ninguém ao seu redor lutar para que algo diferente aconteça. 
- 
-Em "Diários de Sofia", o jogador deve coletar ao longo do jogo itens que contam a história deste mundo, dentre eles, os diários da personagem principal, os quais desvendarão os por quês dessa cidade ser do jeito que é. 
-Seguindo as dicas deixadas em cada um desses itens, rapidamente será visível como a solução está em mostrar a  que, se outras mulheres foram capazes de feitos tão incríveis, por qual motivo as de agora não seriam?
+Na cidade de Ogama as coisas são como são e ninguém discorda de nenhuma das regras.
+A principal delas: Mulheres não tem direito ao ensino superior.
+Para Sofia isso sempre foi motivo de incômodo, mas nunca viu ninguém ao seu redor lutar para que algo diferente aconteça.
+
+Em "Diários de Sofia", o jogador deve coletar ao longo do jogo itens que contam a história deste mundo, dentre eles, os diários da personagem principal, os quais desvendarão os por quês dessa cidade ser do jeito que é.
+Seguindo as dicas deixadas em cada um desses itens, rapidamente será visível como a solução está em mostrar a que, se outras mulheres foram capazes de feitos tão incríveis, por qual motivo as de agora não seriam?
 
 # Aspectos Técnicos
 
-O jogo será em 2D, desenvolvido na plataforma Unity usando a linguagem de programação C#. 
+O jogo será em 2D, desenvolvido na plataforma Unity usando a linguagem de programação C#.
 Na produção visual, usaremos artes autorais criada no software Aseprite, e também caso seja necessário, usaremos artes grátis de outros autores
