@@ -10,8 +10,8 @@ public class PlayerMovimentation : MonoBehaviour
 	public float jumpSpeed = 5;
 
 	// Private attributes
-	private Rigidbody2D rigidBody;
-	private bool isJumping = false;
+	Rigidbody2D rigidBody;
+	bool isJumping = false;
 
 	// Start is called before the first frame update
 	// Here you can handle with all objects in the scene
@@ -21,7 +21,7 @@ public class PlayerMovimentation : MonoBehaviour
 
 	// Awake is called before the first frame update
 	// Here you can handle with all components in the object
-	private void Awake()
+	void Awake()
 	{
 		rigidBody = GetComponent<Rigidbody2D>();
 	}
@@ -39,5 +39,11 @@ public class PlayerMovimentation : MonoBehaviour
 			isJumping = true;
 			rigidBody.velocity = new Vector2(rigidBody.velocity.x, jump * jumpSpeed);
 		}
+	}
+
+	// OnCollisionEnter2D is called whenever the player hits something
+	void OnCollisionEnter2D(Collision2D other) {
+		Debug.Log("Collision with: " + other.gameObject.name);
+		isJumping = false;
 	}
 }
