@@ -47,7 +47,10 @@ namespace PartIII
 		void OnCollisionEnter2D(Collision2D other)
 		{
 			Debug.Log("Collision with: " + other.gameObject.name);
-			isJumping = false;
+			if (other.contacts[0].normal == Vector2.up)
+			{
+				isJumping = false;
+			}
 		}
 	}
 }
