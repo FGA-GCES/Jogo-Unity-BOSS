@@ -9949,6 +9949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6967d752ae4684caa91931db314a8183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
   resultText: {fileID: 510417776}
   button: {fileID: 2054830567}
   health: 150

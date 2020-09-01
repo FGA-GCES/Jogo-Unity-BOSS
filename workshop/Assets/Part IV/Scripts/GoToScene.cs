@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoToScene : MonoBehaviour
+namespace PartIV
 {
-    public void ChangeScene(string sceneName)
+    public class GoToScene : MonoBehaviour
     {
-        SceneManager.LoadScene(sceneName);
-    }
+        public void ChangeScene(string sceneName)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+    } 
 }
