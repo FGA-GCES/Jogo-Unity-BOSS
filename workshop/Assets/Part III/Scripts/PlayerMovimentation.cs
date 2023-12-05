@@ -1,56 +1,53 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace PartIII
 {
-	public class PlayerMovimentation : MonoBehaviour
-	{
-		// Public attributes
-		public float maxSpeed = 5;
-		public float jumpSpeed = 5;
+    public class PlayerMovimentation : MonoBehaviour
+    {
+        public float maxSpeed = 1f;         // Velocidade máxima horizontal
+        public float jumpSpeed = 0.5f;      // Aceleração do pulo
+        public Rigidbody2D myrigidbody;     // Componente Rigidbody2D
 
-		// Private attributes
-		Rigidbody2D rigidBody;
-		bool isJumping = false;
+        public int multiJump = 0;           // Quantidade de pulos que o jogador já fez
+        public int maxJump = 3;             // Quantidade máxima de pulos
 
-		// Start is called before the first frame update
-		// Here you can handle with all objects in the scene
-		void Start()
-		{
-		}
+        // Start is called before the first frame update
+        void Start()
+        {
+            myrigidbody = GetComponent<Rigidbody2D>();  // Inicializa a variável ao rodar o jogo
+        }
 
-		// Awake is called before the first frame update
-		// Here you can handle with all components in the object
-		void Awake()
-		{
-			rigidBody = GetComponent<Rigidbody2D>();
-		}
+        // Update is called once per frame
+        void Update()
+        {
 
-		// Update is called once per frame
-		void Update()
-		{
-			var x = Input.GetAxis("Horizontal");
-			// transform.position += x * maxSpeed * transform.right * Time.deltaTime;
-			rigidBody.velocity = new Vector2(x * maxSpeed, rigidBody.velocity.y);
+            var inputX = Input.GetAxis("Horizontal");
+            // inputX = -1 se o player apertar o botão para mover para a esquerda
+            //        =  1 para a direita
+            //        =  0 se nenhum dos dois estiver sendo apertado
 
-			var jump = Input.GetAxis("Jump");
-			if (jump > 0.5 && !isJumping)
-			{
-				isJumping = true;
-				rigidBody.velocity = new Vector2(rigidBody.velocity.x, jump * jumpSpeed);
-			}
-		}
 
-		// OnCollisionEnter2D is called whenever the player hits something
-		void OnCollisionEnter2D(Collision2D other)
-		{
-			Debug.Log("Collision with: " + other.gameObject.name);
-			if (other.contacts[0].normal == Vector2.up)
-			{
-				isJumping = false;
-			}
-		}
-	}
+            myrigidbody.velocity = new Vector2(inputX * maxSpeed, myrigidbody.velocity.y);
+            // Atualiza a velocidade horizontal todo frame
+
+
+
+            if (Input.GetButtonDown("Jump") && multiJump < maxJump) // Se barra de espaço foi apertada e ainda houverem pulos disponíveis
+            {
+
+                Debug.Log("Jump"); // Quando pular escreve "Jump" no Debug Log
+
+                myrigidbody.velocity = new Vector2(myrigidbody.velocity.x, jumpSpeed); // atualiza a velocidade vertical do jogador para fazê-lo pular
+
+                multiJump += 1;
+            }
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            multiJump = 0;
+        }
+    }
 }

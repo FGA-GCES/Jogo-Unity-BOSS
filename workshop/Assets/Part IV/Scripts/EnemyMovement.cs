@@ -1,38 +1,39 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace PartIV
 {
     public class EnemyMovement : MonoBehaviour
     {
-        public Vector2 start;
-        public Vector2 end;
-        public float speed;
+        public Vector3 startPosition;       // Posição mais a esquerda do inimigo
+        public Vector3 endPosition;         // Posição mais a direita do inimigo
+        public float speed = 1;             // Velocidade de movimento do inimigo
 
-        private Vector3 direction;
-        private float directionFactor = 1;
+        private int direction = 1;          // Direção de movimento do inimigo (1 = direita, -1 = esquerda)
 
-        private void Start()
+        // Start is called before the first frame update
+        void Start()
         {
-            transform.position = new Vector3(start.x, start.y, transform.position.z);
-            direction = (end - start).normalized;
+
         }
 
+        // Update is called once per frame
         void Update()
         {
-            transform.position += directionFactor * direction * speed * Time.deltaTime;
+            transform.position += Vector3.right * speed * direction;            // Inimigo se move com a direção e velocidade indicada
 
-            if (Vector2.Distance(transform.position, end) < 0.08f)
+            if (Vector3.Distance(transform.position, startPosition) < 0.1f)     // Se o inimigo estiver na posição inicial
             {
-                directionFactor = -1.0f;
-            }
-            else if (Vector2.Distance(transform.position, start) < 0.08f)
-            {
-                directionFactor = 1.0f;
+                direction = 1;          // Direção = direita
             }
 
+            if (Vector3.Distance(transform.position, endPosition) < 0.1f)       // Se o inimigo estiver na posição final
+            {
+                direction = -1;         // Direção = esquerda
+            }
         }
     }
 }
