@@ -70,5 +70,3 @@ Termos e expressões de programação/gamedev usados podem ser vistos no [Gloss�
 ### Saída 
   - [Parte IV](https://github.com/Lizdtre/unity-for-women/tree/master/workshop/Assets/Part%20IV)
 
-## [Configuração do Ambiente](./Ambiente.md)
-
