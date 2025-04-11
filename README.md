@@ -40,4 +40,4 @@ Seguindo as dicas deixadas em cada um desses itens, rapidamente será visível c
 # Aspectos Técnicos
 
 O jogo será em 2D, desenvolvido na plataforma Unity usando a linguagem de programação C#. 
-Na produção visual, usaremos artes autorais criada no software Aseprite, e também caso seja necessário, usaremos artes grátis de outros autores.
+Na produção visual, usaremos artes autorais criada no software Aseprite, e também caso seja necessário, usaremos artes grátis de outros autores
