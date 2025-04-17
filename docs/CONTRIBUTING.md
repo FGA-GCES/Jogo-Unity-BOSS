@@ -56,11 +56,11 @@ Acesse o repositório original e clique em "New Pull Request".
 
 Criterios de Aceitação:
 
-	1. Passar nos testes.
+1. Passar nos testes.
 
-	2. Seguir o [Padrão de Código](./CODE-PATTERNS.md) do projeto.
+2. Seguir o [Padrão de Código](./CODE-PATTERNS.md) do projeto.
 
-	3. Ter aprovação de pelo menos 1 mantenedor.
+3. Ter aprovação de pelo menos 1 mantenedor.
 
 Reportando Bugs:
 
