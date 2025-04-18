@@ -17,7 +17,7 @@
 
 | Projeto      | Descrição                                                                                                                                                                                                                                                                       | Links Úteis                                                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Jogo**     | Na cidade de Ogama, as coisas são como são e ninguém discorda de nenhuma das regras. A principal delas: mulheres não têm direito ao ensino superior. Para Sofia, isso sempre foi motivo de incômodo, mas nunca viu ninguém ao seu redor lutar para que algo diferente aconteça. | [Documentação](https://residenciaticbrisa.github.io/T2G6-Jogo-Unity-BOSS/)                                                                               |
+| **Jogo**     | Na cidade de Ogama, as coisas são como são e ninguém discorda de nenhuma das regras. A principal delas: mulheres não têm direito ao ensino superior. Para Sofia, isso sempre foi motivo de incômodo, mas nunca viu ninguém ao seu redor lutar para que algo diferente aconteça. | [Documentação](https://fga-gces.github.io/Jogo-Unity-BOSS/)                                                                               |
 | **Workshop** | Aprenda Unity do zero criando um jogo 2D passo a passo.                                                                                                                                                                                                                         | [Tutoriais](./unity-for-women/tutoriais/README.md)</br>[Roadmap](./unity-for-women/RoadmapWorkshop.md) </br> [Glossário](./Unity-for-Women/glossario.md) |
 
 ```bash
@@ -49,7 +49,7 @@ WIP
 
 ### ✨ **Créditos**
 
-- Equipe [**T2G6** ](https://residenciaticbrisa.github.io/T2G6-Jogo-Unity-BOSS/)(jogo) • [**BOSS Mentoring**](https://github.com/BOSS-BigOpenSourceSibling) (mentoria) • [**BRISA**](https://github.com/ResidenciaTICBrisa) (apoio educacional).
+- Equipe [**T2G6** ](https://fga-gces.github.io/Jogo-Unity-BOSS/)(jogo) • [**BOSS Mentoring**](https://github.com/BOSS-BigOpenSourceSibling) (mentoria) • [**BRISA**](https://github.com/ResidenciaTICBrisa) (apoio educacional).
 
 ---
 
