@@ -18,4 +18,4 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy2 --force
+        run: mkdocs gh-deploy --force --clean -b gh-pages2
