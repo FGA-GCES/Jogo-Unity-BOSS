@@ -4,10 +4,7 @@
 
 |Data|Versão|Descrição|Autores|
 |--|--|--|--|
-|04/04/2024|0.1|Adicionando referências|Miguel Arthur|
-|10/04/2024|0.2|Adicionando artes próprias|Júlia Yoshida|
-|04/07/2024|0.3|Adicionando artes próprias|Júlia Yoshida|
-|18/08/2024|0.4|Adicionando artes próprias|Júlia Yoshida|
+|19/04/2025|0.1|Adicionando Artes e referências|Artur Bartz|
 
 <p style="text-indent: 50px;text-align: justify;"> Para o desenvolvimento do projeto, estão sendo utilizadas artes de uso livre em conjunto com artes próprias desenvolvidas pelo nosso time. </p>
 
@@ -25,7 +22,7 @@
 
 ### Personagem principal - Sofia
 
-<p style="text-indent: 50px;text-align: justify;"> As artes da personagem principal, Sofia, foram desenhadas no Aseprite pela Júlia. O faceset da Sofia e as sprite sheets de todos os movimentos dela estão apresentadas a seguir.</p> 
+<p style="text-indent: 50px;text-align: justify;"> As artes da personagem principal, Sofia, foram desenhadas no Aseprite pela Júlia Yoshida (equipe passada). O faceset da Sofia e as sprite sheets de todos os movimentos dela estão apresentadas a seguir.</p> 
 
 <div style="text-align: center;">
     <img src="../images/facesetsofia.png" width="300"> 
@@ -79,7 +76,7 @@
 
 ### Prefeito
 
-<p style="text-indent: 50px;text-align: justify;"> As artes do prefeito foram desenhadas no Aseprite pela Letícia. As sprite sheets de todos os movimentos dele estão apresentadas a seguir.</p> 
+<p style="text-indent: 50px;text-align: justify;"> As artes do prefeito foram desenhadas no Aseprite pela Letícia Monteiro (equipe passada). As sprite sheets de todos os movimentos dele estão apresentadas a seguir.</p> 
 
 <div style="text-align: center;">
     <img src="../images/idlevillain.PNG" width="700"> 
@@ -103,7 +100,7 @@
 
 ### Robô cinza
 
-<p style="text-indent: 50px;text-align: justify;"> As artes do movimento do robô foram desenhadas pela Letícia e a arte do faceset dele foi desenhada pela Júlia. As sprite sheets de todos os movimentos dele estão apresentadas a seguir.</p> 
+<p style="text-indent: 50px;text-align: justify;"> As artes do movimento do robô foram desenhadas pela Letícia Monteiro (equipe passada) e a arte do faceset dele foi desenhada pela Júlia Yoshida (equipe passada). As sprite sheets de todos os movimentos dele estão apresentadas a seguir.</p> 
 
 <div style="text-align: center;">
     <img src="../images/facesetrobot.png" width="300"> 
@@ -137,7 +134,7 @@
 
 ### Inventário
 
-<p style="text-indent: 50px;text-align: justify;"> A arte do inventário foi desenhada no Aseprite pela Júlia. </p> 
+<p style="text-indent: 50px;text-align: justify;"> A arte do inventário foi desenhada no Aseprite pela Júlia Yoshida (equipe passada). </p> 
 
 <div style="text-align: center;">
     <img src="../images/inventory.jpeg" width="250">
@@ -146,7 +143,7 @@
 
 ### Robô vermelho
 
-<p style="text-indent: 50px;text-align: justify;"> A arte do robô vermelho foi desenhada no Aseprite pela Letícia. </p> 
+<p style="text-indent: 50px;text-align: justify;"> A arte do robô vermelho foi desenhada no Aseprite pela Letícia Monteiro (equipe passada). </p> 
 
 <div style="text-align: center;">
     <img src="../images/1RoboVermelho.png" width="600">
@@ -155,9 +152,16 @@
 
 ### Prefeito robô
 
-<p style="text-indent: 50px;text-align: justify;"> A arte do prefeito robô foi desenhada no Aseprite pela Letícia. </p> 
+<p style="text-indent: 50px;text-align: justify;"> A arte do prefeito robô foi desenhada no Aseprite pela Letícia Monteiro (equipe passada). </p> 
 
 <div style="text-align: center;">
     <img src="../images/2RoboPrefeito.png" width="700">
     <p>Imagem 1: Sprite sheet do prefeito robô andando</p>
 </div>
+
+## Referências
+
+<p style="text-indent: 50px;text-align: justify;"> A referência principal utilizada para esse projeto foi o repositório da equipe de desenvolvimento passada: <a href="https://residenciaticbrisa.github.io/T2G6-Jogo-Unity-BOSS/" target="_blank">Link do GitPages da equipe passada</a>. Além de:</p>
+<p style="text-indent: 50px;text-align: justify;"> <a href="https://github.com/FGA-GCES/A-disciplina/blob/master/cheklists.md" target="_blank">Checklist do projeto de Gerência de Configuração Evolução de Software - Carla Rocha</a>.</p>
+<p style="text-indent: 50px;text-align: justify;"> <a href="https://github.com/ResidenciaTICBrisa/T2G6-Jogo-Unity-BOSS" target="_blank">Residência TIC BRISA</a>.</p>
+<p style="text-indent: 50px;text-align: justify;"> <a href="https://github.com/BOSS-BigOpenSourceSibling/unity-for-women" target="_blank">BOSS - Big Open Source Sibling</a>.</p>
