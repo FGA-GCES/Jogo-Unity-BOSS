@@ -13,7 +13,8 @@ nav:
  - Artes e referências: 'references.md'
  - Sprints: 'sprints.md'
  - Roadmaps: 
-    - Roadmap de desenvolvimento: 'devroadmap.md'
+    - Roadmap de desenvolvimento: 'desenvolvimento_roadmap.md'
+    - Roadmap de deploy contínuo: 'deploy_continuo_roadmap.md'
     - Roadmap: 'roadmap.md'
  - Releases:
     - Release 1(08/04/24): 'release1.md'
