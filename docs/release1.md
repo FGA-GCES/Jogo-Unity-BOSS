@@ -1,10 +1,10 @@
-# Release 1 (25/04/17)
+# Release 1 (22/04/2025)
 
 ## Histórico de Versão
 
 | Data       | Versão | Descrição             | Autores |
 |------------|--------|-----------------------|---------|
-| 25/04/2025 | 0.1    | Adicionando Release 1 | Carlos Henrique [carlinn1]|
+| 22/04/2025 | 0.1    | Adicionando Release 1 | Carlos Henrique [carlinn1]|
 
 ## Relato de Experiência
 
