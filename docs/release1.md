@@ -4,7 +4,7 @@
 
 | Data       | Versão | Descrição             | Autores |
 |------------|--------|-----------------------|---------|
-| 22/04/2025 | 0.1    | Adicionando Release 1 | Carlos Henrique [carlinn1]|
+| 22/04/2025 | 0.1    | Adicionando Release 1 | [Carlos Henrique](https://github.com/carlinn1), [Vinicius Castelo](https://github.com/Vini47)|
 
 ## Relato de Experiência
 
