@@ -1,23 +1,36 @@
 # Visão de Produto
 
-## Histórico de versão
+## Introdução
+O produto consiste em um jogo desenvolvido na engine Unity, criado no âmbito do programa de mentoria BOSS em parceria com a BRISA. Seu principal propósito é proporcionar uma experiência lúdica que:
+ - Envolva e capacite grupos sub‑representados no cenário tecnológico.
+ - Estimule o aprendizado de conceitos de desenvolvimento de software e design de jogos.
+ - Promova diversidade e inclusão na comunidade de código‑aberto, alinhando‑se à missão do programa BOSS.
+
+ O programa BOSS — “Big Open‑Source Sibling” — visa reforçar a representatividade em tecnologia por meio de mentoria e projetos colaborativos. Criar um jogo em Unity atende a esse objetivo ao:
+ 1. **Combinar teoria e prática**, permitindo que os mentorados coloquem em ação conhecimentos de programação orientada a jogos e de contribuição em projetos de software livre.  
+ 2. **Fomentar a cultura open source**, pois o código‑fonte e os ativos são disponibilizados publicamente para aprendizado e contribuição.  
+ 3. **Gerar impacto social**, ao tornar o processo de ensino‑aprendizagem mais atrativo e inclusivo, fortalecendo a comunidade tecnológica.
+
+Já que esse projeto é dinâmico e está em constante mudança de equipes de desenvolvimento, muitas informações presentes nesse documento foram referenciadas em trabalhos de equipes anteriores. Todas as informações sobre as referências podem ser acessadas na página de [Artes e referências](references.md).
+
+## Histórico de Versão
 
 |Data|Versão|Descrição|Autores|
 |--|--|--|--|
-|07/04/2024|0.1|Adicionando visão de produto|Júlia Yoshida|
-|18/08/2024|0.2|Atualizando ferramentas utilizadas|Júlia Yoshida|
+|19/04/2025|0.1|Adicionando a Visão de Produto, Tecnologias Utilizadas e Ferramentas Utilizadas|Artur Bartz|
+|21/04/2025|0.2|Adicionando a Introdução do documento de Visão de Produto|João Gabriel|
 
-## Tecnologias utilizadas
+## Tecnologias Utilizadas
 
 |Função|Tecnologia|
 |--|--|
-|Desenho de pixel art|Aseprite|
-|Desenvolvimento|Unity</brC#>|
+|Desenho de Pixel Art|Aseprite|
+|Desenvolvimento|Unity</brC#><br>Microsoft Visual Studio 2022|
 
-
-## Ferramentas utilizadas
+## Ferramentas Utilizadas
 
 |Atividade|Ferramenta|
 |--|--|
-|Organização e documentação|Github<br>Git Pages<br>Trello<br>Github projects|
-|Comunicação|WhatsApp<br>Telegram|
+|Organização e documentação|Github<br>Git Pages<br>Github Projects|
+|Gerenciamento de Tarefas|GitHub Issues|
+|Comunicação|Telegram|
