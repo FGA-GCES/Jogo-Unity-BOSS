@@ -13,7 +13,7 @@
 - [ ] Visão geral do projeto (com prints de como funciona o projeto);  
 - [X] Tecnologias utilizadas;  
 - [ ] Como rodar localmente (instalação + execução);  
-- [ ] CONTRIBUTING.md - Como contribuir (passo a passo);  
+- [X] CONTRIBUTING.md - Como contribuir (passo a passo);  
 - [ ] Como usar a aplicação (guia de usuário);  
 - [ ] CODE_OF_CONDUCT.md com boas práticas de convivência;  
 - [ ] CHANGELOG.md com histórico de alterações;  
@@ -21,9 +21,9 @@
 - [ ] Arquitetura da solução;  
 - [ ] Roadmap e backlog público;  
 - [ ] Dicionário de dados (se aplicável);  
-- [ ] Sistema de governança (ex: mantenedores, comitês, votação);  
-- [ ] Templates para issues e pull requests;  
-- [ ] Etiquetas (labels) para organizar issues (ex: good first issue, bug, enhancement);  
+- [X] Sistema de governança (ex: mantenedores, comitês, votação);  
+- [X] Templates para issues e pull requests;  
+- [X] Etiquetas (labels) para organizar issues (ex: good first issue, bug, enhancement);  
 - [ ] Agendas públicas de reuniões (caso ocorram);  
 - [ ] LICENSE com licença de software livre (ex: MIT, GPL, Apache 2.0);  
 - [ ] Verificação de licenças das dependências utilizadas;  
