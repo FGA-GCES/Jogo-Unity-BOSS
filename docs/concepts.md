@@ -91,16 +91,7 @@ Essa técnica permite criar cenários de forma modular e eficiente, facilitando 
 
 
 
-## 10. Por que usar Pixel Art?
-**Definição**:  
-A Pixel Art é uma técnica de criação gráfica baseada no uso de pixels, frequentemente associada ao estilo retrô. Ela é eficiente em termos de recursos computacionais e permite um visual simplificado, mas cheio de estilo.
-
-**Aplicação**:  
-Além de ser mais leve, ela é acessível para quem está começando a criar jogos. Também é muito apreciada por jogadores nostálgicos e em jogos indie, devido ao seu charme único.
-
-
-
-## 11. Collider
+## 10. Collider
 **Definição**:  
 Componente que define a área física de um GameObject, usada para detectar colisões com outros objetos. Pode ser de diferentes formas: caixa (BoxCollider2D), círculo (CircleCollider2D), etc.
 
@@ -109,7 +100,7 @@ Permite que o personagem colida com paredes, pegue itens, interaja com NPCs, ent
 
 
 
-## 12. Rigidbody (Rigidbody2D)
+## 11. Rigidbody (Rigidbody2D)
 **Definição**:  
 Componente que aplica física ao GameObject. Controla velocidade, gravidade, massa e permite interações físicas realistas, como pular ou cair.
 
@@ -118,7 +109,7 @@ Se o jogador ou um inimigo precisa se mover com física (pular, cair, ser empurr
 
 
 
-## 13. Animações (Animator / Animation)
+## 12. Animações (Animator / Animation)
 **Definição**:  
 Sistema que permite trocar sprites em sequência para simular movimento (ex: andar, atacar, pular).
 
@@ -127,7 +118,7 @@ O Unity usa um componente chamado Animator, junto de Animation Clips, para contr
 
 
 
-## 14. Prefabs
+## 13. Prefabs
 **Definição**:  
 Modelo reutilizável de um GameObject. Um Prefab é como um molde que pode ser instanciado várias vezes no jogo com o mesmo comportamento.
 
@@ -136,7 +127,7 @@ Modelo reutilizável de um GameObject. Um Prefab é como um molde que pode ser i
 
 
 
-## 15. HUD (Heads-Up Display)
+## 14. HUD (Heads-Up Display)
 **Definição**:  
 Elementos gráficos da interface que ficam na tela mostrando informações importantes ao jogador, como vida, pontuação, tempo, inventário, etc.
 
@@ -145,7 +136,7 @@ Usado para manter o jogador informado sobre seu progresso no jogo, criando uma i
 
 
 
-## 16. Interação
+## 15. Interação
 **Definição**:  
 É a forma como o jogador se comunica com o mundo do jogo. Pode incluir falar com NPCs, pegar itens, abrir portas, entre outras ações.
 
@@ -154,7 +145,7 @@ Normalmente envolve detectar colisões e interações com objetos ou NPCs. Scrip
 
 
 
-## 17. ScriptableObject
+## 16. ScriptableObject
 **Definição**:  
 Tipo especial de asset no Unity usado para armazenar dados reutilizáveis e organizados, separados da lógica do jogo.
 
@@ -173,11 +164,10 @@ Ideal para guardar informações como estatísticas de inimigos, itens, feitiço
 7. [O que é pixel art e qual é a sua utilização no mundo dos games?](https://blog.saibala.com.br/o-que-e-pixel-art-e-qual-e-a-sua-utilizacao-no-universo-dos-games/)
 8. [Level Design: O que é e como aplicar?](https://www.thedesigninspiration.com/articles/level-design-o-que-e-como-aplicar/)
 9. [O que são tileset e tilemap no desenvolvimento de jogos](https://www.domestika.org/pt/blog/6985-o-que-e-tileset-e-tilemap-no-desenvolvimento-de-games)
-10. [O que é pixel art e qual é a sua utilização no mundo dos games?](https://blog.saibala.com.br/o-que-e-pixel-art-e-qual-e-a-sua-utilizacao-no-universo-dos-games/)
-11. [Unity - Manual: Colliders](https://docs.unity3d.com/Manual/Colliders.html)
-12. [Unity - Manual: Rigidbody](https://docs.unity3d.com/Manual/class-Rigidbody.html)
-13. [Unity - Manual: Animation](https://docs.unity3d.com/Manual/AnimationSection.html)
-14. [Unity - Manual: Prefabs](https://docs.unity3d.com/Manual/Prefabs.html)
-15. [Unity - Manual: UI](https://docs.unity3d.com/Manual/UISystem.html)
-16. [Unity - Manual: Physics Interactions](https://docs.unity3d.com/Manual/PhysicsOverview.html)
-17. [Unity - Manual: ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
+10. [Unity - Manual: Colliders](https://docs.unity3d.com/Manual/Colliders.html)
+11. [Unity - Manual: Rigidbody](https://docs.unity3d.com/Manual/class-Rigidbody.html)
+12. [Unity - Manual: Animation](https://docs.unity3d.com/Manual/AnimationSection.html)
+13. [Unity - Manual: Prefabs](https://docs.unity3d.com/Manual/Prefabs.html)
+14. [Unity - Manual: UI](https://docs.unity3d.com/Manual/UISystem.html)
+15. [Unity - Manual: Physics Interactions](https://docs.unity3d.com/Manual/PhysicsOverview.html)
+16. [Unity - Manual: ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
