@@ -1,34 +1,34 @@
-## ? Checklist para o projeto se tornar um software livre.
+## Checklist para o projeto se tornar um software livre.
 
-- [ ] Usar Git Flow para estratégias de branchs;  
+- [ ] Usar Git Flow para estratÃ©gias de branchs;  
 - [ ] Fazer um versionamento;  
 - [ ] Releases com Notes claras;  
 - [ ] Build automatizado;  
-- [ ] Testes automatizados (unitários/integrados);  
-- [ ] Testes end-to-end automatizados (se aplicável);  
+- [ ] Testes automatizados (unitÃ¡rios/integrados);  
+- [ ] Testes end-to-end automatizados (se aplicÃ¡vel);  
 - [ ] Monitoramento de qualidade com badges (ex: Codecov, SonarCloud);  
 - [ ] Linter (ex: ESLint, Flake8, etc.);  
-- [ ] Validação de segurança e dependências (ex: Dependabot, Snyk);  
-- [ ] Arquivos de configuração de ambiente: Dockerfile, docker-compose.yml, .env.example;  
-- [ ] Visão geral do projeto (com prints de como funciona o projeto);  
+- [ ] ValidaÃ§Ã£o de seguranÃ§a e dependÃªncias (ex: Dependabot, Snyk);  
+- [ ] Arquivos de configuraÃ§Ã£o de ambiente: Dockerfile, docker-compose.yml, .env.example;  
+- [ ] VisÃ£o geral do projeto (com prints de como funciona o projeto);  
 - [ ] Tecnologias utilizadas;  
-- [ ] Como rodar localmente (instalação + execução);  
+- [ ] Como rodar localmente (instalaÃ§Ã£o + execuÃ§Ã£o);  
 - [ ] CONTRIBUTING.md - Como contribuir (passo a passo);  
-- [ ] Como usar a aplicação (guia de usuário);  
-- [ ] CODE_OF_CONDUCT.md com boas práticas de convivência;  
-- [ ] CHANGELOG.md com histórico de alterações;  
+- [ ] Como usar a aplicaÃ§Ã£o (guia de usuÃ¡rio);  
+- [ ] CODE_OF_CONDUCT.md com boas prÃ¡ticas de convivÃªncia;  
+- [ ] CHANGELOG.md com histÃ³rico de alteraÃ§Ãµes;  
 - [ ] Landing page;  
-- [ ] Arquitetura da solução;  
-- [ ] Roadmap e backlog público;  
-- [ ] Dicionário de dados (se aplicável);  
-- [ ] Sistema de governança (ex: mantenedores, comitês, votação);  
+- [ ] Arquitetura da soluÃ§Ã£o;  
+- [ ] Roadmap e backlog pÃºblico;  
+- [ ] DicionÃ¡rio de dados (se aplicÃ¡vel);  
+- [ ] Sistema de governanÃ§a (ex: mantenedores, comitÃªs, votaÃ§Ã£o);  
 - [ ] Templates para issues e pull requests;  
 - [ ] Etiquetas (labels) para organizar issues (ex: good first issue, bug, enhancement);  
-- [ ] Agendas públicas de reuniões (caso ocorram);  
-- [ ] LICENSE com licença de software livre (ex: MIT, GPL, Apache 2.0);  
-- [ ] Verificação de licenças das dependências utilizadas;  
-- [ ] Ferramentas de análise estática de código;
-- [ ] Planejamento de onboarding de novos contribuidores (documentação de onboarding);  
-- [ ] Deploy automatizado (CI/CD) para ambiente de homologação/produção (opcional);
-- [ ] Infraestrutura como código (IaC) para ambientes cloud (ex: Terraform, Ansible) (opcional); 
-- [ ] Observabilidade básica: logs, métricas e alertas (ex: Prometheus, Grafana, Sentry) (opcional).  
+- [ ] Agendas pÃºblicas de reuniÃµes (caso ocorram);  
+- [ ] LICENSE com licenÃ§a de software livre (ex: MIT, GPL, Apache 2.0);  
+- [ ] VerificaÃ§Ã£o de licenÃ§as das dependÃªncias utilizadas;  
+- [ ] Ferramentas de anÃ¡lise estÃ¡tica de cÃ³digo;
+- [ ] Planejamento de onboarding de novos contribuidores (documentaÃ§Ã£o de onboarding);  
+- [ ] Deploy automatizado (CI/CD) para ambiente de homologaÃ§Ã£o/produÃ§Ã£o (opcional);
+- [ ] Infraestrutura como cÃ³digo (IaC) para ambientes cloud (ex: Terraform, Ansible) (opcional); 
+- [ ] Observabilidade bÃ¡sica: logs, mÃ©tricas e alertas (ex: Prometheus, Grafana, Sentry) (opcional).  
