@@ -11,7 +11,7 @@
 - [ ] Validação de segurança e dependências (ex: Dependabot, Snyk);  
 - [ ] Arquivos de configuração de ambiente: Dockerfile, docker-compose.yml, .env.example;  
 - [ ] Visão geral do projeto (com prints de como funciona o projeto);  
-- [ ] Tecnologias utilizadas;  
+- [X] Tecnologias utilizadas;  
 - [ ] Como rodar localmente (instalação + execução);  
 - [ ] CONTRIBUTING.md - Como contribuir (passo a passo);  
 - [ ] Como usar a aplicação (guia de usuário);  
