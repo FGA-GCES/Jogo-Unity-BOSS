@@ -2,83 +2,182 @@
 
 ## Histórico de versão
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|11/04/2024|0.1|Adicionando conceitos|Júlia Yoshida|
-|16/04/2024|0.2|Adicionando conceito de NPC e tiles|Júlia Yoshida|
-|18/08/2024|0.3|Adicionando conceito de game object, game design e level design|Júlia Yoshida|
+| Data       | Versão | Descrição             | Autores                                                                 |
+|------------|--------|-----------------------|-------------------------------------------------------------------------|
+| 22/04/2025 | 0.1    | Adicionando conceitos | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
+
+---
 
 <p style="text-indent: 50px;text-align: justify;"> Essa seção é dedicada a conceitos e definições importantes relacionados ao nosso projeto que serão utilizados por toda a documentação. </p>
 
-## 1. Pixel Art
+## 1. Unity
+**Definição**:  
+O Unity é uma poderosa ferramenta de criação de jogos que permite desenvolver experiências interativas em 2D e 3D. Ele oferece muitos recursos prontos, como sistemas de iluminação, física, animações e inteligência artificial, além de usar a linguagem C#.
 
-<p style="text-indent: 50px;text-align: justify;"> O pixel é a menor unidade de uma imagem na qual é possível aplicar cor, tendo formato quadrado. Pixel Art, por sua vez, consiste na criação de arte utilizando esses pixels visíveis. Surgiu junto aos primeiros consoles de videogame, tais como Atari e Super Nintendo, devido às limitações de resolução e armazenamento características daquela época. </p>
+**Aplicação**:  
+Facilita o processo de desenvolvimento, permitindo que os programadores se concentrem mais na criação do conteúdo e menos na construção de recursos do zero.
 
-### 1.1 Por que usar pixel art?
 
-<p style="text-indent: 50px;text-align: justify;"> A criação de jogos com Pixel Art é mais acessível do que com gráficos em 3D, devido à facilidade de manipulação dos detalhes e à menor demanda por definição. Além disso, a existência de softwares intuitivos e gratuitos, como o Unity, facilita a programação nesse estilo, sendo uma excelente opção para iniciantes no desenvolvimento de jogos. </p>
 
-<p style="text-indent: 50px;text-align: justify;"> As possibilidades criativas com Pixel Art são vastas, permitindo uma personalização ampla e uma curva de aprendizado mais rápida. Isso possibilita a criação de cenários e personagens diversificados, com variedade na jogabilidade. </p>
+## 2. Game Design
+**Definição**:  
+O design de jogos é o processo criativo e técnico de definir como um jogo será jogado. Ele abrange desde as regras, os objetivos e a progressão até a história, os personagens e a forma como o jogador interage com o universo do jogo.
 
-<p style="text-indent: 50px;text-align: justify;"> Os jogos em Pixel Art tendem a ser mais leves devido à sua resolução menor, o que os torna ideais para dispositivos móveis. Além disso, a estética retrô da Pixel Art evoca nostalgia nos jogadores, pois muitos dos jogos clássicos, como Super Mario Bros., Chrono Trigger e Sonic, foram criados nesse estilo. </p>
+**Aplicação**:  
+Cria uma experiência envolvente para o jogador, equilibrando a diversão, desafio e fluidez do jogo, além de garantir que a jogabilidade seja agradável e intuitiva.
+
+
 
 ## 3. Sprite
+**Definição**:  
+Sprites são imagens em 2D usadas para representar personagens, objetos ou partes do cenário em um jogo. Cada ação de um personagem – como andar, correr ou atacar – é feita com diferentes quadros de animação, criando a sensação de movimento.
 
-<p style="text-indent: 50px;text-align: justify;"> Sprite em um jogo é uma representação gráfica bidimensional de um personagem, objeto ou elemento do cenário. Sprites são essenciais para dar vida ao jogo, permitindo que os personagens realizem uma variedade de ações, como caminhar, correr, pular e muito mais. Para cada uma dessas ações, é necessário criar diferentes variações do sprite, representando cada movimento de forma detalhada. Imagine que você está construindo a movimentação de um personagem em seu jogo. Você precisaria desenhar cada frame de animação para cada movimento que o personagem realizará, como caminhar ou pular. Isso se assemelha ao processo de criação de uma animação tradicional, onde uma sequência de desenhos à mão é utilizada para criar movimento. </p>
+**Aplicação**:  
+Usado para dar vida aos personagens e objetos do jogo, criando uma animação fluida para representar as ações de um personagem.
 
-## 4. Unity
 
-<p style="text-indent: 50px;text-align: justify;"> O Unity é uma plataforma de criação e operação de conteúdo interativo 3D, sendo uma game engine que centraliza e simplifica o desenvolvimento de jogos eletrônicos. Assim, o Unity torna possível que os desenvolvedores otimizem tempo na produção de jogos por não precisarem densenvolver tudo do zero. O Unity oferece suporte para a linguagem de programçaõ C#, que é a que estamos utilizando no nosso projeto. </p>
 
-<p style="text-indent: 50px;text-align: justify;"> O Unity fornece vários elementos que compõe um jogo, como: </p>
+## 4. Cena
+**Definição**:  
+Dentro do Unity, uma cena representa uma parte do jogo, como uma fase ou tela específica. É nela que o desenvolvedor monta os elementos visuais e interativos do jogo, como cenários, personagens e objetos.
 
-- Motor gráfico para renderização de gráficos 2D e 3D;
-- Motor de física que simula interações entre objetos;
-- Sistema de iluminação;
-- Texturas;
-- Animações;
-- Sons;
-- Programação de inteligência artificial;
-- Simulação de partículas.
+**Aplicação**:  
+Permite dividir o jogo em seções ou fases distintas, facilitando a organização e o desenvolvimento do jogo, além de permitir a criação de diferentes ambientes e estágios.
 
-## 5. Tile, Tileset e Tilemap
 
-<p style="text-indent: 50px;text-align: justify;"> Um tileset é a coleção de pequenas imagens ou texturas(tile) que representam diferentes partes do ambiente do jogo, como pisos, paredes, objetos, e assim por diante. Essas texturas são organizadas em uma única imagem, geralmente em uma grade, onde cada célula da grade é um "tile". Essa organização facilita o processo de design do jogo, pois permite que os desenvolvedores criem cenários complexos combinando esses tiles de forma modular. Então, um tileset fornece os elementos visuais necessários para construir os diferentes aspectos do mundo do jogo, enquanto o tilemap dita como esses elementos devem ser dispostos no espaço do jogo. </p>
 
-## 6. NPC
+## 5. NPC (Personagem Não Jogável)
+**Definição**:  
+NPCs são os personagens dentro do jogo que não são controlados por jogadores. Eles podem ter diversos papéis, como dar missões, vender itens ou interagir com o jogador de forma dinâmica.
 
-<p style="text-indent: 50px;text-align: justify;">Os NPCs(Non-Player Characters), ou personagens não jogáveis, são como os habitantes virtuais que povoam os mundos dos jogos. Eles são todos aqueles que não estão sob o domínio direto do jogador, desde os figurantes que vagueiam pelas ruas até os personagens com um propósito mais substancial na narrativa. Embora muitos desses personagens sigam rotinas pré-estabelecidas, alguns podem responder às ações do jogador de maneiras diversas. Por exemplo, podem se defender se atacados ou oferecer tarefas e informações que influenciam diretamente a experiência do jogo. </p>
+**Aplicação**:  
+São essenciais para enriquecer a narrativa e a interação no jogo, permitindo que o jogador tenha objetivos, diálogos e experiências que não dependem apenas de outros jogadores.
 
-## 7. Cena
-<p style="text-indent: 50px;text-align: justify;">As cenas são o local onde você trabalha com o conteúdo no Unity. Elas são ativos que contêm parte ou a totalidade de um jogo ou aplicação. Por exemplo, em um jogo simples, você pode construir tudo em uma única cena, enquanto que em um jogo mais complexo, pode ser necessário usar uma cena para cada nível, cada uma contendo seus próprios ambientes, personagens, obstáculos, decorações e interfaces. Você pode criar quantas cenas quiser em um projeto. Ao criar um novo projeto e abri-lo pela primeira vez, o Unity carrega uma cena de amostra contendo apenas uma Câmera e uma Luz.</p>
 
-## 8. Game Object
-<p style="text-indent: 50px;text-align: justify;"> A classe GameObject do Unity representa qualquer coisa que pode existir em uma Cena. GameObjects são os blocos de construção das cenas no Unity, funcionando como contêineres para componentes funcionais que determinam como o GameObject aparece e o que ele faz. Na programação, a classe GameObject oferece uma série de métodos que permitem trabalhar com esses objetos no código, como localizar, criar conexões, enviar mensagens entre GameObjects, adicionar ou remover componentes ligados ao GameObject e ajustar valores relacionados ao seu estado dentro da cena. </p>
 
-## 9. Game Design
-<p style="text-indent: 50px;text-align: justify;">Game design é o processo de criar a mecânica, estrutura e experiências interativas de um jogo. Envolve a definição das regras, objetivos, narrativa, personagens, níveis e interações do jogador com o ambiente. O game design combina elementos técnicos e criativos para proporcionar uma experiência divertida, desafiadora e envolvente ao jogador. O designer de jogos também pensa na progressão, nas recompensas e no equilíbrio entre dificuldade e jogabilidade, visando criar um jogo coeso e interessante.</p>
+## 6. Game Object
+**Definição**:  
+No Unity, qualquer item que exista dentro da cena é um GameObject. Ele pode ter componentes como imagens, colisores, scripts e sons.
 
-## 10. Level Design
-<p style="text-indent: 50px;text-align: justify;">O level design é uma área do desenvolvimento de jogos que se concentra na criação dos ambientes onde o jogo ocorre, como fases, missões ou cenários. Esse processo envolve tanto aspectos técnicos quanto artísticos, pois é necessário construir esses ambientes digitais de forma que sejam funcionais e visualmente atraentes. O processo de criação de um nível começa com a fase conceitual, onde são feitos esboços e modelos físicos ou digitais do cenário. </p>
-<p style="text-indent: 50px;text-align: justify;">O level design é uma subárea do game design que se concentra especificamente na criação dos ambientes ou níveis dentro do jogo, onde os jogadores irão interagir e enfrentar os desafios propostos. Podemos dizer que o game design é o planejamento macro do jogo como um todo, enquanto level design lida com o planejamento e criação dos espaços específicos onde o jogo acontece.</p>
+**Aplicação**:  
+Os GameObjects formam a base de qualquer elemento do jogo, e sua flexibilidade permite a criação de quase qualquer tipo de item ou ação no jogo, como inimigos, itens e elementos do cenário.
 
-## Referências
 
-- [1] [O que é pixel art e qual é a sua utilização no mundo dos games?](https://blog.saibala.com.br/
-o-que-e-pixel-art-e-qual-e-a-sua-utilizacao-no-universo-dos-games/)
 
-- [2] [O que é um sprite e como ele funciona em jogos 2D?](https://www.alura.com.br/artigos/sprite-como-funciona-em-jogos-2d)
+## 7. Pixel Art
+**Definição**:  
+Pixel Art é uma técnica de criação de arte visual que usa blocos quadrados (pixels) visíveis para formar imagens. Foi amplamente usada em jogos antigos devido às limitações técnicas dos gráficos, mas hoje é valorizada pelo seu estilo nostálgico.
 
-- [3] [O que é um desenvolvedor Unity e como se tornar um?](https://ebaconline.com.br/blog/o-que-e-um-desenvolvedor-unity-e-como-se-tornar-um)
+**Aplicação**:  
+É ideal para jogos indie e plataformas móveis, pois exige menos recursos e pode ser criada de maneira acessível, especialmente para desenvolvedores iniciantes.
 
-- [4] [O que é tileset e tilemap no desenvolvimento de games?](https://www.domestika.org/pt/blog/6985-o-que-e-tileset-e-tilemap-no-desenvolvimento-de-games)
 
-- [5] [O que é NPC?](https://canaltech.com.br/games/o-que-e-npc/)
 
-- [6] [Unity - Manual: Scenes](https://docs.unity3d.com/Manual/CreatingScenes.html)
+## 8. Level Design
+**Definição**:  
+O design de níveis cuida da criação dos ambientes e fases do jogo. Ele envolve a definição de obstáculos, estrutura e distribuição dos elementos do cenário.
 
-- [7] [Unity - Manual: Game Object](https://docs.unity3d.com/Manual/class-GameObject.html)
+**Aplicação**:  
+Cria um ambiente onde o jogador interage, sendo responsável por guiar o jogador pela experiência do jogo, equilibrando a dificuldade e garantindo uma jogabilidade divertida.
 
-- [8] [What is Game Design? Everything you need to know](https://www.karagamedesign.com/post/what-is-game-design-guide)
 
-- [9] [Level design](https://www.techopedia.com/definition/88/level-design)
+
+## 9. Tile, Tileset e Tilemap
+**Definição**:  
+Um tile é uma pequena peça gráfica usada para construir mapas e ambientes. O tileset é o conjunto dessas peças, e o tilemap é a disposição delas no mundo do jogo.
+
+**Aplicação**:  
+Essa técnica permite criar cenários de forma modular e eficiente, facilitando a criação de grandes ambientes e reduzindo o tempo de desenvolvimento.
+
+
+
+## 10. Por que usar Pixel Art?
+**Definição**:  
+A Pixel Art é uma técnica de criação gráfica baseada no uso de pixels, frequentemente associada ao estilo retrô. Ela é eficiente em termos de recursos computacionais e permite um visual simplificado, mas cheio de estilo.
+
+**Aplicação**:  
+Além de ser mais leve, ela é acessível para quem está começando a criar jogos. Também é muito apreciada por jogadores nostálgicos e em jogos indie, devido ao seu charme único.
+
+
+
+## 11. Collider
+**Definição**:  
+Componente que define a área física de um GameObject, usada para detectar colisões com outros objetos. Pode ser de diferentes formas: caixa (BoxCollider2D), círculo (CircleCollider2D), etc.
+
+**Aplicação**:  
+Permite que o personagem colida com paredes, pegue itens, interaja com NPCs, entre outras interações físicas no jogo.
+
+
+
+## 12. Rigidbody (Rigidbody2D)
+**Definição**:  
+Componente que aplica física ao GameObject. Controla velocidade, gravidade, massa e permite interações físicas realistas, como pular ou cair.
+
+**Aplicação**:  
+Se o jogador ou um inimigo precisa se mover com física (pular, cair, ser empurrado), é necessário adicionar um Rigidbody2D ao GameObject.
+
+
+
+## 13. Animações (Animator / Animation)
+**Definição**:  
+Sistema que permite trocar sprites em sequência para simular movimento (ex: andar, atacar, pular).
+
+**Aplicação**:  
+O Unity usa um componente chamado Animator, junto de Animation Clips, para controlar quando e como as animações acontecem com base em parâmetros (ex: está correndo, está no chão, etc.).
+
+
+
+## 14. Prefabs
+**Definição**:  
+Modelo reutilizável de um GameObject. Um Prefab é como um molde que pode ser instanciado várias vezes no jogo com o mesmo comportamento.
+
+**Aplicação**:  
+Útil para criar múltiplos inimigos, itens ou NPCs com as mesmas características. Ao editar o prefab, todos os clones instanciados são automaticamente atualizados.
+
+
+
+## 15. HUD (Heads-Up Display)
+**Definição**:  
+Elementos gráficos da interface que ficam na tela mostrando informações importantes ao jogador, como vida, pontuação, tempo, inventário, etc.
+
+**Aplicação**:  
+Usado para manter o jogador informado sobre seu progresso no jogo, criando uma interface visual que pode ser atualizada por scripts durante o jogo.
+
+
+
+## 16. Interação
+**Definição**:  
+É a forma como o jogador se comunica com o mundo do jogo. Pode incluir falar com NPCs, pegar itens, abrir portas, entre outras ações.
+
+**Aplicação**:  
+Normalmente envolve detectar colisões e interações com objetos ou NPCs. Scripts são usados para executar ações como mostrar um diálogo ou iniciar uma missão quando o jogador interage com algo.
+
+
+
+## 17. ScriptableObject
+**Definição**:  
+Tipo especial de asset no Unity usado para armazenar dados reutilizáveis e organizados, separados da lógica do jogo.
+
+**Aplicação**:  
+Ideal para guardar informações como estatísticas de inimigos, itens, feitiços, ou qualquer dado que precise ser reaproveitado entre objetos diferentes, sem a necessidade de duplicar informações.
+
+---
+
+## Referências gerais
+1. [Unity - O que é e como funciona?](https://www.alura.com.br/artigos/o-que-e-unity)
+2. [Game Design - Tudo o que você precisa saber](https://www.cursouniversitario.com.br/o-que-e-game-design/)
+3. [O que é Sprite e como usá-lo nos seus jogos](https://www.gamasutra.com/blogs/joseignacio/20180706/318401/O_que_e_sprite_e_como_usalo_nos_seus_jogos.php)
+4. [Unity - Manual: Scenes](https://docs.unity3d.com/Manual/CreatingScenes.html)
+5. [O que é NPC?](https://canaltech.com.br/games/o-que-e-npc/)
+6. [Unity - Manual: Game Object](https://docs.unity3d.com/Manual/class-GameObject.html)
+7. [O que é pixel art e qual é a sua utilização no mundo dos games?](https://blog.saibala.com.br/o-que-e-pixel-art-e-qual-e-a-sua-utilizacao-no-universo-dos-games/)
+8. [Level Design: O que é e como aplicar?](https://www.thedesigninspiration.com/articles/level-design-o-que-e-como-aplicar/)
+9. [O que são tileset e tilemap no desenvolvimento de jogos](https://www.domestika.org/pt/blog/6985-o-que-e-tileset-e-tilemap-no-desenvolvimento-de-games)
+10. [O que é pixel art e qual é a sua utilização no mundo dos games?](https://blog.saibala.com.br/o-que-e-pixel-art-e-qual-e-a-sua-utilizacao-no-universo-dos-games/)
+11. [Unity - Manual: Colliders](https://docs.unity3d.com/Manual/Colliders.html)
+12. [Unity - Manual: Rigidbody](https://docs.unity3d.com/Manual/class-Rigidbody.html)
+13. [Unity - Manual: Animation](https://docs.unity3d.com/Manual/AnimationSection.html)
+14. [Unity - Manual: Prefabs](https://docs.unity3d.com/Manual/Prefabs.html)
+15. [Unity - Manual: UI](https://docs.unity3d.com/Manual/UISystem.html)
+16. [Unity - Manual: Physics Interactions](https://docs.unity3d.com/Manual/PhysicsOverview.html)
+17. [Unity - Manual: ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html)
