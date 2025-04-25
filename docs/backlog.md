@@ -1,46 +1,136 @@
-# Backlog
+# Backlog do Produto
 
-## Histórico de versão
+## Guia para Revisar Esta Documentação
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|04/04/2024|0.1|Adicionando backlog|Lucas Gobbi|
-|18/08/2024|0.2|Adicionando gráficos de resolução de issues|Júlia Yoshida|
+Este documento descreve os **requisitos funcionais e não funcionais** para o **Diários de Sofia**, incluindo **mecânicas de exploração, sistemas de combate, progressão de personagem e recursos narrativos**. A estrutura segue uma divisão progressiva, começando pelo design de alto nível até histórias de usuário e funcionalidades específicas.
 
-<p style="text-indent: 50px;text-align: justify;"> Este artefato tem o propósito de reunir informações e conteúdo do backlog desenvolvido pelo grupo para este projeto. Dois quadros foram criados na aplicação Trello, um para acompanhar todas as sprints de cada lançamento e outro para os requisitos que foram levantados nas reuniões do grupo. </p>
+### **Como Usar Esta Documentação**
 
-<p style="text-indent: 50px;text-align: justify;"> Todo o conteúdo mencionado abaixo pode ser acessado <a href="https://trello.com/w/unitybrisa" target="_blank">aqui</a>. </p>
+* **Requisitos Funcionais (RF-00)** – Recursos principais de jogabilidade e mecânicas.
+* **Requisitos Não-Funcionais (RNF-00)** – Questões de usabilidade, desempenho e manutenção.
+* **Temas (TM-00)** – Principais áreas de jogabilidade agrupadas por tópico.
+* **Épicos (EP-00)** – Grandes unidades de funcionalidade dentro de cada tema.
+* **Capacidades (C-00)** – Habilidades específicas do sistema necessárias para suportar funcionalidades.
+* **Features (F-00)** – Elementos técnicos que compõem as capacidades.
+* **User Stories (US-00)** – Interações do jogo sob a perspectiva do jogador.
+* **Backlog** – O plano estruturado para desenvolvimento.
 
-## Quadro de Requisitos
-<p style="text-indent: 50px;text-align: justify;"> Este quadro reúne todos os requisitos levantados durante as reuniões do grupo, rotulando-os como Funcionais ou Não Funcionais e qual é a sua prioridade(baixa, média ou alta). </p>
+Nada neste documento é final; por favor, sugira correções ou melhorias.
 
-<p style="text-indent: 50px;text-align: justify;"> Além disso, ele contém informações sobre para qual dos quatro Lançamentos do projeto cada requisito se refere. Outro aspecto importante é o _id_ do requisito, que vem imediatamente antes de seu título, dentro de colchetes. </p>
+***
 
-<p style="text-indent: 50px;text-align: justify;"> O Quadro de Requisitos pode ser visualizado a seguir: </p>
+## **1. Requisitos Funcionais**
 
+| #     | Descrição                                                                 |
+| ----- | ------------------------------------------------------------------------- |
+| RF-01 | Movimento do personagem, ataque e defesa                                  |
+| RF-02 | Sistema de combate dinâmico                                               |
+| RF-03 | Progressão de XP e nível do jogador                                       |
+| RF-04 | Sistema de inventário e atributos baseados em itens                       |
+| RF-05 | Progressão do jogo por fases e aumento de dificuldade                     |
+| RF-06 | Menu interativo baseado em mapa                                           |
+| RF-07 | Coleta de diários narrativos                                              |
+| RF-08 | Interação com NPCs                                                        |
+| RF-09 | Nível inicial em um cenário de biblioteca                                 |
+| RF-10 | Customização do personagem do jogador                                     |
+| RF-11 | Sistema de loja                                                           |
 
-<iframe src="https://trello.com/b/q3R7wCJO.html" frameBorder="0" width="900" height="900"></iframe>
+***
 
-## Github Projects
-<p style="text-indent: 50px;text-align: justify;"> O Github Projects do grupo foi desenvolvido para uma organização mais adequada das issues do projeto. Cada issue é dividida em algumas categorias, como: tamanho, prioridade, responsável por ela e etc. </p>
+## **2. Requisitos Não Funcionais**
 
-<img src="../images/gitprojects01.png" width="900">
+| #      | Tipo        | Descrição                                                  |
+| ------ | ----------- | ---------------------------------------------------------- |
+| RNF-01 | Usabilidade | Estética de Pixel Art / 8-bit para apelo nostálgico         |
+| RNF-02 | Disponibilidade | O jogo deve funcionar completamente offline             |
+| RNF-03 | Desempenho  | Os níveis do jogo devem carregar em menos de 2 segundos     |
+| RNF-04 | Manutenibilidade | Arquitetura modular e limpa no Unity                   |
 
-<p style="text-indent: 50px;text-align: justify;"> Para acessar o projects da equipe basta clicar <a href="https://github.com/orgs/ResidenciaTICBrisa/projects/20/views/2">aqui</a> .</p>
+***
 
-<p style="text-indent: 50px;text-align: justify;"> A partir dessas issues e de seus dados, foram desenvolvidos gráficos para análise de performance do grupo, na aba de insights do projects, a qual está sendo utilizado para melhor distribuição de issues para a equipe.</p>
+## **3. Temas**
 
-<div style="text-align: center;">
-    <img src="../images/issues1.jpg" width="800">    
-    <p>Imagem 1: issues por release por membro </p>
-</div>
+| #     | Tema                     | Descrição                                                   |
+| ----- | ------------------------ | ----------------------------------------------------------- |
+| TM-01 | Mundo do Jogo & Exploração | Foco no mapa, ambiente e interação                         |
+| TM-02 | Combate & Mecânicas       | Sistema de batalha, habilidades do personagem e evolução   |
+| TM-03 | Sistemas de Progressão    | XP, níveis, estatísticas de itens e customização de personagem |
+| TM-04 | Experiência Narrativa     | Contação de histórias, coleta de diários e integração cultural |
 
-<div style="text-align: center;">
-    <img src="../images/issues2.jpg" width=800">    
-    <p>Imagem 2: issues por release</p>
-</div>
+***
 
-<div style="text-align: center;">
-    <img src="../images/issues3.jpg" width="800">    
-    <p>Imagem 3: issues concluídas por membro do grupo</p>
-</div>
+## **4. Épicos**
+
+| #     | Épico                     | Descrição                                                           |
+| ----- | ------------------------- | ------------------------------------------------------------------- |
+| EP-01 | Exploração & Navegação    | Permitir movimento entre fases, menus e locais no mapa             |
+| EP-02 | Sistema de Combate        | Combate em tempo real, com mecânicas baseadas em estatísticas e habilidades |
+| EP-03 | Progressão & Customização | XP, níveis e itens que modificam estatísticas do personagem         |
+| EP-04 | Narrativa & Lore          | Histórias colecionáveis e temas culturais embutidos no mundo        |
+
+***
+
+## **5. Capacidades**
+
+| #    | Capacidade                 | Descrição                                                             |
+| ---- | -------------------------- | --------------------------------------------------------------------- |
+| C-01 | Sistema de Movimento       | Permitir que o jogador se mova livremente                            |
+| C-02 | Motor de Combate           | Gerenciar ataques, lógica de inimigos e detecção de acertos          |
+| C-03 | XP e Progressão de Nível   | Ganhar XP e aumentar atributos ao subir de nível                     |
+| C-04 | Gerenciamento de Inventário | Itens que impactam a jogabilidade ao melhorar estatísticas           |
+| C-05 | Rastreamento de Progresso Narrativo | Coletar e armazenar entradas de diários                          |
+| C-06 | Interação com NPCs         | Permitir diálogo e ativação de missões através de NPCs               |
+| C-07 | Menu Interativo de Mapa    | Navegar pelo menu como um mapa físico no jogo                        |
+
+***
+
+## **6. Funcionalidades**
+
+| #    | Funcionalidade              | Descrição                                                          |
+| ---- | --------------------------- | ------------------------------------------------------------------ |
+| F-01 | Sistema de controle do personagem | Suporte para movimento suave e entrada básica de combate         |
+| F-02 | Animação & feedback de combate | Mecânicas visuais de combate em tempo real                       |
+| F-03 | Sistema de XP               | Sistema para ganhar XP e subir de nível                           |
+| F-04 | Lógica de progressão de atributos | Modificar atributos com base no nível/efeitos de itens          |
+| F-05 | Interface de loja e coleta de itens | Loja que vende itens que alteram estatísticas                  |
+| F-06 | Gerenciamento de fases      | Manipulação de cenas e ajuste de dificuldade entre fases          |
+| F-07 | Cena do nível da biblioteca | Primeiro nível do jogo em uma biblioteca                         |
+| F-08 | Menu de navegação por mapa  | Navegação na interface através de um mapa visual                 |
+| F-09 | Sistema de diálogo com NPCs | Ativação básica de diálogos e interações                         |
+| F-10 | Sistema de inventário de diários | Visualização e rastreamento de colecionáveis de história        |
+
+***
+
+## **7. Histórias de Usuário**
+
+| #     | Descrição                                                                                   |
+| ----- | ------------------------------------------------------------------------------------------- |
+| US-01 | Como jogador, quero explorar diferentes fases para experimentar o mundo completo do jogo.   |
+| US-02 | Como jogador, quero lutar contra inimigos dinamicamente para me sentir imerso na ação.      |
+| US-03 | Como jogador, quero ganhar XP e subir de nível para sentir progressão.                      |
+| US-04 | Como jogador, quero customizar meu personagem para me sentir único.                         |
+| US-05 | Como jogador, quero coletar diários para entender o enredo do jogo.                         |
+| US-06 | Como jogador, quero comprar itens que melhorem meus atributos.                              |
+| US-07 | Como jogador, quero interagir com NPCs para receber dicas de história ou jogabilidade.      |
+| US-08 | Como jogador, quero usar um menu em estilo de mapa para navegar entre áreas.                |
+
+***
+
+## **8. Backlog**
+
+| Tema      | Épico              | Capacidades               | Funcionalidades            | História de Usuário | Descrição                                                  |
+| --------- | ------------------ | ------------------------- | -------------------------- | ------------------- | ---------------------------------------------------------- |
+| TM-01     | EP-01              | C-01, C-07                | F-01, F-06, F-08, F-07     | US-01, US-08        | Movimento, transições de nível e navegação baseada em mapa |
+| TM-02     | EP-02              | C-02                      | F-02                       | US-02               | Sistema de combate em tempo real com interações de inimigos |
+| TM-03     | EP-03              | C-03, C-04, C-06          | F-03, F-04, F-05           | US-03, US-04, US-06, US-07 | XP, níveis, coleta de itens e interação com personagens    |
+| TM-04     | EP-04              | C-05                      | F-10                       | US-05               | Coleta e visualização de entradas de diários para narrativa |
+
+***
+
+## Histórico de Revisões
+
+| Data       | Versão | Alterações                              | Autores                                                   |
+| ---------- | -------| --------------------------------------- | --------------------------------------------------------- |
+| 2025-04-25 | 0.1    | Mapeamento inicial do backlog e estrutura | [Mateus Vieira](https://github.com/matix0)               |
+
+[Voltar para a Página Principal](../../index.md)
