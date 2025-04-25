@@ -1,4 +1,4 @@
-# Código de Conduta Contributor Covenant  
+# Código de Conduta
 
 ## Nosso Compromisso  
 
