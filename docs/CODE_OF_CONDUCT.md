@@ -1,39 +1,39 @@
-# Código de Conduta Contributor Covenant  
+# CÃ³digo de Conduta Contributor Covenant  
 
 ## Nosso Compromisso  
 
-Com o objetivo de promover um ambiente aberto e acolhedor, nós, como colaboradores e mantenedores, nos comprometemos a tornar a participação em nosso projeto e comunidade uma experiência livre de assédio para todos, independentemente de idade, tamanho corporal, deficiência, etnia, identidade e expressão de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião, identidade ou orientação sexual.  
+Com o objetivo de promover um ambiente aberto e acolhedor, nÃ³s, como colaboradores e mantenedores, nos comprometemos a tornar a participaÃ§Ã£o em nosso projeto e comunidade uma experiÃªncia livre de assÃ©dio para todos, independentemente de idade, tamanho corporal, deficiÃªncia, etnia, identidade e expressÃ£o de gÃªnero, nÃ­vel de experiÃªncia, nacionalidade, aparÃªncia pessoal, raÃ§a, religiÃ£o, identidade ou orientaÃ§Ã£o sexual.  
 
-## Nossos Padrões  
+## Nossos PadrÃµes  
 
 Exemplos de comportamentos que contribuem para um ambiente positivo incluem:  
 
 - Utilizar linguagem acolhedora e inclusiva  
-- Respeitar diferentes pontos de vista e experiências  
-- Aceitar críticas construtivas com elegância  
-- Focar no que é melhor para a comunidade  
+- Respeitar diferentes pontos de vista e experiÃªncias  
+- Aceitar crÃ­ticas construtivas com elegÃ¢ncia  
+- Focar no que Ã© melhor para a comunidade  
 - Demonstrar empatia com outros membros da comunidade  
 
-Exemplos de comportamentos inaceitáveis incluem:  
+Exemplos de comportamentos inaceitÃ¡veis incluem:  
 
-- Uso de linguagem ou imagens sexualizadas e avanços ou atenção sexual indesejada  
-- Comentários ofensivos, insultuosos, ataques pessoais ou políticos
-- Assédio, seja em público ou privado  
-- Divulgar informações privadas de terceiros sem permissão explícita  
+- Uso de linguagem ou imagens sexualizadas e avanÃ§os ou atenÃ§Ã£o sexual indesejada  
+- ComentÃ¡rios ofensivos, insultuosos, ataques pessoais ou polÃ­ticos
+- AssÃ©dio, seja em pÃºblico ou privado  
+- Divulgar informaÃ§Ãµes privadas de terceiros sem permissÃ£o explÃ­cita  
 - Qualquer conduta considerada inapropriada em um ambiente profissional  
 
 ## Nossas Responsabilidades  
 
-Os mantenedores do projeto são responsáveis por esclarecer os padrões de comportamento aceitável e devem tomar ações corretivas justas diante de qualquer conduta inapropriada.  
+Os mantenedores do projeto sÃ£o responsÃ¡veis por esclarecer os padrÃµes de comportamento aceitÃ¡vel e devem tomar aÃ§Ãµes corretivas justas diante de qualquer conduta inapropriada.  
 
-Eles têm o direito e a responsabilidade de remover, editar ou rejeitar comentários, commits, código, edições na wiki, issues e outras contribuições que não estejam alinhadas a este Código de Conduta, bem como banir temporariamente ou permanentemente colaboradores por comportamentos considerados inapropriados, ameaçadores, ofensivos ou prejudiciais.  
+Eles tÃªm o direito e a responsabilidade de remover, editar ou rejeitar comentÃ¡rios, commits, cÃ³digo, ediÃ§Ãµes na wiki, issues e outras contribuiÃ§Ãµes que nÃ£o estejam alinhadas a este CÃ³digo de Conduta, bem como banir temporariamente ou permanentemente colaboradores por comportamentos considerados inapropriados, ameaÃ§adores, ofensivos ou prejudiciais.  
 
 ## Escopo  
 
-Este Código de Conduta se aplica tanto aos espaços do projeto quanto a situações públicas onde alguém esteja representando o projeto ou sua comunidade. Exemplos de representação incluem usar um e-mail oficial do projeto, postar por uma conta oficial em mídias sociais ou atuar como representante designado em eventos online ou presenciais. A definição de representação pode ser detalhada pelos mantenedores.  
+Este CÃ³digo de Conduta se aplica tanto aos espaÃ§os do projeto quanto a situaÃ§Ãµes pÃºblicas onde alguÃ©m esteja representando o projeto ou sua comunidade. Exemplos de representaÃ§Ã£o incluem usar um e-mail oficial do projeto, postar por uma conta oficial em mÃ­dias sociais ou atuar como representante designado em eventos online ou presenciais. A definiÃ§Ã£o de representaÃ§Ã£o pode ser detalhada pelos mantenedores.  
 
-## Aplicação  
+## AplicaÃ§Ã£o  
 
-Casos de comportamentos abusivos, de assédio ou inaceitáveis podem ser reportados à equipe do projeto em **bigopensourcesister@gmail.com**. Todas as denúncias serão analisadas e investigadas, resultando em uma resposta adequada às circunstâncias. A equipe se compromete a manter a confidencialidade em relação ao denunciante. Políticas específicas de aplicação podem ser divulgadas separadamente.  
+Casos de comportamentos abusivos, de assÃ©dio ou inaceitÃ¡veis podem ser reportados Ã  equipe do projeto em **bigopensourcesister@gmail.com**. Todas as denÃºncias serÃ£o analisadas e investigadas, resultando em uma resposta adequada Ã s circunstÃ¢ncias. A equipe se compromete a manter a confidencialidade em relaÃ§Ã£o ao denunciante. PolÃ­ticas especÃ­ficas de aplicaÃ§Ã£o podem ser divulgadas separadamente.  
 
-Mantenedores que não cumprirem ou aplicarem este Código de Conduta de boa fé podem sofrer consequências temporárias ou permanentes, conforme decisão da liderança do projeto.  
+Mantenedores que nÃ£o cumprirem ou aplicarem este CÃ³digo de Conduta de boa fÃ© podem sofrer consequÃªncias temporÃ¡rias ou permanentes, conforme decisÃ£o da lideranÃ§a do projeto.
