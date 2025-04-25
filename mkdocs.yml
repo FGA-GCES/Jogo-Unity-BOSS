@@ -11,7 +11,7 @@ nav:
     - Padrões de desenvolvimento: 'patterns.md'
  - Backlog: 'backlog.md'
  - Artes e referências: 'references.md'
- - Sprints: 'sprints.md'
+ #- Sprints: 'sprints.md'
  - Roadmaps: 
     - Roadmap de desenvolvimento: 'desenvolvimento_roadmap.md'
     - Roadmap de deploy contínuo: 'deploy_continuo_roadmap.md'
