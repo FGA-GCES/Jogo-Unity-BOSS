@@ -13,6 +13,6 @@ Este roadmap propõe ações estratégicas para contribuir com o desenvolvimento
 
 A imagem a seguir apresenta uma visão geral das etapas estratégicas sugeridas. Em seguida, o quadro interativo disponível no Miro possibilita uma exploração mais detalhada das fases propostas, permitindo uma análise abrangente dos aspectos relacionados à estruturação, automação, manutenção e organização colaborativa do desenvolvimento.
 
-![Roadmap de Desenvolvimento](images\Roadmap_Proposta_Contribuição.jpg)
+![Roadmap de Desenvolvimento](images/Roadmap_Proposta_Contribuição.jpg)
 
 <iframe width="768" height="432" src="https://miro.com/app/embed/uXjVIAWc6To=/?pres=1&frameId=3458764625498556206&embedId=876067699118" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
