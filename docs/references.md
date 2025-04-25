@@ -4,7 +4,7 @@
 
 |Data|Versão|Descrição|Autores|
 |--|--|--|--|
-|19/04/2025|0.1|Adicionando Artes e referências|Artur Bartz|
+|19/04/2025|0.1|Adicionando Artes e referências|[Artur Bartz](https://github.com/H0lzz)|
 
 <p style="text-indent: 50px;text-align: justify;"> Para o desenvolvimento do projeto, estão sendo utilizadas artes de uso livre em conjunto com artes próprias desenvolvidas pelo nosso time. </p>
 

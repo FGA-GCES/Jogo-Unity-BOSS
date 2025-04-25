@@ -17,8 +17,8 @@ Já que esse projeto é dinâmico e está em constante mudança de equipes de de
 
 |Data|Versão|Descrição|Autores|
 |--|--|--|--|
-|19/04/2025|0.1|Adicionando a Visão de Produto, Tecnologias Utilizadas e Ferramentas Utilizadas|Artur Bartz|
-|21/04/2025|0.2|Adicionando a Introdução do documento de Visão de Produto|João Gabriel|
+|19/04/2025|0.1|Adicionando a Visão de Produto, Tecnologias Utilizadas e Ferramentas Utilizadas|[Artur Bartz](https://github.com/H0lzz)|
+|21/04/2025|0.2|Adicionando a Introdução do documento de Visão de Produto|[João Gabriel](https://github.com/flyerjohn)|
 
 ## Tecnologias Utilizadas
 
