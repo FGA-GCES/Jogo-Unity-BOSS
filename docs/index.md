@@ -2,15 +2,15 @@
 
 ## Sobre o Projeto BOSS
 
-<p style="text-indent: 50px;text-align: justify;"> O BOSS, um programa de mentoria inovador, tem como objetivo envolver grupos sub-representados no cenário tecnológico, buscando promover a diversidade e inclusão no universo do Open Source. Este programa pioneiro não apenas fomenta a participação desses grupos, mas também cria oportunidades valiosas para o desenvolvimento de habilidades e a expansão do conhecimento em tecnologia. Esta iniciativa não apenas destaca a importância da diversidade no campo da tecnologia, mas também demonstra como a colaboração entre organizações pode resultar em projetos inovadores e inclusivos, contribuindo para a expansão do acesso e participação em iniciativas de código aberto. Como parte desse compromisso, propõe-se o desenvolvimento de um jogo Unity em parceria com a BRISA. </p>
+<p style="text-indent: 50px;text-align: justify;">
+O BOSS é um projeto de **software livre** para a disciplina de Gerência de Configuração e Evolução de Software. Seu objetivo é proporcionar aos participantes experiência prática em controle de versão (Git), estratégias de branching (Git Flow ou trunk-based), integração contínua (CI), entrega contínua (CD), rastreamento de mudanças e versionamento, tudo isso através do desenvolvimento colaborativo de um jogo em Unity. A iniciativa une conceitos teóricos de configuração e evolução de software com aplicação prática em um repositório aberto, incentivando boas práticas e colaboração em código aberto.
+</p>
 
-- **Habilidades necessárias/preferenciais:** Unity, Design de Sprites e efeitos sonoros, Programação voltada para jogos 
+- **Habilidades necessárias/preferenciais:** Unity, Design de Sprites e efeitos sonoros, Programação voltada para jogos, Git, Integração Contínua (CI) e Entrega Contínua (CD). 
+- **Mentores:** Carla Silva 
+- **Tamanho do projeto:** Pequeno  
+- **Dificuldade:** Média  
 
-- **Mentores:** Júlia Lopes Matos Carneiro de Farias - BOSS, Laís - BOSS 
-
-- **Tamanho do projeto:** Pequeno 
-
-- **Dificuldade:** Média
 
 ## Equipe 
 
