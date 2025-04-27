@@ -32,3 +32,6 @@
 - [ ] Deploy automatizado (CI/CD) para ambiente de homologação/produção (opcional);
 - [ ] Infraestrutura como código (IaC) para ambientes cloud (ex: Terraform, Ansible) (opcional); 
 - [ ] Observabilidade básica: logs, métricas e alertas (ex: Prometheus, Grafana, Sentry) (opcional).  
+- [ ] Indicar no README.md que o projeto é um software livre (uso, modificação e redistribuição permitidos);
+- [ ] Tornar o repositório público (ex: GitHub, GitLab, etc.).
+
