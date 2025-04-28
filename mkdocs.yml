@@ -1,6 +1,6 @@
 site_name: Projeto BOSS - Unity
 nav: 
- - Landing Page: 'landingpage/landingpage.html'
+ - Landing Page: 'https://jogo-unity-boss.vercel.app/'
  - Home: 'index.md'
  - Conceitos: 'concepts.md'
  - Jogo: 'game.md'
