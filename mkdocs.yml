@@ -19,15 +19,19 @@ nav:
       - Roadmap geral: "roadmap.md"
   - Releases:
       - Release 1 (22/04/2025): "release1.md"
-  - Tutoriais:
-      - Página inicial: "tutoriais/wokshop_home.md"
-      - Configuração do Ambiente (Unity e IDE): "tutoriais/workshop_ambiente.md"
-      - Roadmap do Workshop: "tutoriais/workshop_roadmap.md"
-      - Criação do primeiro nível: "tutoriais/workshop_primeiro_nivel.md"
-      - Movimento do jogador: "tutoriais/workshop_movimento_player.md"
-      - Desenvolvimento do nível: "tutoriais/workshop_desenvolvendo_nivel.md"
-      - Inimigos e UI: "tutoriais/workshop_inimigos_ui.md"
-      - Glossário: "tutoriais/workshop_glossario.md"
+  - Unity for Woman:
+      - Tutoriais:
+        - Página inicial: "tutoriais/wokshop_home.md"
+        - Configuração do Ambiente (Unity e IDE): "tutoriais/workshop_ambiente.md"
+        - Roadmap do Workshop: "tutoriais/workshop_roadmap.md"
+        - Criação do primeiro nível: "tutoriais/workshop_primeiro_nivel.md"
+        - Movimento do jogador: "tutoriais/workshop_movimento_player.md"
+        - Desenvolvimento do nível: "tutoriais/workshop_desenvolvendo_nivel.md"
+        - Inimigos e UI: "tutoriais/workshop_inimigos_ui.md"
+        - Glossário: "tutoriais/workshop_glossario.md"
+      - Cases:
+        - Coral Quest: "tutoriais/coral_quest.md"
+        - Diários de Sofia: "tutoriais/diarios_de_sofia.md"
 
 theme:
   name: material
