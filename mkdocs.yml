@@ -1,25 +1,33 @@
 site_name: Projeto BOSS - Unity
-nav: 
- - Landing Page: 'https://jogo-unity-boss.vercel.app/'
- - Home: 'index.md'
- - Conceitos: 'concepts.md'
- - Jogo: 'game.md'
- - Visão de produto e projeto: 
-    - Visão de produto: 'product.md'
-    - Visão de projeto: 'project.md'
-    - Processos de desenvolvimento de software: 'devprocess.md'
-    - Padrões de desenvolvimento: 'patterns.md'
- - Backlog: 'backlog.md'
- - Artes e referências: 'references.md'
- #- Sprints: 'sprints.md'
- - Roadmaps: 
-    - Roadmap de desenvolvimento: 'desenvolvimento_roadmap.md'
-    - Roadmap de deploy contínuo: 'deploy_continuo_roadmap.md'
-    - Roadmap de proposta de contribuição: 'contribuicao_roadmap.md'
-    - Roadmap: 'roadmap.md'
- - Releases:
-    - Release 1(22/04/2025): 'release1.md'
-    
+
+nav:
+  - Landing Page: "https://jogo-unity-boss.vercel.app/"
+  - Home: "index.md"
+  - Conceitos: "concepts.md"
+  - Jogo: "game.md"
+  - Visão de produto e projeto:
+      - Visão de produto: "product.md"
+      #- Visão de projeto: ""
+      - Processos de desenvolvimento de software: "devprocess.md"
+      - Padrões de desenvolvimento: "patterns.md"
+  - Backlog: "backlog.md"
+  - Artes e referências: "references.md"
+  - Roadmaps:
+      - Roadmap de desenvolvimento: "desenvolvimento_roadmap.md"
+      - Roadmap de deploy contínuo: "deploy_continuo_roadmap.md"
+      - Roadmap de proposta de contribuição: "contribuicao_roadmap.md"
+      - Roadmap geral: "roadmap.md"
+  - Releases:
+      - Release 1 (22/04/2025): "release1.md"
+  - Tutoriais:
+      - Página inicial: "tutoriais/wokshop_home.md"
+      - Configuração do Ambiente (Unity e IDE): "tutoriais/workshop_ambiente.md"
+      - Roadmap do Workshop: "tutoriais/workshop_roadmap.md"
+      - Criação do primeiro nível: "tutoriais/workshop_primeiro_nivel.md"
+      - Movimento do jogador: "tutoriais/workshop_movimento_player.md"
+      - Desenvolvimento do nível: "tutoriais/workshop_desenvolvendo_nivel.md"
+      - Inimigos e UI: "tutoriais/workshop_inimigos_ui.md"
+      - Glossário: "tutoriais/workshop_glossario.md"
 
 theme:
   name: material
@@ -41,19 +49,19 @@ theme:
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/link
-        name: Switch to light mode
+        icon: material/weather-night
+        name: Mudar para modo claro
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
+        icon: material/brightness-4
+        name: Mudar para modo escuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: indigo
       toggle:
-        icon: material/toggle-switch-off
-        name: Switch to system preference
+        icon: material/brightness-6
+        name: Usar preferência do sistema
