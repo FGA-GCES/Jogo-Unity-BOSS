@@ -133,4 +133,4 @@ Nada neste documento é final; por favor, sugira correções ou melhorias.
 | ---------- | -------| --------------------------------------- | --------------------------------------------------------- |
 | 2025-04-25 | 0.1    | Mapeamento inicial do backlog e estrutura | [Mateus Vieira](https://github.com/matix0)               |
 
-[Voltar para a Página Principal](../../index.md)
+[Voltar para a Página Principal](index.md)

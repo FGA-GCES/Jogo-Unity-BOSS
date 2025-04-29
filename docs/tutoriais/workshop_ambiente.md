@@ -92,3 +92,5 @@
    
    - Nos controles superiores, você pode pausar ou parar a execução do jogo
    - Lembre-se de pará-la sempre antes de modificar objetos ou componentes em cena, ou as modificações poderão ser perdidas
+
+[Voltar para a Página Principal](./wokshop_home.md)

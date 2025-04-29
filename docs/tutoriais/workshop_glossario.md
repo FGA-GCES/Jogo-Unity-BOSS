@@ -76,3 +76,5 @@
   * __z-fighting__: Artefato visual causado quando duas superfícies de sprites estão no mesmo plano, e o jogo não consegue decidir qual delas deve ser renderizada
 
     ![Stitching](https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Z-fighting.png/220px-Z-fighting.png)
+
+[Voltar para a Página Principal](./wokshop_home.md)
