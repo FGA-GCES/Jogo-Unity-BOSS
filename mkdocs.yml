@@ -20,7 +20,7 @@ nav:
  - Releases:
     - Release 1(22/04/2025): 'release1.md'
  - Sprints: 'sprints.md'
-    
+ - Dificuldades Subir Ambinete: 'dificuldades_subir_ambinete.md'
 
 theme:
   name: material
