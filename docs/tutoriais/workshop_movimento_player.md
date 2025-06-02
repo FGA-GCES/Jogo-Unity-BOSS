@@ -22,7 +22,7 @@
 3. Procure por "Box Collider 2D"
 4. Clique para editar a caixa de colisão
 
-  ![Botão de editar collider](https://media.discordapp.net/attachments/1105270961391030293/1124346156546273330/image.png?width=416&height=316)
+  ![Botão de editar collider](../assets/workshop/movimento_player/edithitbox.png)
 
 5. Tente deixar a caixa de colisão o mais próximo o possível do formato dos objetos
 
@@ -87,14 +87,14 @@ public class PlayerMovimentation : MonoBehaviour
 
   Variáveis definidas com "public" podem ser acessadas diretamente pelo editor Unity
 
-  ![Editando a variável durante execução](https://cdn.discordapp.com/attachments/1105270961391030293/1126910382817161257/ezgif-2-6ec952770d.gif)
+  ![Editando a variável durante execução](../assets/workshop/movimento_player/varsineditor.png)
 
 ### Inputs
 1. No canto superior esquerdo, clique em edit > Project Settings
 2. Na nova janela aberta, clique em Input Manager > Axes > Horizontal
 3. Defina os botões negativo e positivo com as teclas que quiser usar para mover o player para a esquerda e para a direita, respectivamente
 
-  ![Input Maganer](https://cdn.discordapp.com/attachments/1105270961391030293/1126883320458924102/image.png)
+  ![Input Maganer](../assets/workshop/movimento_player/inputmanager.png)
 
 Para permitir que o player seja controlado pelo teclado, fazemos essa modificação dentro de Update()
   
@@ -110,7 +110,7 @@ void Update()
 }
 ```
 
-   ![Player sendo controlado pelo teclado](https://media.discordapp.net/attachments/1105270961391030293/1126913829171904593/ezgif-2-1672155832.gif?width=719&height=404)
+   ![Player sendo controlado pelo teclado](../assets/workshop/movimento_player/keyboardmove.gif)
    
 ## Movimento por Rigidbody2D
 Outra maneira de fazer a movimentação do jogador é utilizando seu componente Rigidbody2D, que dita sua velocidade
@@ -138,7 +138,7 @@ void Start()
 
 3. Depois de salvar o script, no Unity você verá uma nova variável no componente script do jogador com um valor "None". Para arrumar isso, clique e segure o RigidBody2D do jogador e leve-o até aquela caixa.
 
-	![Arrastando o componente](https://cdn.discordapp.com/attachments/1105270961391030293/1129450931445051432/this_one.png)
+	![Arrastando o componente](../assets/workshop/movimento_player/draggingcomponents.png)
 
 5. Para movimentar o jogador através do Rigidbody2D, escreva o seguinte código em Update()
 ```C#
@@ -176,7 +176,7 @@ void Update()
 
 Quando apertarmos o botão de pulo, uma mensagem aparecerá no console de debug
 
-![Console de Debug](https://media.discordapp.net/attachments/1105270961391030293/1129453759194468443/image.png?width=599&height=508)
+![Console de Debug](../assets/workshop/movimento_player/console.png)
 
 3. Dentro da condição if, insira o seguinte código
 ```C#
@@ -254,5 +254,6 @@ public class PlayerMovimentation : MonoBehaviour
     }
   ```
 
-  ![jumping](https://cdn.discordapp.com/attachments/1105270961391030293/1138206900123611156/ezgif-5-af5672a76c.gif)
+  ![jumping](../assets/workshop/movimento_player/jumping.gif)
       
+[Voltar para a Página Principal](./wokshop_home.md)

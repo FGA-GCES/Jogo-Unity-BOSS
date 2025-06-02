@@ -6,12 +6,12 @@
   1. Crie um novo objeto e dê o sprite que quiser
   2. Adicione um Collider2D e customize o formato
 
-  ![Inimigo com collider](https://cdn.discordapp.com/attachments/1105270961391030293/1141479279109079193/image.png)
+  ![Inimigo com collider](../assets/workshop/inimigos_ui/inimigo_hitbox.png)
 
   Queremos que esse inimigo fique andando de um lado para o outro, se movendo até uma posição expecífica e trocando de direção
 
-  3. Crie um novo script de movimentação para seu inimigo
-  4. Insira o seguinte código dentro de Update() (e defina a variável speed no início da classe)
+  1. Crie um novo script de movimentação para seu inimigo
+  2. Insira o seguinte código dentro de Update() (e defina a variável speed no início da classe)
   ```C#
   update()
   {
@@ -19,7 +19,7 @@
   }
   ```
   Sabemos que isso fará o inimigo se deslocar para a direita infinitamente
-  5. Para definir os limites do seu movimento, crie as seguintes variáveis no início da classe
+  1. Para definir os limites do seu movimento, crie as seguintes variáveis no início da classe
 
   ```C#
   public Vector3 startPosition;
@@ -59,7 +59,7 @@
 
   Se tudo der certo, o inimigo irá aparecer dentre os seus arquivos e o inimigo já existente ficará com texto azul
 
-  ![Criação de prefab](https://cdn.discordapp.com/attachments/1105270961391030293/1141494091641798718/image.png)
+  ![Criação de prefab](../assets/workshop/inimigos_ui/inimigo_azul.png)
   
 ## Dano
   Precisamos que os inimigos interajam com o jogador de alguma forma, a mais clássica sendo que eles dêem reduzam a vida do jogador
@@ -74,9 +74,9 @@
   Para isso, precisamos definir o que é um inimigo
 
   2. No inspector do inimigo, atribua a ele uma tag (pode ser a tag "Enemy" existente ou uma nova)
-  ![Seletor de tags](https://media.discordapp.net/attachments/1105270961391030293/1142572597205291078/image.png?width=316&height=360)
+  ![Seletor de tags](../assets/workshop/inimigos_ui/inimigo_tag.png)
 
-  3. No script do jogador, adicione o seguinte código dentro de OnCollisionEnter()
+  1. No script do jogador, adicione o seguinte código dentro de OnCollisionEnter()
   ```C#
   private void OnCollisionEnter2D(Collision2D other)
   {
@@ -103,17 +103,17 @@
   1. Crie um novo objeto UI > Canvas.
   2. Dê um clique duplo nesse novo objeto. Este vai ser o lugar onde você ira criar sua UI
 
-  ![Canvas](https://media.discordapp.net/attachments/1105270961391030293/1142578845283799172/image.png?width=648&height=386)
+  ![Canvas](../assets/workshop/inimigos_ui/UI_tab.png)
 
   ⚠ Não se alarme pelo tamanho do canvas, não é necessário reduzí-lo
 
   3. Dentro do seu objeto canvas, crie um novo objeto UI > Text
   4. Edite o texto como quiser, a posição do texto no canvas equivalerá a sua posição na tela do jogador
-  ![texto no canvas](https://media.discordapp.net/attachments/1105270961391030293/1142580437840056490/image.png?width=1013&height=527)
+  ![texto no canvas](../assets/workshop/inimigos_ui/UI_posicao.png)
 
   (Mudar as opções de Overflow vertical e horizontal para "overflow" pode facilitar)
 
-  ![ui no jogo](https://cdn.discordapp.com/attachments/1105270961391030293/1142581361811660860/image.png)
+  ![ui no jogo](../assets/workshop/inimigos_ui/UI_overflow.png)
 
 
   5. Dentro do script do jogador, nas primeiras linhas, insira o seguinte código
@@ -152,5 +152,6 @@
 
   Agora a vida no HUD irá atualizar sempre que o player tomar dano! (mas note que nada a impede de ficar negativa)
 
-  ![GIF inimigos dando dano e HUD](https://cdn.discordapp.com/attachments/1105270961391030293/1142607917581869206/level.gif)
+  ![GIF inimigos dando dano e HUD](../assets/workshop/inimigos_ui/inimigos_dano.gif)
 
+[Voltar para a Página Principal](./wokshop_home.md)
