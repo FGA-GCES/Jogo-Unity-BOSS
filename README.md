@@ -138,7 +138,7 @@ Para compilar o jogo, siga os seguintes passos:
 
 ### Informações Adicionais
 - Atualmente, o jogo está em desenvolvimento, então cada cena pode conter elementos que ainda não estão finalizados. Sinta-se à vontade para explorar as cenas e contribuir com melhorias, correções de bugs ou novas funcionalidades.
-- Erros conhecidos na hora de rodar o jogo localmente podem ser encontrados na [página de Erros Conhecidos](./docs/dificuldades_subir_ambinete.md).
+- Erros conhecidos na hora de rodar o jogo localmente podem ser encontrados na [página de Erros Conhecidos](./docs/dificuldades_subir_ambiente.md).
 - Se quiser contribuir com o jogo, talvez seja interessante começar por uma ```GoodFirstIssue``` ou uma ```HelpWanted```, que são issues mais fáceis de resolver e podem te ajudar a entender melhor o projeto. Você pode encontrar essas issues na [página de Issues](https://github.com/FGA-GCES/Jogo-Unity-BOSS/issues) do repositório.
 - Para acessar as fases (cenas) disponíveis atualmente, você pode navegar até a pasta `Assets/Scenes` dentro do projeto Unity. Lá, você encontrará as cenas disponíveis para jogar e contribuir.
   1. **Menu Principal**: A cena inicial do jogo, onde você pode iniciar a jornada de Sofia e acessar as configurações.
