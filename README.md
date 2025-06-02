@@ -92,16 +92,59 @@ Ele irá rodar em: http://localhost:8000
 | **Jogo**     | Na cidade de Ogama, as coisas são como são e ninguém discorda de nenhuma das regras. A principal delas: mulheres não têm direito ao ensino superior. Para Sofia, isso sempre foi motivo de incômodo, mas nunca viu ninguém ao seu redor lutar para que algo diferente aconteça. | [Documentação](https://fga-gces.github.io/Jogo-Unity-BOSS/)                                                                               |
 | **Workshop** | Aprenda Unity do zero criando um jogo 2D passo a passo.                                                                                                                                                                                                                         | [Tutoriais](./unity-for-women/tutoriais/README.md)</br>[Roadmap](./unity-for-women/RoadmapWorkshop.md) </br> [Glossário](./Unity-for-Women/glossario.md) |
 
-```bash
-# Clone o repositório
-git clone https://github.com/FGA-GCES/Jogo-Unity-BOSS
-```
-
 ---
 
-## 👩‍💻 **Participe**
+# 👩‍💻 **Participe**
 
-WIP
+## Como contribuir com o jogo Diários de Sofia
+ > Você pode contribuir com o jogo Diários de Sofia de várias maneiras, como reportando bugs, sugerindo melhorias ou até mesmo contribuindo com código.
+ Para começar, você precisará estar em conformidade com os [Guias de Conduta](./docs/patterns.md) e [Contribuição do projeto](./docs/patterns.md). 
+
+## Instalação do Jogo
+### 🧰 Pré-requisitos
+
+Certifique-se de ter o seguinte instalado:
+
+- [Unity Hub](https://unity.com/download)
+
+Caso não tenha o Unity Hub instalado, siga as instruções de instalação no site oficial da [Unity](https://unity.com/download).
+
+Após instalar o Unity Hub, você precisará adicionar a versão do Unity que será utilizada no projeto. Para isso, siga os passos abaixo:
+1. Abra o Unity Hub.
+2. Vá para a aba "Installs" (Instalações).
+3. Clique em "Add" (Adicionar) e selecione a versão **2022.3.20f1**.
+4. Certifique-se de incluir os módulos necessários, como suporte ao Android e iOS, considerando que o intuito do jogo é rodar em dispositivos mobile. Não se preocupe, você poderá rodar o jogo no computador também.
+
+### Rodando localmente
+
+Para rodar o jogo localmente, siga os seguintes passos:
+1. Clone o repositório do jogo:
+```bash
+git clone https://github.com/FGA-GCES/Jogo-Unity-BOSS.git
+```
+2. Abra o Unity Hub.
+3. Vá para a aba "Projects" (Projetos).
+4. Clique em "Add" (Adicionar) e selecione a pasta do repositório clonado.
+5. Selecione o diretório "Unity-Project" e clique em "Open" (Abrir).
+6. O Unity irá carregar o projeto. Aguarde até que todos os pacotes sejam baixados e o projeto esteja pronto.
+
+### Compilação do Jogo
+Para compilar o jogo, siga os seguintes passos:
+1. No Unity, vá para o menu "File" (Arquivo).
+2. Selecione "Build Settings" (Configurações de Compilação).
+3. Selecione a plataforma desejada (Android, iOS, PC, etc.).
+4. Clique em "Build" (Compilar) e escolha o local onde deseja salvar o arquivo compilado.
+5. Aguarde a compilação ser concluída. O Unity irá gerar o arquivo executável do jogo para a plataforma desejada.
+
+### Informações Adicionais
+- Atualmente, o jogo está em desenvolvimento, então cada cena pode conter elementos que ainda não estão finalizados. Sinta-se à vontade para explorar as cenas e contribuir com melhorias, correções de bugs ou novas funcionalidades.
+- Erros conhecidos na hora de rodar o jogo localmente podem ser encontrados na [página de Erros Conhecidos](./docs/dificuldades_subir_ambiente.md).
+- Se quiser contribuir com o jogo, talvez seja interessante começar por uma ```GoodFirstIssue``` ou uma ```HelpWanted```, que são issues mais fáceis de resolver e podem te ajudar a entender melhor o projeto. Você pode encontrar essas issues na [página de Issues](https://github.com/FGA-GCES/Jogo-Unity-BOSS/issues) do repositório.
+- Para acessar as fases (cenas) disponíveis atualmente, você pode navegar até a pasta `Assets/Scenes` dentro do projeto Unity. Lá, você encontrará as cenas disponíveis para jogar e contribuir.
+  1. **Menu Principal**: A cena inicial do jogo, onde você pode iniciar a jornada de Sofia e acessar as configurações.
+  2. **City Map**: Mapa da cidade, onde poderá interagir com os NPCs e visitar outros locais.
+  3. **Library**: A segunda fase do jogo, onde você continua a história de Sofia.
+  4. **SofiaHouse**: Fase inicial do jogo, onde você conhece a casa de Sofia.
 
 ## 💬 **Fale Conosco**
 
