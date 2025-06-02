@@ -2,18 +2,18 @@
 
 Obrigado por seu interesse em contribuir com o projeto! Seguem as diretrizes:  
 
-## **Antes de Começar**  
+## **Antes de Comeï¿½ar**  
 1. Certifique-se de ter:  
-	- Unity instalado (versão 3.11.1).  
+	- Unity instalado (versï¿½o 3.11.1).  
 	- Git configurado.  
 	- Microsoft Visual Studio Community 2022 instalado.
 
-2. Leia o [Código de Conduta](./CODE_OF_CONDUCT.md).  
+2. Leia o [CÃ³digo de Conduta](./CODE_OF_CONDUCT.md).  
 
 ## **Fluxo de Trabalho**  
-1. **Faça um Fork** do repositório.  
+1. **Faï¿½a um Fork** do repositï¿½rio.  
 
-2. Sincronize seu repositório local:
+2. Sincronize seu repositÃ³rio local:
    ```bash  
    git clone (link do seu fork)
    cd Jogo-Unity-BOSS
@@ -23,24 +23,24 @@ Obrigado por seu interesse em contribuir com o projeto! Seguem as diretrizes:
    ```bash  
    git checkout -b tipo/nome-da-branch 
    ```
-Padrão de nomes:
+Padrï¿½o de nomes:
 
 	feat/: Nova funcionalidade (ex: feat/inimigo-zumbi).
 
-	fix/: Correção de bugs (ex: fix/colisao-personagem).
+	fix/: CorreÃ§Ã£o de bugs (ex: fix/colisao-personagem).
 
-	docs/: Atualização de documentação (ex: docs/contributing).
+	docs/: AtualizaÃ§Ã£o de documentaÃ§Ã£o (ex: docs/contributing).
 
-	refactor/: Melhoria de código sem mudança de comportamento.
+	refactor/: Melhoria de cÃ³digo sem mudanÃ§a de comportamento.
 
-	bug/: Correção de bugs (ex: bug/colisao-inimigo).
+	bug/: CorreÃ§Ã£o de bugs (ex: bug/colisao-inimigo).
 
 	task/: Tarefa ou melhoria (ex: task/atualizar-documentacao).
 
-4. Faça commits atômicos claros:  
+4. FaÃ§a commits atÃ´micos claros:  
    ```bash  
    git add ArquivoModificado.cs
-   git commit -m "Corrige bug de colisão com paredes. Fix #5"
+   git commit -m "Corrige bug de colisÃ£o com paredes. Fix #5"
    ```
 
 5. Envie a branch para o GitHub:  
@@ -49,24 +49,24 @@ Padrão de nomes:
    ```
 
 6. **Crie um Pull Request**:
-Acesse o repositório original e clique em "New Pull Request".
+Acesse o repositÃ³rio original e clique em "New Pull Request".
 	1. Selecione sua branch e clique em "Create Pull Request".
-	2. Adicione uma descrição clara do que foi feito e por quê.
+	2. Adicione uma descriÃ§Ã£o clara do que foi feito e por quÃª.
 	3. Clique em "Create Pull Request" novamente para enviar.
 
-Criterios de Aceitação:
+Criterios de AceitaÃ§Ã£o:
 
 1. Passar nos testes.
 
-2. Seguir o [Padrão de Código](./CODE-PATTERNS.md) do projeto.
+2. Seguir o [PadrÃ£o de CÃ³digo](./patterns.md) do projeto.
 
-3. Ter aprovação de pelo menos 1 mantenedor.
+3. Ter aprovaÃ§Ã£o de pelo menos 1 mantenedor.
 
 Reportando Bugs:
 
-	Verifique se o bug já foi reportado na aba Issues. Caso não exista, crie uma nova issue.
+	Verifique se o bug jÃ¡ foi reportado na aba Issues. Caso nÃ£o exista, crie uma nova issue.
 
 Sugerindo Melhorias:
 
- 	1. Verifique se a melhoria já foi sugerida na aba Issues. Caso não exista, crie uma nova issue.
-	2. Descreva claramente a melhoria e por que ela é importante.
+ 	1. Verifique se a melhoria jÃ¡ foi sugerida na aba Issues. Caso nÃ£o exista, crie uma nova issue.
+	2. Descreva claramente a melhoria e por que ela Ã© importante.
