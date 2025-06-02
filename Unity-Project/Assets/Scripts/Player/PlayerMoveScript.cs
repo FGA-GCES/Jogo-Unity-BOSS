@@ -86,7 +86,7 @@ public class MovePlayer : MonoBehaviour
 
     public void HandleAttack()
     {
-        if (/*Input.GetKeyDown(KeyCode.V)*/ isAttacking == false)
+        if (isAttacking == false)
         {
             isAttacking = true;
             Debug.Log("Att");
