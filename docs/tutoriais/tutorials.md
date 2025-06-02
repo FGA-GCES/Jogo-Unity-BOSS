@@ -1,8 +1,8 @@
 ## Histórico de versão
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|18/08/2024|0.1|Adicionando tutorias|Júlia Yoshida|
+| Data       | Versão | Descrição            | Autores       |
+| ---------- | ------ | -------------------- | ------------- |
+| 18/08/2024 | 0.1    | Adicionando tutorias | Júlia Yoshida |
 
 <p style="text-indent: 50px;text-align: justify;">Essa seção é dedicada aos tutoriais que nos guiaram nessa trajetória de desenvolver um jogo do zero.</p>
 
@@ -53,7 +53,6 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1nFNOyCalzo?si=HutSoSkQ_9q-FOzZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
 </div>
 
-
 <p style="text-indent: 50px;text-align: justify;">Para o desenvolvimento do inventário da fase 1, foram utilizados os seguintes tutoriais: </p>
 
 <div align="center">
@@ -71,5 +70,3 @@
 <div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HBEStd96UzI?si=kQNp1fBuTgdHMyI_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
-
