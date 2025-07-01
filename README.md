@@ -177,3 +177,9 @@ Para compilar o jogo, siga os seguintes passos:
 ---
 
 **Feito com ❤️ para democratizar o desenvolvimento de jogos.**
+
+---
+
+## Licença
+
+Este projeto está licenciado sob os termos da Licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
