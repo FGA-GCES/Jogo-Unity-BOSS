@@ -2,6 +2,31 @@
 
 Este arquivo tem como objetivo documentar de forma clara e estruturada a evolução do projeto ao longo do tempo. Aqui são registradas todas as alterações relevantes realizadas, como adições de novas funcionalidades, correções de bugs, atualizações de documentação e melhorias no código ou nos processos de desenvolvimento.
 
+## [v0.2.0] - 02-06-2025
+
+### Adicionado
+
+- Tutorial em vídeo: Como rodar o jogo Diários de Sofia localmente
+- Passo a passo no README para rodar o jogo localmente
+- Documento com Erros Conhecidos e suas possíveis soluções
+- Seção "First Good Issues" para engajar contribuições da comunidade
+
+### Atualizado
+
+- Workshop e tutoriais do Unity for Women
+- Roadmap de Proposta de Contribuições
+- Roadmap de Desenvolvimento
+
+### Corrigido
+
+- Bug da funcionalidade **Porta** nas cenas _Sofia's House_ e _Shop_
+- Bug do **painel de diálogo de NPCs** na cena _City Map_
+- Bug do asset **Sign Forest** na cena _City Map_
+
+### Alterado
+
+- Fases (cenas) integradas na mesma raiz do projeto
+
 ---
 
 ## [v0.1.0] - 27-04-2025
