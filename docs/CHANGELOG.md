@@ -60,3 +60,9 @@ Este arquivo tem como objetivo documentar de forma clara e estruturada a evoluç
 - Refatoração completa do GitHub Pages e documentação
 
 ---
+
+## Histórico de versão
+
+| Data       | Versão | Descrição                                                                     | Autores                                                                                          |
+| ---------- | ------ | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 03/07/2025 | 1.0    | Primeira versão do changelog com o histórico completo das releases anteriores | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
