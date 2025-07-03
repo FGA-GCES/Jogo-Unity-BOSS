@@ -146,4 +146,4 @@ Essas práticas são vivas e podem ser atualizadas conforme a maturidade do proj
 
 |Data|Versão|Descrição|Autores|
 |--|--|--|--|
-|20/04/2025|1.0|Adicionando versão inicial do guia de boas práticas |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
+|03/07/2025|1.0|Adicionando versão inicial do guia de boas práticas |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|

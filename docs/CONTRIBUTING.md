@@ -107,3 +107,11 @@ git push origin tipo/nome-da-branch
 ---
 
 Muito obrigado por contribuir com a construção deste jogo! 💙
+
+---
+
+## Histórico de versão
+
+|Data|Versão|Descrição|Autores|
+|--|--|--|--|
+|03/07/2025|1.0|Adicionando versão inicial do guia de boas práticas |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
