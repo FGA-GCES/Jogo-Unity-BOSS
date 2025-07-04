@@ -1,72 +1,117 @@
-# Como Contribuir  
+# Como Contribuir
 
-Obrigado por seu interesse em contribuir com o projeto! Seguem as diretrizes:  
+Obrigado por seu interesse em contribuir com o projeto **Jogo Unity B.O.S.S**! Este guia apresenta as diretrizes para colaboração de forma eficiente e organizada.
 
-## **Antes de Come�ar**  
-1. Certifique-se de ter:  
-	- Unity instalado (vers�o 3.11.1).  
-	- Git configurado.  
-	- Microsoft Visual Studio Community 2022 instalado.
+---
 
-2. Leia o [Código de Conduta](./CODE_OF_CONDUCT.md).  
+## Pré-requisitos
 
-## **Fluxo de Trabalho**  
-1. **Fa�a um Fork** do reposit�rio.  
+Antes de começar, verifique se você possui:
 
-2. Sincronize seu repositório local:
-   ```bash  
-   git clone (link do seu fork)
-   cd Jogo-Unity-BOSS
-   git pull origin main
-   ```
-3. **Crie um Branch** descritiva:  
-   ```bash  
-   git checkout -b tipo/nome-da-branch 
-   ```
-Padr�o de nomes:
+- [Unity](https://unity.com/) instalado (versão 3.11.1)
+- Git configurado corretamente
+- [Microsoft Visual Studio Community 2022](https://visualstudio.microsoft.com/) instalado
 
-	feat/: Nova funcionalidade (ex: feat/inimigo-zumbi).
+Também é importante que você leia o nosso [Código de Conduta](./CODE_OF_CONDUCT.md).
 
-	fix/: Correção de bugs (ex: fix/colisao-personagem).
+---
 
-	docs/: Atualização de documentação (ex: docs/contributing).
+## Fluxo de Trabalho
 
-	refactor/: Melhoria de código sem mudança de comportamento.
+### 1. Faça um Fork do repositório
 
-	bug/: Correção de bugs (ex: bug/colisao-inimigo).
+Crie uma cópia do repositório original para sua conta do GitHub.
 
-	task/: Tarefa ou melhoria (ex: task/atualizar-documentacao).
+### 2. Clone o seu fork e sincronize com a branch principal
 
-4. Faça commits atômicos claros:  
-   ```bash  
-   git add ArquivoModificado.cs
-   git commit -m "Corrige bug de colisão com paredes. Fix #5"
-   ```
+```bash
+git clone https://github.com/seu-usuario/Jogo-Unity-BOSS.git
+cd Jogo-Unity-BOSS
+git pull origin main
+```
 
-5. Envie a branch para o GitHub:  
-   ```bash  
-   git push origin tipo/nome-da-branch
-   ```
+### 3. Crie uma branch descritiva
 
-6. **Crie um Pull Request**:
-Acesse o repositório original e clique em "New Pull Request".
-	1. Selecione sua branch e clique em "Create Pull Request".
-	2. Adicione uma descrição clara do que foi feito e por quê.
-	3. Clique em "Create Pull Request" novamente para enviar.
+Utilize o padrão abaixo para nomear sua branch:
 
-Criterios de Aceitação:
+```bash
+git checkout -b tipo/nome-da-branch
+```
 
-1. Passar nos testes.
+**Padrões de nome para branch:**
 
-2. Seguir o [Padrão de Código](./patterns.md) do projeto.
+| Prefixo      | Descrição                                          |
+|--------------|----------------------------------------------------|
+| `feat/`      | Nova funcionalidade (ex: `feat/inimigo-zumbi`)     |
+| `fix/`       | Correção de bugs (ex: `fix/colisao-personagem`)    |
+| `docs/`      | Atualizações na documentação (ex: `docs/contributing`) |
+| `refactor/`  | Refatorações sem alterar comportamento             |
+| `bug/`       | Correção de bugs (ex: `bug/colisao-inimigo`)       |
+| `task/`      | Tarefas gerais ou melhorias (ex: `task/ajuste-ui`) |
 
-3. Ter aprovação de pelo menos 1 mantenedor.
+### 4. Faça commits atômicos e descritivos
 
-Reportando Bugs:
+```bash
+git add ArquivoModificado.cs
+git commit -m "fix: corrige bug de colisão com paredes. Fix #5"
+```
 
-	Verifique se o bug já foi reportado na aba Issues. Caso não exista, crie uma nova issue.
+> Use mensagens curtas e diretas, seguindo o [padrão de commits](./CONTRIBUTING.md#commits-e-pull-requests).
 
-Sugerindo Melhorias:
+### 5. Envie sua branch para o GitHub
 
- 	1. Verifique se a melhoria já foi sugerida na aba Issues. Caso não exista, crie uma nova issue.
-	2. Descreva claramente a melhoria e por que ela é importante.
+```bash
+git push origin tipo/nome-da-branch
+```
+
+---
+
+## Criando um Pull Request
+
+1. Acesse o repositório original.
+2. Clique em **"New Pull Request"**.
+3. Selecione a sua branch.
+4. Adicione uma descrição clara explicando:
+   - O que foi feito
+   - Por que foi feito
+5. Clique em **"Create Pull Request"**.
+
+---
+
+## Critérios de Aceitação
+
+- ✅ A PR deve passar em todos os testes automatizados
+- ✅ Seguir o [padrão de código](./patterns.md) do projeto
+- ✅ Ter aprovação de pelo menos **um mantenedor**
+
+---
+
+## Reportando Bugs
+
+1. Verifique se o bug já foi reportado na aba [Issues](https://github.com/ResidenciaTICBrisa/T2G6-Jogo-Unity-BOSS/issues).
+2. Caso não exista, crie uma nova issue com:
+   - Descrição clara do problema
+   - Etapas para reproduzir
+   - Comportamento esperado
+   - Prints ou vídeos, se possível
+
+---
+
+## Sugerindo Melhorias
+
+1. Verifique se a sugestão já está listada nas Issues.
+2. Se não estiver, abra uma nova issue explicando:
+   - A melhoria proposta
+   - O benefício esperado para o projeto
+
+---
+
+Muito obrigado por contribuir com a construção deste jogo! 💙
+
+---
+
+## Histórico de versão
+
+|Data|Versão|Descrição|Autores|
+|--|--|--|--|
+|03/07/2025|1.0|Adicionando versão inicial do guia de boas práticas |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
