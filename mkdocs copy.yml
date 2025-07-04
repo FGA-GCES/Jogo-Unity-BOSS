@@ -15,7 +15,6 @@ nav:
     - Roadmap de desenvolvimento: 'desenvolvimento_roadmap.md'
     - Roadmap de deploy contínuo: 'deploy_continuo_roadmap.md'
     - Roadmap de proposta de contribuição: 'contribuicao_roadmap.md'
-    - Roadmap: 'roadmap.md'
  - Releases:
     - Release 1(22/04/2025): 'release1.md'
     - Release 2(05/05/24): 'release2.md'
