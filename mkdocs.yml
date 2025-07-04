@@ -17,9 +17,9 @@ nav:
       - Roadmap de desenvolvimento: 'desenvolvimento_roadmap.md'
       - Roadmap de deploy contínuo: 'deploy_continuo_roadmap.md'
       - Roadmap de proposta de contribuição: 'contribuicao_roadmap.md'
-      - Roadmap: 'roadmap.md'
   - Releases:
       - Release 1 (22/04/2025): 'release1.md'
+      - Release 2 (07/07/2025): 'release2.md'
   - Sprints: 'sprints.md'
   - Workshops:
       - Tutoriais:
@@ -34,7 +34,6 @@ nav:
           - BRISA: "tutoriais/tutorials.md"
       - Cases:
           - Coral Quest: "tutoriais/coral_quest.md"
-          - Diários de Sofia: "tutoriais/diarios_de_sofia.md"
       - Dificuldades Subir Ambiente: 'dificuldades_subir_ambiente.md'
 
 # Configuração do tema Material

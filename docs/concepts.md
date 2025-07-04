@@ -156,7 +156,7 @@ Ideal para guardar informações como estatísticas de inimigos, itens, feitiço
 
 ## Referências gerais
 1. [Unity - O que é e como funciona?](https://www.alura.com.br/artigos/o-que-e-unity)
-2. [Game Design - Tudo o que você precisa saber](https://www.cursouniversitario.com.br/o-que-e-game-design/)
+2. [Game Design - Tudo o que você precisa saber](https://www.alura.com.br/artigos/game-design?srsltid=AfmBOoqizdb49aXVrTbPCYs75YZ30vQ035zmanjAwxGvxTdZhm1XUBDd)
 3. [O que é Sprite e como usá-lo nos seus jogos](https://www.gamasutra.com/blogs/joseignacio/20180706/318401/O_que_e_sprite_e_como_usalo_nos_seus_jogos.php)
 4. [Unity - Manual: Scenes](https://docs.unity3d.com/Manual/CreatingScenes.html)
 5. [O que é NPC?](https://canaltech.com.br/games/o-que-e-npc/)
