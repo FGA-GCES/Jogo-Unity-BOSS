@@ -7,7 +7,6 @@
 | 22/04/2025 | 0.1    | Adicionando Release 1                       | [Carlos Henrique](https://github.com/carlinn1), [Vinicius Castelo](https://github.com/Vini47) |
 | 07/07/2025 | 0.2    | Planejamento de contribuições e qualidade   | [Carlos Henrique](https://github.com/carlinn1), [Vinicius Castelo](https://github.com/Vini47)                             |
 
-## Relato de Experiência
 
 ### Contexto
 
