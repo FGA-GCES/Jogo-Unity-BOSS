@@ -20,7 +20,7 @@
  Para saber mais assista ao video: [O que é uma ENGINE?](https://youtu.be/Zf4JKBG6_I4)
 
  * __gdd__: Sigla em inglês para "Game Design Document" é um documento contendo as principais informações sobre a proposta, funcionalidades e mecânicas do jogo.  
- Se precisar fazer o seu, de uma olhadinha aqui: [Como (e quando) criar um GDD: formatos, dicas e exemplos práticos.](https://producaodejogos.com/gdd/)
+ Se precisar fazer o seu, de uma olhadinha aqui: [Como (e quando) criar um GDD: formatos, dicas e exemplos práticos.](https://caputoduarte.com.br/game-design-document-gdd-ferramenta-estrategica-para-estudios-de-jogos-nocoes-introdutorias/)
 
 ## H
 * __hitbox__: Um formato invisível utilizado para detectar colisões entre objetos.
