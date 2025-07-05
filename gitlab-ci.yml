@@ -1,0 +1,62 @@
+# Definição da versão do docker-compose
+stages:
+  - lint # Estágio de análise estática do código
+  - test # Estágio de testes
+  - build # Estágio para construir o container da aplicação
+
+# Define a imagem Docker que será usada nos jobs do CI
+image: lappis/decidim-govbr:v1-release
+services:
+  - postgres:13.2-alpine # Serviço do Postgres
+  - redis:6.0.12-alpine # Serviço do Redis
+
+# Variáveis de ambiente globais utilizadas em todos os jobs
+variables:
+  POSTGRES_DB: myapp_test
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: password
+  RAILS_ENV: test
+  REDIS_URL: redis://localhost:6379
+  REDIS_CACHE_URL: redis://localhost:6380
+
+# Job para construir a imagem Docker da aplicação
+Build:
+  stage: build
+  image: docker:20.10.16
+  services:
+    - docker:20.10.16-dind
+  script:
+    - echo "Iniciando build."
+    - docker pull myapp:1.0 || true  # Attempt to pull the image (ignore errors)
+    - docker build --cache-from myapp:1.0 -t myapp:1.0 .
+    - echo "Sucesso de build."
+  cache:
+    key: "$CI_COMMIT_REF_NAME"  # Unique cache key per branch
+
+# Job para executar testes unitários
+Testing:
+  stage: test
+  services:
+    - name: postgres:13.2-alpine
+      alias: postgres
+    - redis:6.0.12-alpine
+  variables:
+    POSTGRES_HOST: postgres
+    DATABASE_URL: "postgres://$POSTGRES_USER:$POSTGRES_PASSWORD@$POSTGRES_HOST/$POSTGRES_DB"
+  script:
+    - echo "Iniciando testes."
+    - bundle install
+    - bundle exec rails db:schema:load RAILS_ENV=$RAILS_ENV
+    - yarn install
+    - bundle exec rails webpacker:compile
+    - chmod +x bin/setup_chrome
+    - ./bin/setup_chrome
+    - if bundle exec rails test && bundle exec rspec; then exit 0; else exit 1; fi # Executa testes do Rails e RSpec
+    - echo "Finalizando."
+
+# Job para análise estática do código com Rubocop, ignorando determinadas regras
+Lint:
+  stage: lint
+  script:
+    - bundle install
+    - bundle exec rubocop
