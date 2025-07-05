@@ -34,7 +34,7 @@ jobs:
         # 4) Executa o build Unity via action oficial game-ci
       - uses: game-ci/unity-builder@v4
         with:
-          projectPath: 'unity-for-women/workshop'
+          projectPath: 'Unity-Project'
           targetPlatform: ${{ matrix.targetPlatform }}
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
