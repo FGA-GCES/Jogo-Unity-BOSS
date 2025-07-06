@@ -2460,14 +2460,17 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1678484095}
   dialogueText: {fileID: 418808960}
   nameText: {fileID: 1647903017}
+  photoPanel: {fileID: 1275607183}
   dialogues:
   - "iiirrrr\xED"
-  nameOfNPC: Cavalo John
+  npcName: Cavalo John
   photo: {fileID: 21300000, guid: 24d40a8d660d6ac45be9d01303cd773d, type: 3}
-  photoPanel: {fileID: 1275607183}
-  sound: {fileID: 0}
+  audioSource: {fileID: 0}
   wordSpeed: 0.04
+  dialogueIndex: 0
   playerIsClose: 0
+  isTalkable: 0
+  skipTalk: 0
 --- !u!224 &585160826 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 705540525238529620, guid: 17d24f8d708f67b4fa7d0e5b4c365df9, type: 3}
@@ -3465,14 +3468,17 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1678484095}
   dialogueText: {fileID: 418808960}
   nameText: {fileID: 1647903017}
+  photoPanel: {fileID: 1275607183}
   dialogues:
   - "iiirrrr\xED"
-  nameOfNPC: Cavalo Lennon
+  npcName: Cavalo Lennon
   photo: {fileID: 21300000, guid: fa467cfbe58f23e418a5e93601d6c568, type: 3}
-  photoPanel: {fileID: 1275607183}
-  sound: {fileID: 0}
+  audioSource: {fileID: 0}
   wordSpeed: 0.04
+  dialogueIndex: 0
   playerIsClose: 0
+  isTalkable: 0
+  skipTalk: 0
 --- !u!224 &817107321 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 705540525238529620, guid: 17d24f8d708f67b4fa7d0e5b4c365df9, type: 3}
@@ -16925,7 +16931,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1914123047}
         m_TargetAssemblyTypeName: NPCScript, Assembly-CSharp
-        m_MethodName: SkipTalk
+        m_MethodName: SkipCurrentDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16937,7 +16943,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1724295502}
         m_TargetAssemblyTypeName: NPCScript, Assembly-CSharp
-        m_MethodName: SkipTalk
+        m_MethodName: SkipCurrentDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16949,7 +16955,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1561391856}
         m_TargetAssemblyTypeName: NPCScript, Assembly-CSharp
-        m_MethodName: SkipTalk
+        m_MethodName: SkipCurrentDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16961,7 +16967,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1281313344}
         m_TargetAssemblyTypeName: NPCScript, Assembly-CSharp
-        m_MethodName: SkipTalk
+        m_MethodName: SkipCurrentDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16973,7 +16979,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 585160818}
         m_TargetAssemblyTypeName: NPCScript, Assembly-CSharp
-        m_MethodName: SkipTalk
+        m_MethodName: SkipCurrentDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16985,7 +16991,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 817107313}
         m_TargetAssemblyTypeName: NPCScript, Assembly-CSharp
-        m_MethodName: SkipTalk
+        m_MethodName: SkipCurrentDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16997,7 +17003,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1346358910}
         m_TargetAssemblyTypeName: NPCScript, Assembly-CSharp
-        m_MethodName: SkipTalk
+        m_MethodName: SkipCurrentDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21442,11 +21448,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &1281313341 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1817979005052670392, guid: 17d24f8d708f67b4fa7d0e5b4c365df9, type: 3}
-  m_PrefabInstance: {fileID: 2130574397}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1281313344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21462,29 +21463,32 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1678484095}
   dialogueText: {fileID: 418808960}
   nameText: {fileID: 1647903017}
+  photoPanel: {fileID: 1275607183}
   dialogues:
   - "Aqui \xE9 a parte nobre da cidade, onde s\xF3 gente legal de verdade mora!"
   - "O maravilhoso governante construiu a alguns anos esses pr\xE9dios e ainda vai
     fazer mais."
   - Tomara que ele tire logo toda essa gente ruim da cidade!
-  nameOfNPC: Enzo Gabriel
+  npcName: Cesinha
   photo: {fileID: 21300000, guid: 8271e7ac9eec86f4eae71d34a55f1256, type: 3}
-  photoPanel: {fileID: 1275607183}
-  sound: {fileID: 0}
+  audioSource: {fileID: 0}
   wordSpeed: 0.04
+  dialogueIndex: 0
   playerIsClose: 0
+  isTalkable: 0
+  skipTalk: 0
   rb: {fileID: 1281313335}
   speed: 1
+  facingDirection: -1
   leftPatrolX: -15
   rightPatrolX: -7
   upPatrolY: 0
   bottomPatrolY: -3
-  facingDirection: -1
   minPauseTime: 2
   maxPauseTime: 4
   minWalkTime: 5
   maxWalkTime: 7
-  anim: {fileID: 1281313341}
+  animator: {fileID: 0}
 --- !u!224 &1281313351 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 705540525238529620, guid: 17d24f8d708f67b4fa7d0e5b4c365df9, type: 3}
@@ -22578,15 +22582,18 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1678484095}
   dialogueText: {fileID: 418808960}
   nameText: {fileID: 1647903017}
+  photoPanel: {fileID: 1275607183}
   dialogues:
   - "Minha m\xE3e sempre fala que o segredo t\xE1 na biblioteca!"
   - "As vezes eu deveria estudar mais n\xE9?"
-  nameOfNPC: Cesinha
+  npcName: Enzo Gabriel
   photo: {fileID: 21300000, guid: 96f0c45f1fea6e84fa7cf678b667492f, type: 3}
-  photoPanel: {fileID: 1275607183}
-  sound: {fileID: 0}
+  audioSource: {fileID: 0}
   wordSpeed: 0.04
+  dialogueIndex: 0
   playerIsClose: 0
+  isTalkable: 0
+  skipTalk: 0
 --- !u!224 &1561391864 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 705540525238529620, guid: 17d24f8d708f67b4fa7d0e5b4c365df9, type: 3}
@@ -28992,15 +28999,18 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1678484095}
   dialogueText: {fileID: 418808960}
   nameText: {fileID: 1647903017}
+  photoPanel: {fileID: 1275607183}
   dialogues:
   - "Este \xE9 o rio Ribeiro, conhecido como Riobeiro!"
   - "Em \xE9pocas mais felizes da cidade, pescavamos muito aqui."
-  nameOfNPC: Bruno
+  npcName: Bruno
   photo: {fileID: 21300000, guid: da4991869c90dd44c88b6a45edd0f338, type: 3}
-  photoPanel: {fileID: 1275607183}
-  sound: {fileID: 0}
+  audioSource: {fileID: 0}
   wordSpeed: 0.04
+  dialogueIndex: 0
   playerIsClose: 0
+  isTalkable: 0
+  skipTalk: 0
 --- !u!224 &1724295510 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 705540525238529620, guid: 17d24f8d708f67b4fa7d0e5b4c365df9, type: 3}
@@ -29036,6 +29046,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1678484095}
   dialogueText: {fileID: 418808960}
   nameText: {fileID: 1647903017}
+  photoPanel: {fileID: 1275607183}
   dialogues:
   - O sonho de minha vida era estudar na Universidade de Ogama, mas o governo me
     impediu...
@@ -29043,12 +29054,14 @@ MonoBehaviour:
   - "Ao redor do mundo todo, mulheres conquistam coisas incr\xEDveis na ci\xEAncia
     e tecnologia."
   - Se ao menos pudessemos mostrar isso para o resto da cidade...
-  nameOfNPC: Sra. Elaine
+  npcName: Sra. Elaine
   photo: {fileID: 21300000, guid: 535b382b2b0d3884389014593d03e802, type: 3}
-  photoPanel: {fileID: 1275607183}
-  sound: {fileID: 0}
+  audioSource: {fileID: 0}
   wordSpeed: 0.04
+  dialogueIndex: 0
   playerIsClose: 0
+  isTalkable: 0
+  skipTalk: 0
 --- !u!224 &1914123055 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 705540525238529620, guid: 17d24f8d708f67b4fa7d0e5b4c365df9, type: 3}
@@ -29281,7 +29294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LetsTalk
+      value: TriggerDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[10].m_CallState
@@ -29289,27 +29302,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LetsTalk
+      value: TriggerDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: LetsTalk
+      value: TriggerDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: LetsTalk
+      value: TriggerDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: LetsTalk
+      value: TriggerDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
-      value: LetsTalk
+      value: TriggerDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
-      value: LetsTalk
+      value: TriggerDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 3156408338238638416, guid: 0e29e512070b9114490cf8f37a9ff37e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_MethodName

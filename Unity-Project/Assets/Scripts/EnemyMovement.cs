@@ -41,7 +41,7 @@ public class EnemyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         if (hp == 0) Destroy(gameObject, 2);
-        if (player.GetComponent<MovePlayer>().hp == 0 || hp == 0) return;
+        if (player.GetComponent<MovePlayer>().currentHp == 0 || hp == 0) return;
         CheckTimer();
         if (isAttacking == true) return;
         UpdateTargetDirection();
