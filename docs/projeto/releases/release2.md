@@ -2,13 +2,14 @@
 
 ## Histórico de versão
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|16/04/2024|0.1|Adicionando Release 2|Miguel Arthur|
+| Data       | Versão | Descrição             | Autores       |
+| ---------- | ------ | --------------------- | ------------- |
+| 16/04/2024 | 0.1    | Adicionando Release 2 | Miguel Arthur |
 
 ## Relato de experiência
 
 ### Contexto
+
 <p style="text-indent: 50px;text-align: justify;"> Durante o desenvolvimento do jogo para a BOSS, nossa equipe se dedicou a entregar uma série de produtos que enriqueceram significativamente a experiência do jogo. Trabalhamos na criação de arte para personagens, desenvolvimento de novos cenários, roteiro detalhado para a fase inicial e implementação de novas mecânicas de jogo e NPCs (personagens não jogáveis). Cada entrega exigiu colaboração intensa, criatividade e aprendizado contínuo das ferramentas e técnicas necessárias. </p>
 
 ### Desafios
@@ -41,5 +42,3 @@
 3. Roteiro da fase 1 juntamente com o desenvolvimento dela;
 4. Novas mecânicas de interações;
 5. Novos NPCs.
-
-

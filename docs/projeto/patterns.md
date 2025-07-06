@@ -1,11 +1,10 @@
-
 # Padrões de Desenvolvimento
 
 ## Histórico de Versão
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|20/04/2025|0.1|Adicionando regras de versionamento|[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
+| Data       | Versão | Descrição                           | Autores                                                                                          |
+| ---------- | ------ | ----------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 20/04/2025 | 0.1    | Adicionando regras de versionamento | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
 
 Este documento define as diretrizes de versionamento, estrutura de branches, mensagens de commit, integração contínua e documentação para o projeto **Jogo-Unity-BOSS**. O objetivo é manter a organização, clareza e eficiência no desenvolvimento colaborativo.
 
@@ -56,17 +55,18 @@ vMAJOR.MINOR.PATCH
 - **Contribuidores**: se houver um coautor no commit, você deve incluí-lo no final;
 - Prefixos que seguimos:
 
-| Prefixo | Finalidade                         |
-|--------|------------------------------------|
-| `feat:` | Nova funcionalidade                |
-| `fix:`  | Correção de bug                   |
-| `docs:` | Atualizações na documentação      |
-| `style:`| Formatação, identação, etc.       |
-| `refactor:` | Refatoração de código         |
-| `test:` | Adição ou modificação de testes   |
-| `chore:`| Tarefas de build ou configuração  |
+| Prefixo     | Finalidade                       |
+| ----------- | -------------------------------- |
+| `feat:`     | Nova funcionalidade              |
+| `fix:`      | Correção de bug                  |
+| `docs:`     | Atualizações na documentação     |
+| `style:`    | Formatação, identação, etc.      |
+| `refactor:` | Refatoração de código            |
+| `test:`     | Adição ou modificação de testes  |
+| `chore:`    | Tarefas de build ou configuração |
 
 **Exemplos:**
+
 ```bash
 feat: adicionar sistema de inventário
 fix: corrigir bug no movimento do personagem
@@ -103,13 +103,16 @@ Co-authored-by: Nome do Contribuidor <email@exemplo.com>
 Mantemos a documentação sempre atualizada:
 
 - **README.md**
+
   - Instruções para clonar, abrir e rodar o projeto no Unity.
   - Dependências e versões recomendadas.
 
 - **CHANGELOG.md**
+
   - Histórico detalhado de alterações e versões lançadas.
 
 - **CONTRIBUTING.md**
+
   - Diretrizes para contribuição: padrões de código, pull requests, etc.
 
 - (Opcional) Documentamos:
@@ -140,7 +143,6 @@ Mantemos a documentação sempre atualizada:
     ## Informações Adicionais
 
     Adicione qualquer informação adicional que possa ser útil.
-
 
 ## Template de PR
 

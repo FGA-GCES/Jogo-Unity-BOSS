@@ -22,8 +22,8 @@ Este roadmap propôs ações estratégicas para contribuir com o desenvolvimento
 
 ## Histórico de versão
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|21/04/2025|1.0|Adicionando versão inicial do roadmap de proposta de contribuição |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
-|24/04/2025|1.1|Atualizando roadmap de proposta de contribuição |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
-|01/06/2025|1.2|Nova versão do roadmap com melhorias nas fases de automação e monitoramento |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
+| Data       | Versão | Descrição                                                                   | Autores                                                                                          |
+| ---------- | ------ | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 21/04/2025 | 1.0    | Adicionando versão inicial do roadmap de proposta de contribuição           | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
+| 24/04/2025 | 1.1    | Atualizando roadmap de proposta de contribuição                             | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
+| 01/06/2025 | 1.2    | Nova versão do roadmap com melhorias nas fases de automação e monitoramento | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |

@@ -22,8 +22,8 @@ Abaixo, apresenta-se a versão anterior do roadmap de desenvolvimento do projeto
 
 ## Histórico de versão
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|20/04/2025|1.0|Adicionando versão inicial do roadmap de desenvolvimento |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
-|24/04/2025|1.1|Atualizando o roadmap de desenvolvimento |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
-|01/06/2025|1.2|Nova versão do roadmap 1.1 |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
+| Data       | Versão | Descrição                                                | Autores                                                                                          |
+| ---------- | ------ | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 20/04/2025 | 1.0    | Adicionando versão inicial do roadmap de desenvolvimento | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
+| 24/04/2025 | 1.1    | Atualizando o roadmap de desenvolvimento                 | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
+| 01/06/2025 | 1.2    | Nova versão do roadmap 1.1                               | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
