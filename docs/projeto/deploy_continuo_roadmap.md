@@ -12,7 +12,7 @@ Esta nova versão do roadmap atualiza os estágios de Integração e Entrega Con
 
 ## Roadmap de Deploy Contínuo (v1.0) - Arquivo Histórico
 
-Este roadmap descreve os passos necessários para implementar **Integração e Entrega Contínuas (CI/CD)** no projeto, bem como garantir escalabilidade e manutenção contínua. 
+Este roadmap descreve os passos necessários para implementar **Integração e Entrega Contínuas (CI/CD)** no projeto, bem como garantir escalabilidade e manutenção contínua.
 
 A imagem a seguir apresenta uma visão geral das etapas envolvidas na implementação de integração e entrega contínuas (CI/CD), bem como das práticas associadas à escalabilidade e manutenção do projeto. O quadro interativo no Miro, disponibilizado em sequência, permite uma análise mais aprofundada das fases e atividades propostas.
 
@@ -22,7 +22,7 @@ A imagem a seguir apresenta uma visão geral das etapas envolvidas na implementa
 
 ## Histórico de versão
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|20/04/2025|1.0|Adicionando versão inicial do roadmap de deploy contínuo |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
-|01/06/2025|1.1|Atualizando o roadmap de deploy contínuo com novos estágios de escalabilidade e monitoramento |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
+| Data       | Versão | Descrição                                                                                     | Autores                                                                                          |
+| ---------- | ------ | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 20/04/2025 | 1.0    | Adicionando versão inicial do roadmap de deploy contínuo                                      | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |
+| 01/06/2025 | 1.1    | Atualizando o roadmap de deploy contínuo com novos estágios de escalabilidade e monitoramento | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |

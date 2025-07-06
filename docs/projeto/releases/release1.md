@@ -2,9 +2,9 @@
 
 ## Histórico de Versão
 
-| Data       | Versão | Descrição             | Autores |
-|------------|--------|-----------------------|---------|
-| 22/04/2025 | 0.1    | Adicionando Release 1 | [Carlos Henrique](https://github.com/carlinn1), [Vinicius Castelo](https://github.com/Vini47)|
+| Data       | Versão | Descrição             | Autores                                                                                       |
+| ---------- | ------ | --------------------- | --------------------------------------------------------------------------------------------- |
+| 22/04/2025 | 0.1    | Adicionando Release 1 | [Carlos Henrique](https://github.com/carlinn1), [Vinicius Castelo](https://github.com/Vini47) |
 
 ## Relato de Experiência
 
@@ -66,5 +66,3 @@ Após a primeira reunião com a BOSS, ficou claro que o escopo do jogo estava ab
 4. Desenvolver landing page e README detalhado;
 5. Community Advocate: criar estrutura de produto no Figma;
 6. Implementar as mudanças propostas.
-
-
