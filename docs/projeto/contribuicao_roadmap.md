@@ -6,7 +6,7 @@
 
 Esta versão (1.1) do roadmap atualiza as estratégias de contribuição ao projeto Jogo-Unity-BOSS com foco aprimorado em automação de testes, integração contínua e painéis de monitoramento. As fases foram revisadas para refletir o progresso atual do projeto e as prioridades identificadas em reuniões recentes.
 
-![Roadmap de Desenvolvimento v1.1](images/Roadmap_Proposta_Contribuição1.1.jpg)
+![Roadmap de Desenvolvimento v1.1](../images/Roadmap_Proposta_Contribuição1.1.jpg)
 
 <iframe width="768" height="432" src="https://miro.com/app/embed/uXjVIAWc6To=/?pres=1&frameId=3458764625498556206&embedId=876067699118" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 

@@ -4,7 +4,7 @@
 
 Esta nova versão do roadmap atualiza os estágios de Integração e Entrega Contínuas (CI/CD), incorporando práticas mais avançadas de escalabilidade, monitoramento e segurança contínua. Além disso, reflete a evolução do projeto no uso de pipelines automatizadas e práticas DevOps modernas.
 
-![Roadmap de Deploy Contínuo v1.1](images/Roadmap-Deploy-Contínuo-1.1.jpg)
+![Roadmap de Deploy Contínuo v1.1](../images/Roadmap-Deploy-Contínuo-1.1.jpg)
 
 <iframe width="768" height="432" src="https://miro.com/welcomeonboard/NlN4R3RhbTJPTjJZL3FxUTEyTTRGZkZNYVovL2szcDAxMEUzV3UzblBXTUxsR1B1S0t6NDhRem1aYy9QNVArOHlCeXFSMTMxL0QvU3A2aFd5WVF6UEdld0RWSUNxRDJMeXNKbGE5UTc1Yy9NeVE0bjJ5NUJVZTMrMTZiMURHZzl0R2lncW1vRmFBVnlLcVJzTmdFdlNRPT0hdjE=?share_link_id=176364753528" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 

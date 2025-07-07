@@ -1,0 +1,36 @@
+## Checklist para o projeto se tornar um software livre.
+
+- [X] Usar Git Flow para estratégias de branchs;  
+- [X] Fazer um versionamento;  
+- [X] Releases com Notes claras;  
+- [X] Build automatizado;  
+- [ ] Testes automatizados (unitários/integrados);  
+- [ ] Testes end-to-end automatizados (se aplicável);  
+- [ ] Monitoramento de qualidade com badges (ex: Codecov, SonarCloud);  
+- [ ] Linter (ex: ESLint, Flake8, etc.);  
+- [ ] Validação de segurança e dependências (ex: Dependabot, Snyk);  
+- [ ] Arquivos de configuração de ambiente: Dockerfile, docker-compose.yml, .env.example;  
+- [X] Visão geral do projeto (com prints de como funciona o projeto);  
+- [X] Tecnologias utilizadas;  
+- [X] Como rodar localmente (instalação + execução);  
+- [X] CONTRIBUTING.md - Como contribuir (passo a passo);  
+- [X] Como usar a aplicação (guia de usuário);  
+- [X] CODE_OF_CONDUCT.md com boas práticas de convivência;  
+- [X] CHANGELOG.md com histórico de alterações;  
+- [X] Landing page;  
+- [X] Arquitetura da solução;  
+- [X] Roadmap e backlog público;  
+- [ ] Dicionário de dados (se aplicável);  
+- [X] Sistema de governança (ex: mantenedores, comitês, votação);  
+- [X] Templates para issues e pull requests;  
+- [X] Etiquetas (labels) para organizar issues (ex: good first issue, bug, enhancement);  
+- [ ] Agendas públicas de reuniões (caso ocorram);  
+- [X] LICENSE com licença de software livre (ex: MIT, GPL, Apache 2.0);  
+- [ ] Verificação de licenças das dependências utilizadas;  
+- [ ] Ferramentas de análise estática de código;
+- [X] Planejamento de onboarding de novos contribuidores (documentação de onboarding);  
+- [X] Deploy automatizado (CI/CD) para ambiente de homologação/produção (opcional);
+- [ ] Infraestrutura como código (IaC) para ambientes cloud (ex: Terraform, Ansible) (opcional); 
+- [ ] Observabilidade básica: logs, métricas e alertas (ex: Prometheus, Grafana, Sentry) (opcional).  
+- [X] Indicar no README.md que o projeto é um software livre (uso, modificação e redistribuição permitidos);
+- [X] Tornar o repositório público (ex: GitHub, GitLab, etc.).

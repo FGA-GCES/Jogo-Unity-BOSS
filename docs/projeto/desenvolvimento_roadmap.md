@@ -6,7 +6,7 @@
 
 Esta nova versão do roadmap apresenta uma reformulação nas fases e redistribuição das tarefas ao longo das semanas, considerando os aprendizados obtidos na execução anterior. O objetivo é otimizar o fluxo de trabalho e reforçar a organização das entregas semanais do projeto.
 
-![Roadmap de Desenvolvimento v1.1](images/Roadmap_Desenvolvimento1.1.jpg)
+![Roadmap de Desenvolvimento v1.1](.././images/Roadmap_Desenvolvimento1.1.jpg)
 
 <iframe width="768" height="432" src="https://miro.com/app/embed/uXjVIARvuZs=/?pres=1&frameId=3458764569417287432&embedId=148893583153" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 

@@ -1,342 +1,513 @@
-# Documentação dos Scripts - Jogo Unity BOSS
+# Documentação dos Scripts - Diários de Sofia
 
-Esta documentação descreve o funcionamento de cada script C# do projeto Unity.
+Esta documentação descreve o funcionamento de cada script C# do projeto Unity "Diários de Sofia".
 
-## Índice
-- [Scripts de Movimento](#scripts-de-movimento)
-- [Scripts de NPCs](#scripts-de-npcs)
-- [Scripts de Interface](#scripts-de-interface)
-- [Scripts de Sistema](#scripts-de-sistema)
-- [Scripts de Combate](#scripts-de-combate)
-- [Scripts de Inimigos](#scripts-de-inimigos)
-- [Scripts de Menu](#scripts-de-menu)
+## 📁 Estrutura dos Scripts
+
+O projeto está organizado da seguinte forma:
+```
+Assets/Scripts/
+├── Player/
+│   └── PlayerMoveScript.cs
+├── BookScripts.cs
+├── Boy2Script.cs
+├── DiaryScript.cs
+├── EnemyMovement.cs
+├── ExitButtonScript.cs
+├── FlipPage.cs
+├── Loading.cs
+├── MenuScripts.cs
+├── NPCScript.cs
+├── OldManScript.cs
+├── OldWomanScript.cs
+├── PlayerAttackScript.cs
+├── PlayerAwareness.cs
+├── RedMovement.cs
+├── SalvarPosic.cs
+├── SceneTransition.cs
+├── SignScript.cs
+├── SpawnPoints.cs
+└── StoreScripts.cs
+```
+
+## 📋 Índice
+- [🎮 Scripts do Jogador](#-scripts-do-jogador)
+- [🤖 Scripts de NPCs](#-scripts-de-npcs)
+- [👹 Scripts de Inimigos](#-scripts-de-inimigos)
+- [⚔️ Scripts de Combate](#️-scripts-de-combate)
+- [🖥️ Scripts de Interface](#️-scripts-de-interface)
+- [🔧 Scripts de Sistema](#-scripts-de-sistema)
+- [📚 Scripts de Menu e Navegação](#-scripts-de-menu-e-navegação)
 
 ---
 
-## Scripts de Movimento
+## 🎮 Scripts do Jogador
 
-### MovePlayer.cs (PlayerMoveScript.cs)
-**Localização:** `Assets/Scripts/Player/PlayerMoveScript.cs`
+### PlayerMoveScript.cs (PlayerController)
+**Localização:** `Assets/Scripts/Player/PlayerMoveScript.cs`  
+**Classe Principal:** `PlayerController`
 
-**Descrição:** Controla o movimento, animação e sistema de vida do jogador principal.
+**Descrição:** Script principal que controla todo o comportamento do jogador, incluindo movimento, combate e sistema de vida.
 
 **Funcionalidades:**
-- **Movimento:** Utiliza joystick virtual para controlar movimento 2D
-- **Animação:** Gerencia estados de animação baseados na direção do movimento
-- **Sistema de Combate:** Implementa ataques direcionais com cooldown
-- **Sistema de Vida:** Gerencia HP do jogador (100, 66, 33, 0)
-- **Resposta a Dano:** Reduz HP e atualiza animações correspondentes
+- **🕹️ Sistema de Movimento:** Controle via joystick virtual com movimentação suave em 2D
+- **⚔️ Sistema de Combate:** Ataques direcionais com animações específicas para cada direção
+- **❤️ Sistema de Vida:** Gerenciamento de HP com 4 estados visuais (100, 66, 33, 0)
+- **🎭 Controle de Animações:** Sincronização entre movimento e animações do personagem
+- **🔄 Persistência de Estado:** Mantém estado do jogador entre cenas
+
+**Componentes Requeridos:**
+- `Joystick` para controle de movimento
+- `Animator` para animações
+- `Rigidbody2D` para física
+- `Button` para ataques (UI)
 
 **Variáveis Principais:**
-- `movementJoystick`: Referência ao joystick de movimento
-- `playerSpeed`: Velocidade de movimento do jogador
-- `hp`: Pontos de vida atuais
-- `isAttacking`: Flag para controle de estado de ataque
+```csharp
+[SerializeField] private Joystick movementJoystick;     // Controle de movimento
+[SerializeField] private float playerSpeed = 5f;       // Velocidade do jogador  
+[SerializeField] private int maxHealth = 100;          // Vida máxima
+[SerializeField] private float attackDuration = 0.5f;  // Duração do ataque
+```
 
 **Métodos Importantes:**
-- `HandleMovement()`: Processa input do joystick e move o personagem
-- `HandleAttack()`: Executa ataques direcionais
-- `ReceiveDamage()`: Reduz HP e atualiza animações
-- `UpdateAnimationState()`: Atualiza parâmetros de animação
+- `HandleMovement()`: Processa input do joystick e atualiza posição
+- `HandleCombat()`: Gerencia sistema de ataques direcionais
+- `TakeDamage(int damage)`: Reduz HP e atualiza interface visual
+- `UpdateAnimations()`: Sincroniza parâmetros de animação
+- `SavePlayerState()`: Salva estado atual do jogador
 
 ---
 
-## Scripts de NPCs
+## 🤖 Scripts de NPCs
 
 ### NPCScript.cs
-**Localização:** `Assets/Scripts/NPCScript.cs`
+**Localização:** `Assets/Scripts/NPCScript.cs`  
+**Tipo:** Classe base abstrata para todos os NPCs
 
-**Descrição:** Classe base para todos os NPCs com sistema de diálogo.
+**Descrição:** Classe base que implementa o sistema de diálogo comum a todos os NPCs do jogo.
 
 **Funcionalidades:**
-- **Sistema de Diálogo:** Exibe conversas com efeito de digitação
-- **Detecção de Proximidade:** Detecta quando o jogador está próximo
-- **Interface de Diálogo:** Gerencia painéis, texto e fotos dos NPCs
-- **Navegação de Diálogo:** Permite avançar e pular falas
+- **💬 Sistema de Diálogo:** Interface completa com efeito de digitação
+- **📸 Exibição de Retratos:** Mostra foto do NPC durante conversas
+- **🔊 Áudio Integrado:** Reprodução de sons durante diálogos
+- **🎯 Detecção de Proximidade:** Detecta quando jogador está próximo
+- **⌨️ Controles de Navegação:** Avançar, pular e fechar diálogos
 
-**Variáveis Principais:**
-- `dialogues[]`: Array com todas as falas do NPC
-- `nameOfNPC`: Nome exibido no diálogo
-- `photo`: Sprite da foto do NPC
-- `wordSpeed`: Velocidade do efeito de digitação
+**Componentes de UI:**
+```csharp
+[SerializeField] public GameObject dialoguePanel;    // Painel principal do diálogo
+[SerializeField] public Text dialogueText;          // Texto da conversa
+[SerializeField] public Text nameText;              // Nome do NPC
+[SerializeField] public GameObject photoPanel;      // Painel da foto
+```
 
-**Métodos Importantes:**
-- `Typing()`: Coroutine que simula digitação
-- `NextLine()`: Avança para próxima linha de diálogo
-- `SkipTalk()`: Acelera ou pula diálogo
-- `RemoveText()`: Fecha interface de diálogo
+**Dados do NPC:**
+```csharp
+[SerializeField] public string[] dialogues;         // Array de falas
+[SerializeField] public string npcName;             // Nome do personagem
+[SerializeField] public Sprite photo;               // Retrato do NPC
+[SerializeField] public float wordSpeed = 0.05f;    // Velocidade de digitação
+```
+
+**Métodos Virtuais (podem ser sobrescritos):**
+- `HandleDialogueInput()`: Gerencia input do jogador para diálogos
+- `StartDialogue()`: Inicia conversa com o NPC
+- `DisplayNextLine()`: Avança para próxima linha
+- `EndDialogue()`: Finaliza conversa
 
 ### Boy2Script.cs
-**Localização:** `Assets/Scripts/Boy2Script.cs`
+**Localização:** `Assets/Scripts/Boy2Script.cs`  
+**Herda de:** `NPCScript`
 
-**Descrição:** NPC com comportamento de patrulhamento e diálogo, herda de NPCScript.
+**Descrição:** NPC jovem com comportamento de patrulhamento aleatório.
 
-**Funcionalidades:**
-- **Patrulhamento:** Move-se aleatoriamente dentro de área definida
-- **Pausa quando Jogador Próximo:** Para movimento durante conversas
-- **Sistema de Direções:** Movimenta-se em 4 direções (cima, baixo, esquerda, direita)
-- **Tempos Aleatórios:** Alterna entre caminhar e pausar com intervalos variados
+**Funcionalidades Adicionais:**
+- **🚶 Patrulhamento Inteligente:** Movimento aleatório dentro de área delimitada
+- **⏸️ Pausa durante Diálogo:** Interrompe movimento quando jogador interage
+- **🎲 Comportamento Variado:** Alterna entre caminhar e pausar com tempos aleatórios
+- **🧭 Navegação 4-Direções:** Move-se em direções cardinais
 
-**Variáveis Específicas:**
-- `leftPatrolX, rightPatrolX, upPatrolY, bottomPatrolY`: Limites da área de patrulhamento
-- `minWalkTime, maxWalkTime`: Tempo mínimo e máximo de caminhada
-- `minPauseTime, maxPauseTime`: Tempo mínimo e máximo de pausa
+**Configuração de Patrulhamento:**
+```csharp
+[SerializeField] private float leftPatrolX;     // Limite esquerdo
+[SerializeField] private float rightPatrolX;    // Limite direito  
+[SerializeField] private float upPatrolY;       // Limite superior
+[SerializeField] private float bottomPatrolY;   // Limite inferior
+[SerializeField] private float minWalkTime;     // Tempo mínimo de caminhada
+[SerializeField] private float maxWalkTime;     // Tempo máximo de caminhada
+```
 
 ### OldManScript.cs
-**Localização:** `Assets/Scripts/OldManScript.cs`
+**Localização:** `Assets/Scripts/OldManScript.cs`  
+**Herda de:** `NPCScript`
 
-**Descrição:** NPC que se move entre dois pontos fixos, herda de NPCScript.
+**Descrição:** NPC idoso que se move entre dois pontos fixos predefinidos.
 
-**Funcionalidades:**
-- **Movimento Linear:** Move-se entre ponto A e ponto B
-- **Pausa nos Pontos:** Para por alguns segundos ao chegar em cada ponto
-- **Parada durante Diálogo:** Interrompe movimento quando jogador interage
+**Funcionalidades Específicas:**
+- **🔄 Movimento Pendular:** Vai e volta entre dois pontos (A ↔ B)
+- **⏳ Pausa nos Destinos:** Para por alguns segundos ao chegar em cada ponto
+- **🛑 Parada para Diálogo:** Congela movimento durante interações
 
-**Variáveis Específicas:**
-- `pointA, pointB`: GameObjects que definem os pontos de movimento
-- `currentPoint`: Ponto atual de destino
-- `speed`: Velocidade de movimento
+**Configuração de Movimento:**
+```csharp
+[SerializeField] private GameObject pointA;     // Primeiro ponto de destino
+[SerializeField] private GameObject pointB;     // Segundo ponto de destino  
+[SerializeField] private float speed;           // Velocidade de movimento
+[SerializeField] private float pauseTime;       // Tempo de pausa nos pontos
+```
 
 ### OldWomanScript.cs
-**Localização:** `Assets/Scripts/OldWomanScript.cs`
+**Localização:** `Assets/Scripts/OldWomanScript.cs`  
+**Herda de:** `NPCScript`
 
-**Descrição:** NPC simples que herda apenas funcionalidades básicas de NPCScript.
+**Descrição:** NPC estático que oferece apenas funcionalidades básicas de diálogo.
 
-**Funcionalidades:**
-- Apenas sistema de diálogo básico sem movimento adicional
-
----
-
-## Scripts de Interface
-
-### SignScript.cs
-**Localização:** `Assets/Scripts/SignScript.cs`
-
-**Descrição:** Controla placas e sinais interativos no jogo.
-
-**Funcionalidades:**
-- **Exibição de Texto:** Mostra texto informativo quando jogador se aproxima
-- **Ajuste de Fonte:** Adapta tamanho da fonte baseado no comprimento do texto
-- **Toggle de Visibilidade:** Alterna exibição com tecla E
-
-**Variáveis Principais:**
-- `text`: Texto a ser exibido na placa
-- `signBox`: GameObject do painel da placa
-- `playerInRange`: Flag de proximidade do jogador
-
-### FlipPage.cs
-**Localização:** `Assets/Scripts/FlipPage.cs`
-
-**Descrição:** Controla sistema de virar páginas em livros/diários.
-
-**Funcionalidades:**
-- **Navegação de Páginas:** Botões para avançar e retroceder páginas
-- **Controle de Limites:** Desabilita botões nos limites do livro
-- **Animações:** Triggera animações de virar página
-- **Fechamento de Cena:** Permite fechar a cena do livro
-
-**Variáveis Principais:**
-- `maxIndex`: Número máximo de páginas
-- `currentIndex`: Página atual
-- `buttonF, buttonB`: Botões de navegação
-
-### ExitButtonScript.cs
-**Localização:** `Assets/Scripts/ExitButtonScript.cs`
-
-**Descrição:** Script simples para botão de saída para o menu principal.
-
-**Funcionalidades:**
-- **Mudança de Cena:** Carrega cena do menu principal
+**Características:**
+- **🏠 Comportamento Estático:** Permanece em posição fixa
+- **💬 Diálogo Simples:** Utiliza apenas sistema base de conversação
+- **🎯 Foco na Narrativa:** Ideal para NPCs informativos ou storytelling
 
 ---
 
-## Scripts de Sistema
+## 👹 Scripts de Inimigos
 
-### SpawnPoints.cs
-**Localização:** `Assets/Scripts/SpawnPoints.cs`
+### EnemyMovement.cs (EnemyController)
+**Localização:** `Assets/Scripts/EnemyMovement.cs`  
+**Classe Principal:** `EnemyController`
 
-**Descrição:** Gerencia pontos de spawn do jogador entre cenas.
-
-**Funcionalidades:**
-- **Mapeamento de Posições:** Define posições de spawn para diferentes locais
-- **Persistência de Estado:** Mantém posição do jogador entre cenas
-- **Sistema de Áudio:** Controla música de fundo baseada na cena
-- **Gerenciamento de Canvas:** Controla interface baseada no contexto
-
-**Estruturas:**
-- `cityMap`: Struct para armazenar coordenadas de spawn
-- `currentPosition`: Enum para identificar localização atual
-
-### SalvarPosic.cs
-**Localização:** `Assets/Scripts/SalvarPosic.cs`
-
-**Descrição:** Sistema de salvamento de posição do jogador.
+**Descrição:** Controlador principal de IA para inimigos com sistema completo de combate e saúde.
 
 **Funcionalidades:**
-- **Salvamento Automático:** Salva posição do jogador ao mudar de cena
-- **Carregamento de Posição:** Restaura posição salva ao entrar em cena
-- **PlayerPrefs:** Utiliza sistema de preferências do Unity
+- **🎯 Sistema de Detecção:** Detecta jogador dentro do alcance
+- **🏃 Perseguição Inteligente:** Move-se em direção ao jogador detectado
+- **⚔️ Sistema de Combate:** Ataca quando próximo suficiente do alvo
+- **❤️ Gerenciamento de Vida:** Sistema de HP com estados visuais
+- **💀 Sistema de Morte:** Animações de morte e destruição do objeto
 
-### SceneTransition.cs (SceneChange.cs)
-**Localização:** `Assets/Scripts/SceneTransition.cs`
+**Configuração de Combate:**
+```csharp
+[SerializeField] private float movementSpeed = 3f;    // Velocidade de movimento
+[SerializeField] private float attackDuration = 3f;   // Duração do ataque
+[SerializeField] private float attackRange = 2f;      // Alcance de ataque
+[SerializeField] private int maxHealth = 100;         // Vida máxima
+```
 
-**Descrição:** Gerencia transições suaves entre cenas.
-
-**Funcionalidades:**
-- **Interface de Confirmação:** Exibe painel perguntando se deseja mudar de cena
-- **Animação de Fade:** Aplica efeito de fade out/in durante transição
-- **Cancelamento:** Permite cancelar mudança de cena
-
-### Loading.cs (Carregar.cs)
-**Localização:** `Assets/Scripts/Loading.cs`
-
-**Descrição:** Sistema de carregamento de cenas com interação do jogador.
-
-**Funcionalidades:**
-- **Interação com E:** Carrega nova cena ao pressionar tecla E
-- **Salvamento Automático:** Salva posição antes de carregar nova cena
-- **Interface Visual:** Exibe mensagem na tela quando possível interagir
-
-### DiaryScript.cs
-**Localização:** `Assets/Scripts/DiaryScript.cs`
-
-**Descrição:** Controla abertura e exibição de diários no jogo.
-
-**Funcionalidades:**
-- **Carregamento Aditivo:** Carrega cena do diário sobre a cena atual
-- **Gerenciamento de Diários:** Ativa apenas o diário correto baseado no nome
-- **Detecção de Proximidade:** Detecta quando jogador pode abrir diário
-
----
-
-## Scripts de Combate
-
-### PlayerAttackScript.cs
-**Localização:** `Assets/Scripts/PlayerAttackScript.cs`
-
-**Descrição:** Gerencia sistema de ataque do jogador e inimigos.
-
-**Funcionalidades:**
-- **Detecção de Colisão:** Detecta quando ataque atinge alvo
-- **Sistema de Dano:** Aplica dano diferenciado baseado no tipo de inimigo
-- **Knockback:** Aplica força de repulsão em inimigos atingidos
-- **Cooldown de Ataque:** Previne spam de ataques
-
-**Métodos Principais:**
-- `OnTriggerEnter2D()`: Detecta início de ataque
-- `OnTriggerStay2D()`: Aplica força contínua
-- `OnTriggerExit2D()`: Remove força ao fim do ataque
-
-### PlayerAwareness.cs
-**Localização:** `Assets/Scripts/PlayerAwareness.cs`
-
-**Descrição:** Sistema de detecção de proximidade do jogador para inimigos.
-
-**Funcionalidades:**
-- **Detecção de Distância:** Calcula distância entre inimigo e jogador
-- **Direção ao Jogador:** Fornece vetor normalizado para direção do jogador
-- **Estado de Alerta:** Flag indicando se inimigo está ciente do jogador
-
-**Propriedades:**
-- `awareOfPlayer`: Booleano indicando se jogador está no alcance
-- `directionToPlayer`: Vetor direção para o jogador
-- `_playerAwarenessDistance`: Distância máxima de detecção
-
----
-
-## Scripts de Inimigos
-
-### EnemyMovement.cs
-**Localização:** `Assets/Scripts/EnemyMovement.cs`
-
-**Descrição:** Controla movimento e comportamento de inimigos padrão.
-
-**Funcionalidades:**
-- **Perseguição ao Jogador:** Move-se em direção ao jogador quando detectado
-- **Sistema de Ataque:** Ataca quando próximo suficiente do jogador
-- **Sistema de Vida:** Gerencia HP com diferentes estágios visuais
-- **Animações Direcionais:** Atualiza animações baseadas na direção de movimento
-
-**Variáveis Principais:**
-- `_speed`: Velocidade de movimento
-- `atkDuration`: Duração do ataque
-- `distanceToAttack`: Distância mínima para atacar
-- `hp`: Pontos de vida
+**Estados de Saúde:**
+- **100 HP:** Estado saudável (verde)
+- **66 HP:** Estado ferido (amarelo)  
+- **33 HP:** Estado crítico (vermelho)
+- **0 HP:** Morte (destruição após 2s)
 
 ### RedMovement.cs
 **Localização:** `Assets/Scripts/RedMovement.cs`
 
-**Descrição:** Variação do sistema de movimento para inimigo especial (RobotT2).
+**Descrição:** Controlador especializado para inimigo tipo "Robot Vermelho" com mecânicas únicas.
 
-**Funcionalidades:**
-- Similar ao EnemyMovement mas com comportamentos específicos
-- Gerenciamento de objeto de ataque separado
-- Sistema de vida específico para este tipo de inimigo
+**Funcionalidades Especiais:**
+- **🤖 Comportamento Específico:** Adaptado para o robot vermelho
+- **⚔️ Sistema de Ataque Único:** Mecânicas diferentes do inimigo padrão
+- **🎨 Animações Customizadas:** Conjunto específico de animações
+- **🔧 Configuração Independente:** Não herda do EnemyController padrão
 
 ---
 
-## Scripts de Menu
+## ⚔️ Scripts de Combate
+
+### PlayerAttackScript.cs
+**Localização:** `Assets/Scripts/PlayerAttackScript.cs`
+
+**Descrição:** Gerencia detecção de colisões e aplicação de dano dos ataques do jogador.
+
+**Funcionalidades:**
+- **💥 Detecção de Colisão:** Detecta quando ataques atingem inimigos
+- **⚡ Sistema de Dano:** Aplica dano baseado no tipo de inimigo
+- **🌪️ Efeito Knockback:** Empurra inimigos para trás ao serem atingidos
+- **⏱️ Cooldown de Ataque:** Previne spam e garante gameplay balanceado
+
+**Métodos de Colisão:**
+```csharp
+OnTriggerEnter2D()    // Detecta início do ataque
+OnTriggerStay2D()     // Aplica força contínua durante ataque  
+OnTriggerExit2D()     // Remove efeitos ao fim do ataque
+```
+
+### PlayerAwareness.cs
+**Localização:** `Assets/Scripts/PlayerAwareness.cs`
+
+**Descrição:** Sistema de detecção e consciência espacial para inimigos localizarem o jogador.
+
+**Funcionalidades:**
+- **📡 Detecção de Distância:** Calcula distância em tempo real entre inimigo e jogador
+- **🧭 Direcionamento:** Fornece vetor normalizado apontando para o jogador
+- **🚨 Estado de Alerta:** Flag booleana indicando se jogador está no alcance
+- **⚙️ Configuração Flexível:** Distância de detecção ajustável por inimigo
+
+**Propriedades Públicas:**
+```csharp
+public bool AwareOfPlayer { get; }           // Jogador está no alcance?
+public Vector2 DirectionToPlayer { get; }    // Direção para o jogador
+```
+
+---
+
+## 🖥️ Scripts de Interface
+
+### SignScript.cs
+**Localização:** `Assets/Scripts/SignScript.cs`
+
+**Descrição:** Controla placas e sinais informativos interativos espalhados pelo mundo do jogo.
+
+**Funcionalidades:**
+- **📝 Exibição de Texto:** Mostra informações quando jogador se aproxima
+- **🔤 Ajuste Automático de Fonte:** Redimensiona texto baseado no comprimento
+- **⌨️ Interação com Tecla E:** Toggle de visibilidade via input do jogador
+- **🎯 Detecção de Proximidade:** Ativa/desativa baseado na distância do jogador
+
+### FlipPage.cs
+**Localização:** `Assets/Scripts/FlipPage.cs`
+
+**Descrição:** Sistema de navegação para livros e diários com múltiplas páginas.
+
+**Funcionalidades:**
+- **📖 Navegação de Páginas:** Botões para avançar/retroceder
+- **🚫 Controle de Limites:** Desabilita botões nos extremos do livro
+- **🎬 Animações de Transição:** Efeitos visuais ao virar páginas
+- **❌ Fechamento de Livro:** Opção para sair da visualização
+
+**Configuração:**
+```csharp
+[SerializeField] private int maxIndex;           // Número total de páginas
+[SerializeField] private Button forwardButton;   // Botão próxima página
+[SerializeField] private Button backButton;      // Botão página anterior
+```
+
+### ExitButtonScript.cs
+**Localização:** `Assets/Scripts/ExitButtonScript.cs`
+
+**Descrição:** Script simples para botão de saída que retorna ao menu principal.
+
+**Funcionalidade:**
+- **🏠 Retorno ao Menu:** Carrega cena do menu principal do jogo
+
+---
+
+## 🔧 Scripts de Sistema
+
+### SpawnPoints.cs
+**Localização:** `Assets/Scripts/SpawnPoints.cs`
+
+**Descrição:** Sistema central de gerenciamento de pontos de spawn e posicionamento do jogador entre cenas.
+
+**Funcionalidades:**
+- **🗺️ Mapeamento de Posições:** Define coordenadas de spawn para cada local
+- **💾 Persistência de Estado:** Mantém posição do jogador entre mudanças de cena
+- **🎵 Controle de Áudio:** Gerencia música de fundo baseada na localização
+- **🎨 Gerenciamento de UI:** Controla interface contextual por cena
+
+**Estruturas de Dados:**
+```csharp
+public struct cityMap {
+    public Vector3 X { get; set; }
+}
+
+public enum currentPosition { 
+    none, library, house, shop, houseBed, grove 
+}
+```
+
+### SalvarPosic.cs
+**Localização:** `Assets/Scripts/SalvarPosic.cs`
+
+**Descrição:** Sistema de salvamento automático da posição do jogador.
+
+**Funcionalidades:**
+- **💾 Salvamento Automático:** Salva posição ao mudar de cena
+- **📂 PlayerPrefs Integration:** Utiliza sistema de preferências do Unity
+- **🔄 Carregamento Automático:** Restaura posição salva ao entrar em nova cena
+
+### SceneTransition.cs
+**Localização:** `Assets/Scripts/SceneTransition.cs`
+
+**Descrição:** Gerencia transições suaves e elegantes entre diferentes cenas do jogo.
+
+**Funcionalidades:**
+- **❓ Interface de Confirmação:** Pergunta ao jogador antes de mudar cena
+- **🌅 Efeito Fade:** Animação de fade out/in durante transição
+- **❌ Cancelamento:** Permite abortar mudança de cena
+- **⏳ Transição Assíncrona:** Carregamento não-bloqueante de cenas
+
+### Loading.cs
+**Localização:** `Assets/Scripts/Loading.cs`
+
+**Descrição:** Sistema de carregamento de cenas com interação direta do jogador.
+
+**Funcionalidades:**
+- **⌨️ Interação com E:** Carrega nova cena ao pressionar tecla
+- **💾 Salvamento Pré-Carregamento:** Salva estado antes da transição
+- **💬 Feedback Visual:** Exibe prompt de interação na tela
+
+### DiaryScript.cs
+**Localização:** `Assets/Scripts/DiaryScript.cs`
+
+**Descrição:** Controla sistema de abertura e visualização de diários do jogo.
+
+**Funcionalidades:**
+- **📚 Carregamento Aditivo:** Carrega cena do diário sobre a atual
+- **🏷️ Identificação de Diários:** Ativa diário correto baseado no nome
+- **📍 Detecção de Proximidade:** Detecta quando jogador pode abrir diário
+- **🔄 Gerenciamento de Estado:** Controla exibição/ocultação de diários
+
+---
+
+## 📚 Scripts de Menu e Navegação
 
 ### MenuScripts.cs
 **Localização:** `Assets/Scripts/MenuScripts.cs`
 
-**Descrição:** Controla funcionalidades do menu principal.
+**Descrição:** Controla todas as funcionalidades do menu principal do jogo.
 
 **Funcionalidades:**
-- **Iniciar Jogo:** Carrega primeira cena do jogo (SofiaHouse)
-- **Sair do Jogo:** Fecha aplicação
+- **▶️ Iniciar Jogo:** Carrega primeira cena (SofiaHouse)
+- **❌ Sair do Jogo:** Fecha a aplicação
+- **⚙️ Configurações:** (Se implementado) Acesso a opções do jogo
 
-### StoreScripts.cs (ShopScripts.cs)
+### StoreScripts.cs
 **Localização:** `Assets/Scripts/StoreScripts.cs`
 
-**Descrição:** Script para navegação para cena da loja.
+**Descrição:** Gerencia navegação para a cena da loja no jogo.
 
 **Funcionalidades:**
-- **Carregar Loja:** Muda para cena "Store"
+- **🏪 Acesso à Loja:** Transição para cena "Store"
+- **🛒 Preparação de Estado:** Configura contexto antes de entrar na loja
 
 ### BookScripts.cs
 **Localização:** `Assets/Scripts/BookScripts.cs`
 
-**Descrição:** Controla sons de livros interativos.
+**Descrição:** Controla interações sonoras com livros espalhados pelo mundo.
 
 **Funcionalidades:**
-- **Reprodução de Som:** Toca som quando livro é interagido
-- **Debug de Estado:** Verifica se som está tocando
+- **🔊 Reprodução de Som:** Toca áudio quando livro é interagido
+- **🐛 Sistema de Debug:** Verifica estado de reprodução de áudio
+- **📖 Feedback Auditivo:** Fornece resposta sonora à interação do jogador
 
 ---
 
-## Estrutura de Herança
+## 🏗️ Arquitetura e Padrões de Design
 
+### 📐 Estrutura de Herança
 ```
-MonoBehaviour (Unity)
-├── NPCScript (Classe base para NPCs)
-│   ├── Boy2Script (NPC com patrulhamento)
-│   ├── OldManScript (NPC com movimento linear)
-│   └── OldWomanScript (NPC estático)
-├── MovePlayer (Movimento do jogador)
-├── EnemyMovement (Movimento de inimigos)
-├── RedMovement (Movimento de inimigo especial)
-└── [Outros scripts independentes]
+MonoBehaviour (Unity Base Class)
+├── 🎮 PlayerController (Controle do jogador)
+├── 🤖 NPCScript (Classe base para NPCs)
+│   ├── 🚶 Boy2Script (NPC com patrulhamento)
+│   ├── 👴 OldManScript (NPC com movimento linear)
+│   └── 👵 OldWomanScript (NPC estático)
+├── 👹 EnemyController (IA de inimigos)
+├── 🤖 RedMovement (Inimigo especial)
+└── 🔧 [Scripts de Sistema Independentes]
 ```
 
-## Sistemas Principais
+### 🎯 Sistemas Principais
 
-1. **Sistema de Diálogo:** Centralizado em NPCScript com herança
-2. **Sistema de Movimento:** Separado entre jogador e inimigos
-3. **Sistema de Combate:** Integração entre PlayerAttackScript e scripts de movimento
-4. **Sistema de Cenas:** Múltiplos scripts para diferentes tipos de transição
-5. **Sistema de Interface:** Scripts especializados para diferentes elementos UI
+1. **💬 Sistema de Diálogo**
+   - Centralizado em `NPCScript` com herança
+   - Efeito de digitação e navegação
+   - Integração com áudio e imagens
 
-## Dependências Unity
+2. **🕹️ Sistema de Movimento**  
+   - Jogador: `PlayerController` com joystick virtual
+   - Inimigos: `EnemyController` com IA de perseguição
+   - NPCs: Patrulhamento e movimento linear
 
-- **UnityEngine:** Funcionalidades core do Unity
-- **UnityEngine.UI:** Sistema de interface gráfica
-- **UnityEngine.SceneManagement:** Gerenciamento de cenas
-- **System.Collections:** Para Coroutines e estruturas de dados
+3. **⚔️ Sistema de Combate**
+   - Detecção: `PlayerAttackScript` e `PlayerAwareness`
+   - Dano e knockback integrados
+   - Estados de vida com feedback visual
 
-## Padrões de Design Utilizados
+4. **🌍 Sistema de Cenas**
+   - Transições: `SceneTransition` e `Loading`
+   - Persistência: `SpawnPoints` e `SalvarPosic`
+   - Estado global mantido entre cenas
 
-- **Herança:** NPCScript como classe base
-- **Component Pattern:** Scripts como componentes Unity
-- **Observer Pattern:** Eventos de trigger para detecção
-- **State Pattern:** Estados de movimento e ataque
+5. **🖥️ Sistema de Interface**
+   - Elementos interativos: `SignScript`, `FlipPage`
+   - Navegação: `MenuScripts`, `ExitButtonScript`
+   - Feedback visual consistente
+
+### 🛠️ Padrões de Design Utilizados
+
+- **🔗 Component Pattern:** Scripts como componentes Unity modulares
+- **👨‍👩‍👧‍👦 Inheritance Pattern:** NPCScript como classe base reutilizável  
+- **👁️ Observer Pattern:** Eventos de trigger para detecção de colisões
+- **🎭 State Pattern:** Estados de movimento, ataque e vida
+- **🏭 Singleton Pattern:** Gerenciadores de sistema únicos (implícito)
+
+### 🔌 Dependências Unity
+
+- **🎮 UnityEngine:** Funcionalidades core do Unity
+- **🖥️ UnityEngine.UI:** Sistema de interface gráfica
+- **🌍 UnityEngine.SceneManagement:** Gerenciamento de cenas
+- **⏱️ System.Collections:** Para Coroutines e estruturas de dados
+- **🎵 UnityEngine.Audio:** Sistema de áudio integrado
+
+### 📊 Métricas do Projeto
+
+- **📁 Total de Scripts:** 20 arquivos C#
+- **🎯 Classes Principais:** 7 controladores core
+- **👥 NPCs Implementados:** 3 tipos diferentes
+- **👹 Sistemas de IA:** 2 tipos de inimigos
+- **🖥️ Componentes UI:** 5 scripts de interface
+- **🔧 Scripts de Sistema:** 8 utilitários
+
+### 🎓 Conceitos de Game Development
+
+**🎮 Gameplay Programming:**
+- Input handling com joystick virtual
+- State machines para personagens
+- Physics integration com Rigidbody2D
+
+**🎨 UI/UX Programming:**
+- Sistema de diálogo com typewriter effect
+- Responsive interface elements
+- Scene transition animations
+
+**🤖 AI Programming:**
+- Pathfinding básico para inimigos
+- Behavior trees para NPCs
+- Player awareness systems
+
+**🔧 Systems Programming:**
+- Save/load system com PlayerPrefs
+- Scene management e persistence
+- Audio management integrado
+
+---
+
+## 📚 Guia de Contribuição para Scripts
+
+### 🆕 Adicionando Novos Scripts
+
+1. **📁 Organização:** Coloque scripts na pasta apropriada
+2. **📝 Nomenclatura:** Use nomes descritivos em PascalCase
+3. **📖 Documentação:** Adicione XML comments nos métodos públicos
+4. **🔗 Herança:** Use classes base quando apropriado (ex: NPCScript)
+
+### ✏️ Modificando Scripts Existentes
+
+1. **⚠️ Backup:** Sempre teste mudanças em branch separada
+2. **🔍 Compatibilidade:** Verifique impacto em outros sistemas
+3. **📝 Changelog:** Documente alterações significativas
+4. **🧪 Testes:** Teste todas as funcionalidades afetadas
+
+### 🎯 Boas Práticas
+
+- **🔒 Encapsulamento:** Use [SerializeField] ao invés de public
+- **⚡ Performance:** Evite chamadas custosas em Update()
+- **🏷️ Organização:** Agrupe variáveis com [Header("Nome")]
+- **🚫 Null Checks:** Sempre verifique referências antes de usar
+- **📱 Mobile-Friendly:** Considere performance em dispositivos móveis
+
+---
+
+*Documentação atualizada em {{date}} - Projeto Diários de Sofia*
