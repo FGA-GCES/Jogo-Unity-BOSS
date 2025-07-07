@@ -1,0 +1,2987 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../clean_code/">
+      
+      
+        <link rel="next" href="../backlog/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Scripts - Projeto BOSS - Unity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacao-dos-scripts-diarios-de-sofia" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Projeto BOSS - Unity" class="md-header__button md-logo" aria-label="Projeto BOSS - Unity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projeto BOSS - Unity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Scripts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Usar preferência do sistema"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Usar preferência do sistema" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18V6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  BOSS
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../game/" class="md-tabs__link">
+          
+  
+  
+  Diários de Sofia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tutoriais/wokshop_home/" class="md-tabs__link">
+          
+  
+  
+  Workshops
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projeto/home/" class="md-tabs__link">
+          
+  
+  
+  GCES
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Projeto BOSS - Unity" class="md-nav__button md-logo" aria-label="Projeto BOSS - Unity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Projeto BOSS - Unity
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    BOSS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            BOSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Page
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../checklist_oss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Checklist Software Livre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Código de Conduta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contribuindo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ONBOARDING/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Onboarding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BOAS_PRATICAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Boas Práticas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Diários de Sofia
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Diários de Sofia
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Jogo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conceitos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clean_code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Scripts
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scripts
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-dos-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Estrutura dos Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Índice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-do-jogador" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎮 Scripts do Jogador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎮 Scripts do Jogador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playermovescriptcs-playercontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      PlayerMoveScript.cs (PlayerController)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-npcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 Scripts de NPCs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Scripts de NPCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#npcscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      NPCScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boy2scriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boy2Script.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oldmanscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      OldManScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oldwomanscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      OldWomanScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-inimigos" class="md-nav__link">
+    <span class="md-ellipsis">
+      👹 Scripts de Inimigos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👹 Scripts de Inimigos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enemymovementcs-enemycontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      EnemyMovement.cs (EnemyController)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redmovementcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      RedMovement.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-combate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚔️ Scripts de Combate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚔️ Scripts de Combate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playerattackscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      PlayerAttackScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playerawarenesscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      PlayerAwareness.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Scripts de Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Scripts de Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SignScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flippagecs" class="md-nav__link">
+    <span class="md-ellipsis">
+      FlipPage.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exitbuttonscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ExitButtonScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Scripts de Sistema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Scripts de Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spawnpointscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SpawnPoints.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salvarposiccs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SalvarPosic.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenetransitioncs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SceneTransition.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadingcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loading.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diaryscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      DiaryScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-menu-e-navegacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Scripts de Menu e Navegação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Scripts de Menu e Navegação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menuscriptscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      MenuScripts.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storescriptscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      StoreScripts.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bookscriptscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      BookScripts.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitetura-e-padroes-de-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Arquitetura e Padrões de Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Arquitetura e Padrões de Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-heranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      📐 Estrutura de Herança
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistemas-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Sistemas Principais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padroes-de-design-utilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Padrões de Design Utilizados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencias-unity" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔌 Dependências Unity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metricas-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Métricas do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conceitos-de-game-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Conceitos de Game Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guia-de-contribuicao-para-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Guia de Contribuição para Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Guia de Contribuição para Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adicionando-novos-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆕 Adicionando Novos Scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificando-scripts-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✏️ Modificando Scripts Existentes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Boas Práticas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Workshops
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Workshops
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tutoriais
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Tutoriais
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/wokshop_home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Página Home do Workshop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/workshop_ambiente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuração do Ambiente (Unity e IDE)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/workshop_roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap do Workshop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/workshop_primeiro_nivel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Criação do primeiro nível
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/workshop_movimento_player/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Movimento do jogador
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/workshop_desenvolvendo_nivel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Desenvolvimento do nível
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/workshop_inimigos_ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inimigos e UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/workshop_glossario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BRISA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Cases
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutoriais/coral_quest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coral Quest
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/dificuldades_subir_ambiente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dificuldades Subir Ambiente
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    GCES
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            GCES
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Visão de produto e projeto
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Visão de produto e projeto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/product/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visão de produto e projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/devprocess/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Processos de desenvolvimento de software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Padrões de desenvolvimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Artes e referências
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/sprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sprints
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Roadmaps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Roadmaps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/desenvolvimento_roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap de desenvolvimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/deploy_continuo_roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap de deploy contínuo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/contribuicao_roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap de proposta de contribuição
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Releases
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Releases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/releases/release1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release 1 (22/04/2025)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/releases/release2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release 2 (02/06/2025)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projeto/releases/release3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release 3 (07/07/2025)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-dos-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 Estrutura dos Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Índice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-do-jogador" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎮 Scripts do Jogador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎮 Scripts do Jogador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playermovescriptcs-playercontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      PlayerMoveScript.cs (PlayerController)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-npcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 Scripts de NPCs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Scripts de NPCs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#npcscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      NPCScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boy2scriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boy2Script.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oldmanscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      OldManScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oldwomanscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      OldWomanScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-inimigos" class="md-nav__link">
+    <span class="md-ellipsis">
+      👹 Scripts de Inimigos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👹 Scripts de Inimigos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enemymovementcs-enemycontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      EnemyMovement.cs (EnemyController)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redmovementcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      RedMovement.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-combate" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚔️ Scripts de Combate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚔️ Scripts de Combate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playerattackscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      PlayerAttackScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#playerawarenesscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      PlayerAwareness.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ Scripts de Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ Scripts de Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SignScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flippagecs" class="md-nav__link">
+    <span class="md-ellipsis">
+      FlipPage.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exitbuttonscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ExitButtonScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Scripts de Sistema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Scripts de Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spawnpointscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SpawnPoints.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salvarposiccs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SalvarPosic.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenetransitioncs" class="md-nav__link">
+    <span class="md-ellipsis">
+      SceneTransition.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadingcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Loading.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diaryscriptcs" class="md-nav__link">
+    <span class="md-ellipsis">
+      DiaryScript.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-de-menu-e-navegacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Scripts de Menu e Navegação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Scripts de Menu e Navegação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menuscriptscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      MenuScripts.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storescriptscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      StoreScripts.cs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bookscriptscs" class="md-nav__link">
+    <span class="md-ellipsis">
+      BookScripts.cs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitetura-e-padroes-de-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Arquitetura e Padrões de Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Arquitetura e Padrões de Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estrutura-de-heranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      📐 Estrutura de Herança
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistemas-principais" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Sistemas Principais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#padroes-de-design-utilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Padrões de Design Utilizados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencias-unity" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔌 Dependências Unity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metricas-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Métricas do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conceitos-de-game-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎓 Conceitos de Game Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guia-de-contribuicao-para-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Guia de Contribuição para Scripts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Guia de Contribuição para Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adicionando-novos-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆕 Adicionando Novos Scripts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modificando-scripts-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✏️ Modificando Scripts Existentes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Boas Práticas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacao-dos-scripts-diarios-de-sofia">Documentação dos Scripts - Diários de Sofia</h1>
+<p>Esta documentação descreve o funcionamento de cada script C# do projeto Unity "Diários de Sofia".</p>
+<h2 id="estrutura-dos-scripts">📁 Estrutura dos Scripts</h2>
+<p>O projeto está organizado da seguinte forma:</p>
+<pre><code>Assets/Scripts/
+├── Player/
+│   └── PlayerMoveScript.cs
+├── BookScripts.cs
+├── Boy2Script.cs
+├── DiaryScript.cs
+├── EnemyMovement.cs
+├── ExitButtonScript.cs
+├── FlipPage.cs
+├── Loading.cs
+├── MenuScripts.cs
+├── NPCScript.cs
+├── OldManScript.cs
+├── OldWomanScript.cs
+├── PlayerAttackScript.cs
+├── PlayerAwareness.cs
+├── RedMovement.cs
+├── SalvarPosic.cs
+├── SceneTransition.cs
+├── SignScript.cs
+├── SpawnPoints.cs
+└── StoreScripts.cs
+</code></pre>
+<h2 id="indice">📋 Índice</h2>
+<ul>
+<li><a href="#-scripts-do-jogador">🎮 Scripts do Jogador</a></li>
+<li><a href="#-scripts-de-npcs">🤖 Scripts de NPCs</a></li>
+<li><a href="#-scripts-de-inimigos">👹 Scripts de Inimigos</a></li>
+<li><a href="#️-scripts-de-combate">⚔️ Scripts de Combate</a></li>
+<li><a href="#️-scripts-de-interface">🖥️ Scripts de Interface</a></li>
+<li><a href="#-scripts-de-sistema">🔧 Scripts de Sistema</a></li>
+<li><a href="#-scripts-de-menu-e-navegação">📚 Scripts de Menu e Navegação</a></li>
+</ul>
+<hr />
+<h2 id="scripts-do-jogador">🎮 Scripts do Jogador</h2>
+<h3 id="playermovescriptcs-playercontroller">PlayerMoveScript.cs (PlayerController)</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/Player/PlayerMoveScript.cs</code><br />
+<strong>Classe Principal:</strong> <code>PlayerController</code></p>
+<p><strong>Descrição:</strong> Script principal que controla todo o comportamento do jogador, incluindo movimento, combate e sistema de vida.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>🕹️ Sistema de Movimento:</strong> Controle via joystick virtual com movimentação suave em 2D
+- <strong>⚔️ Sistema de Combate:</strong> Ataques direcionais com animações específicas para cada direção
+- <strong>❤️ Sistema de Vida:</strong> Gerenciamento de HP com 4 estados visuais (100, 66, 33, 0)
+- <strong>🎭 Controle de Animações:</strong> Sincronização entre movimento e animações do personagem
+- <strong>🔄 Persistência de Estado:</strong> Mantém estado do jogador entre cenas</p>
+<p><strong>Componentes Requeridos:</strong>
+- <code>Joystick</code> para controle de movimento
+- <code>Animator</code> para animações
+- <code>Rigidbody2D</code> para física
+- <code>Button</code> para ataques (UI)</p>
+<p><strong>Variáveis Principais:</strong></p>
+<pre><code class="language-csharp">[SerializeField] private Joystick movementJoystick;     // Controle de movimento
+[SerializeField] private float playerSpeed = 5f;       // Velocidade do jogador  
+[SerializeField] private int maxHealth = 100;          // Vida máxima
+[SerializeField] private float attackDuration = 0.5f;  // Duração do ataque
+</code></pre>
+<p><strong>Métodos Importantes:</strong>
+- <code>HandleMovement()</code>: Processa input do joystick e atualiza posição
+- <code>HandleCombat()</code>: Gerencia sistema de ataques direcionais
+- <code>TakeDamage(int damage)</code>: Reduz HP e atualiza interface visual
+- <code>UpdateAnimations()</code>: Sincroniza parâmetros de animação
+- <code>SavePlayerState()</code>: Salva estado atual do jogador</p>
+<hr />
+<h2 id="scripts-de-npcs">🤖 Scripts de NPCs</h2>
+<h3 id="npcscriptcs">NPCScript.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/NPCScript.cs</code><br />
+<strong>Tipo:</strong> Classe base abstrata para todos os NPCs</p>
+<p><strong>Descrição:</strong> Classe base que implementa o sistema de diálogo comum a todos os NPCs do jogo.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>💬 Sistema de Diálogo:</strong> Interface completa com efeito de digitação
+- <strong>📸 Exibição de Retratos:</strong> Mostra foto do NPC durante conversas
+- <strong>🔊 Áudio Integrado:</strong> Reprodução de sons durante diálogos
+- <strong>🎯 Detecção de Proximidade:</strong> Detecta quando jogador está próximo
+- <strong>⌨️ Controles de Navegação:</strong> Avançar, pular e fechar diálogos</p>
+<p><strong>Componentes de UI:</strong></p>
+<pre><code class="language-csharp">[SerializeField] public GameObject dialoguePanel;    // Painel principal do diálogo
+[SerializeField] public Text dialogueText;          // Texto da conversa
+[SerializeField] public Text nameText;              // Nome do NPC
+[SerializeField] public GameObject photoPanel;      // Painel da foto
+</code></pre>
+<p><strong>Dados do NPC:</strong></p>
+<pre><code class="language-csharp">[SerializeField] public string[] dialogues;         // Array de falas
+[SerializeField] public string npcName;             // Nome do personagem
+[SerializeField] public Sprite photo;               // Retrato do NPC
+[SerializeField] public float wordSpeed = 0.05f;    // Velocidade de digitação
+</code></pre>
+<p><strong>Métodos Virtuais (podem ser sobrescritos):</strong>
+- <code>HandleDialogueInput()</code>: Gerencia input do jogador para diálogos
+- <code>StartDialogue()</code>: Inicia conversa com o NPC
+- <code>DisplayNextLine()</code>: Avança para próxima linha
+- <code>EndDialogue()</code>: Finaliza conversa</p>
+<h3 id="boy2scriptcs">Boy2Script.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/Boy2Script.cs</code><br />
+<strong>Herda de:</strong> <code>NPCScript</code></p>
+<p><strong>Descrição:</strong> NPC jovem com comportamento de patrulhamento aleatório.</p>
+<p><strong>Funcionalidades Adicionais:</strong>
+- <strong>🚶 Patrulhamento Inteligente:</strong> Movimento aleatório dentro de área delimitada
+- <strong>⏸️ Pausa durante Diálogo:</strong> Interrompe movimento quando jogador interage
+- <strong>🎲 Comportamento Variado:</strong> Alterna entre caminhar e pausar com tempos aleatórios
+- <strong>🧭 Navegação 4-Direções:</strong> Move-se em direções cardinais</p>
+<p><strong>Configuração de Patrulhamento:</strong></p>
+<pre><code class="language-csharp">[SerializeField] private float leftPatrolX;     // Limite esquerdo
+[SerializeField] private float rightPatrolX;    // Limite direito  
+[SerializeField] private float upPatrolY;       // Limite superior
+[SerializeField] private float bottomPatrolY;   // Limite inferior
+[SerializeField] private float minWalkTime;     // Tempo mínimo de caminhada
+[SerializeField] private float maxWalkTime;     // Tempo máximo de caminhada
+</code></pre>
+<h3 id="oldmanscriptcs">OldManScript.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/OldManScript.cs</code><br />
+<strong>Herda de:</strong> <code>NPCScript</code></p>
+<p><strong>Descrição:</strong> NPC idoso que se move entre dois pontos fixos predefinidos.</p>
+<p><strong>Funcionalidades Específicas:</strong>
+- <strong>🔄 Movimento Pendular:</strong> Vai e volta entre dois pontos (A ↔ B)
+- <strong>⏳ Pausa nos Destinos:</strong> Para por alguns segundos ao chegar em cada ponto
+- <strong>🛑 Parada para Diálogo:</strong> Congela movimento durante interações</p>
+<p><strong>Configuração de Movimento:</strong></p>
+<pre><code class="language-csharp">[SerializeField] private GameObject pointA;     // Primeiro ponto de destino
+[SerializeField] private GameObject pointB;     // Segundo ponto de destino  
+[SerializeField] private float speed;           // Velocidade de movimento
+[SerializeField] private float pauseTime;       // Tempo de pausa nos pontos
+</code></pre>
+<h3 id="oldwomanscriptcs">OldWomanScript.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/OldWomanScript.cs</code><br />
+<strong>Herda de:</strong> <code>NPCScript</code></p>
+<p><strong>Descrição:</strong> NPC estático que oferece apenas funcionalidades básicas de diálogo.</p>
+<p><strong>Características:</strong>
+- <strong>🏠 Comportamento Estático:</strong> Permanece em posição fixa
+- <strong>💬 Diálogo Simples:</strong> Utiliza apenas sistema base de conversação
+- <strong>🎯 Foco na Narrativa:</strong> Ideal para NPCs informativos ou storytelling</p>
+<hr />
+<h2 id="scripts-de-inimigos">👹 Scripts de Inimigos</h2>
+<h3 id="enemymovementcs-enemycontroller">EnemyMovement.cs (EnemyController)</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/EnemyMovement.cs</code><br />
+<strong>Classe Principal:</strong> <code>EnemyController</code></p>
+<p><strong>Descrição:</strong> Controlador principal de IA para inimigos com sistema completo de combate e saúde.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>🎯 Sistema de Detecção:</strong> Detecta jogador dentro do alcance
+- <strong>🏃 Perseguição Inteligente:</strong> Move-se em direção ao jogador detectado
+- <strong>⚔️ Sistema de Combate:</strong> Ataca quando próximo suficiente do alvo
+- <strong>❤️ Gerenciamento de Vida:</strong> Sistema de HP com estados visuais
+- <strong>💀 Sistema de Morte:</strong> Animações de morte e destruição do objeto</p>
+<p><strong>Configuração de Combate:</strong></p>
+<pre><code class="language-csharp">[SerializeField] private float movementSpeed = 3f;    // Velocidade de movimento
+[SerializeField] private float attackDuration = 3f;   // Duração do ataque
+[SerializeField] private float attackRange = 2f;      // Alcance de ataque
+[SerializeField] private int maxHealth = 100;         // Vida máxima
+</code></pre>
+<p><strong>Estados de Saúde:</strong>
+- <strong>100 HP:</strong> Estado saudável (verde)
+- <strong>66 HP:</strong> Estado ferido (amarelo)<br />
+- <strong>33 HP:</strong> Estado crítico (vermelho)
+- <strong>0 HP:</strong> Morte (destruição após 2s)</p>
+<h3 id="redmovementcs">RedMovement.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/RedMovement.cs</code></p>
+<p><strong>Descrição:</strong> Controlador especializado para inimigo tipo "Robot Vermelho" com mecânicas únicas.</p>
+<p><strong>Funcionalidades Especiais:</strong>
+- <strong>🤖 Comportamento Específico:</strong> Adaptado para o robot vermelho
+- <strong>⚔️ Sistema de Ataque Único:</strong> Mecânicas diferentes do inimigo padrão
+- <strong>🎨 Animações Customizadas:</strong> Conjunto específico de animações
+- <strong>🔧 Configuração Independente:</strong> Não herda do EnemyController padrão</p>
+<hr />
+<h2 id="scripts-de-combate">⚔️ Scripts de Combate</h2>
+<h3 id="playerattackscriptcs">PlayerAttackScript.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/PlayerAttackScript.cs</code></p>
+<p><strong>Descrição:</strong> Gerencia detecção de colisões e aplicação de dano dos ataques do jogador.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>💥 Detecção de Colisão:</strong> Detecta quando ataques atingem inimigos
+- <strong>⚡ Sistema de Dano:</strong> Aplica dano baseado no tipo de inimigo
+- <strong>🌪️ Efeito Knockback:</strong> Empurra inimigos para trás ao serem atingidos
+- <strong>⏱️ Cooldown de Ataque:</strong> Previne spam e garante gameplay balanceado</p>
+<p><strong>Métodos de Colisão:</strong></p>
+<pre><code class="language-csharp">OnTriggerEnter2D()    // Detecta início do ataque
+OnTriggerStay2D()     // Aplica força contínua durante ataque  
+OnTriggerExit2D()     // Remove efeitos ao fim do ataque
+</code></pre>
+<h3 id="playerawarenesscs">PlayerAwareness.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/PlayerAwareness.cs</code></p>
+<p><strong>Descrição:</strong> Sistema de detecção e consciência espacial para inimigos localizarem o jogador.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>📡 Detecção de Distância:</strong> Calcula distância em tempo real entre inimigo e jogador
+- <strong>🧭 Direcionamento:</strong> Fornece vetor normalizado apontando para o jogador
+- <strong>🚨 Estado de Alerta:</strong> Flag booleana indicando se jogador está no alcance
+- <strong>⚙️ Configuração Flexível:</strong> Distância de detecção ajustável por inimigo</p>
+<p><strong>Propriedades Públicas:</strong></p>
+<pre><code class="language-csharp">public bool AwareOfPlayer { get; }           // Jogador está no alcance?
+public Vector2 DirectionToPlayer { get; }    // Direção para o jogador
+</code></pre>
+<hr />
+<h2 id="scripts-de-interface">🖥️ Scripts de Interface</h2>
+<h3 id="signscriptcs">SignScript.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/SignScript.cs</code></p>
+<p><strong>Descrição:</strong> Controla placas e sinais informativos interativos espalhados pelo mundo do jogo.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>📝 Exibição de Texto:</strong> Mostra informações quando jogador se aproxima
+- <strong>🔤 Ajuste Automático de Fonte:</strong> Redimensiona texto baseado no comprimento
+- <strong>⌨️ Interação com Tecla E:</strong> Toggle de visibilidade via input do jogador
+- <strong>🎯 Detecção de Proximidade:</strong> Ativa/desativa baseado na distância do jogador</p>
+<h3 id="flippagecs">FlipPage.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/FlipPage.cs</code></p>
+<p><strong>Descrição:</strong> Sistema de navegação para livros e diários com múltiplas páginas.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>📖 Navegação de Páginas:</strong> Botões para avançar/retroceder
+- <strong>🚫 Controle de Limites:</strong> Desabilita botões nos extremos do livro
+- <strong>🎬 Animações de Transição:</strong> Efeitos visuais ao virar páginas
+- <strong>❌ Fechamento de Livro:</strong> Opção para sair da visualização</p>
+<p><strong>Configuração:</strong></p>
+<pre><code class="language-csharp">[SerializeField] private int maxIndex;           // Número total de páginas
+[SerializeField] private Button forwardButton;   // Botão próxima página
+[SerializeField] private Button backButton;      // Botão página anterior
+</code></pre>
+<h3 id="exitbuttonscriptcs">ExitButtonScript.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/ExitButtonScript.cs</code></p>
+<p><strong>Descrição:</strong> Script simples para botão de saída que retorna ao menu principal.</p>
+<p><strong>Funcionalidade:</strong>
+- <strong>🏠 Retorno ao Menu:</strong> Carrega cena do menu principal do jogo</p>
+<hr />
+<h2 id="scripts-de-sistema">🔧 Scripts de Sistema</h2>
+<h3 id="spawnpointscs">SpawnPoints.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/SpawnPoints.cs</code></p>
+<p><strong>Descrição:</strong> Sistema central de gerenciamento de pontos de spawn e posicionamento do jogador entre cenas.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>🗺️ Mapeamento de Posições:</strong> Define coordenadas de spawn para cada local
+- <strong>💾 Persistência de Estado:</strong> Mantém posição do jogador entre mudanças de cena
+- <strong>🎵 Controle de Áudio:</strong> Gerencia música de fundo baseada na localização
+- <strong>🎨 Gerenciamento de UI:</strong> Controla interface contextual por cena</p>
+<p><strong>Estruturas de Dados:</strong></p>
+<pre><code class="language-csharp">public struct cityMap {
+    public Vector3 X { get; set; }
+}
+
+public enum currentPosition { 
+    none, library, house, shop, houseBed, grove 
+}
+</code></pre>
+<h3 id="salvarposiccs">SalvarPosic.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/SalvarPosic.cs</code></p>
+<p><strong>Descrição:</strong> Sistema de salvamento automático da posição do jogador.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>💾 Salvamento Automático:</strong> Salva posição ao mudar de cena
+- <strong>📂 PlayerPrefs Integration:</strong> Utiliza sistema de preferências do Unity
+- <strong>🔄 Carregamento Automático:</strong> Restaura posição salva ao entrar em nova cena</p>
+<h3 id="scenetransitioncs">SceneTransition.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/SceneTransition.cs</code></p>
+<p><strong>Descrição:</strong> Gerencia transições suaves e elegantes entre diferentes cenas do jogo.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>❓ Interface de Confirmação:</strong> Pergunta ao jogador antes de mudar cena
+- <strong>🌅 Efeito Fade:</strong> Animação de fade out/in durante transição
+- <strong>❌ Cancelamento:</strong> Permite abortar mudança de cena
+- <strong>⏳ Transição Assíncrona:</strong> Carregamento não-bloqueante de cenas</p>
+<h3 id="loadingcs">Loading.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/Loading.cs</code></p>
+<p><strong>Descrição:</strong> Sistema de carregamento de cenas com interação direta do jogador.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>⌨️ Interação com E:</strong> Carrega nova cena ao pressionar tecla
+- <strong>💾 Salvamento Pré-Carregamento:</strong> Salva estado antes da transição
+- <strong>💬 Feedback Visual:</strong> Exibe prompt de interação na tela</p>
+<h3 id="diaryscriptcs">DiaryScript.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/DiaryScript.cs</code></p>
+<p><strong>Descrição:</strong> Controla sistema de abertura e visualização de diários do jogo.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>📚 Carregamento Aditivo:</strong> Carrega cena do diário sobre a atual
+- <strong>🏷️ Identificação de Diários:</strong> Ativa diário correto baseado no nome
+- <strong>📍 Detecção de Proximidade:</strong> Detecta quando jogador pode abrir diário
+- <strong>🔄 Gerenciamento de Estado:</strong> Controla exibição/ocultação de diários</p>
+<hr />
+<h2 id="scripts-de-menu-e-navegacao">📚 Scripts de Menu e Navegação</h2>
+<h3 id="menuscriptscs">MenuScripts.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/MenuScripts.cs</code></p>
+<p><strong>Descrição:</strong> Controla todas as funcionalidades do menu principal do jogo.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>▶️ Iniciar Jogo:</strong> Carrega primeira cena (SofiaHouse)
+- <strong>❌ Sair do Jogo:</strong> Fecha a aplicação
+- <strong>⚙️ Configurações:</strong> (Se implementado) Acesso a opções do jogo</p>
+<h3 id="storescriptscs">StoreScripts.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/StoreScripts.cs</code></p>
+<p><strong>Descrição:</strong> Gerencia navegação para a cena da loja no jogo.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>🏪 Acesso à Loja:</strong> Transição para cena "Store"
+- <strong>🛒 Preparação de Estado:</strong> Configura contexto antes de entrar na loja</p>
+<h3 id="bookscriptscs">BookScripts.cs</h3>
+<p><strong>Localização:</strong> <code>Assets/Scripts/BookScripts.cs</code></p>
+<p><strong>Descrição:</strong> Controla interações sonoras com livros espalhados pelo mundo.</p>
+<p><strong>Funcionalidades:</strong>
+- <strong>🔊 Reprodução de Som:</strong> Toca áudio quando livro é interagido
+- <strong>🐛 Sistema de Debug:</strong> Verifica estado de reprodução de áudio
+- <strong>📖 Feedback Auditivo:</strong> Fornece resposta sonora à interação do jogador</p>
+<hr />
+<h2 id="arquitetura-e-padroes-de-design">🏗️ Arquitetura e Padrões de Design</h2>
+<h3 id="estrutura-de-heranca">📐 Estrutura de Herança</h3>
+<pre><code>MonoBehaviour (Unity Base Class)
+├── 🎮 PlayerController (Controle do jogador)
+├── 🤖 NPCScript (Classe base para NPCs)
+│   ├── 🚶 Boy2Script (NPC com patrulhamento)
+│   ├── 👴 OldManScript (NPC com movimento linear)
+│   └── 👵 OldWomanScript (NPC estático)
+├── 👹 EnemyController (IA de inimigos)
+├── 🤖 RedMovement (Inimigo especial)
+└── 🔧 [Scripts de Sistema Independentes]
+</code></pre>
+<h3 id="sistemas-principais">🎯 Sistemas Principais</h3>
+<ol>
+<li><strong>💬 Sistema de Diálogo</strong></li>
+<li>Centralizado em <code>NPCScript</code> com herança</li>
+<li>Efeito de digitação e navegação</li>
+<li>
+<p>Integração com áudio e imagens</p>
+</li>
+<li>
+<p><strong>🕹️ Sistema de Movimento</strong>  </p>
+</li>
+<li>Jogador: <code>PlayerController</code> com joystick virtual</li>
+<li>Inimigos: <code>EnemyController</code> com IA de perseguição</li>
+<li>
+<p>NPCs: Patrulhamento e movimento linear</p>
+</li>
+<li>
+<p><strong>⚔️ Sistema de Combate</strong></p>
+</li>
+<li>Detecção: <code>PlayerAttackScript</code> e <code>PlayerAwareness</code></li>
+<li>Dano e knockback integrados</li>
+<li>
+<p>Estados de vida com feedback visual</p>
+</li>
+<li>
+<p><strong>🌍 Sistema de Cenas</strong></p>
+</li>
+<li>Transições: <code>SceneTransition</code> e <code>Loading</code></li>
+<li>Persistência: <code>SpawnPoints</code> e <code>SalvarPosic</code></li>
+<li>
+<p>Estado global mantido entre cenas</p>
+</li>
+<li>
+<p><strong>🖥️ Sistema de Interface</strong></p>
+</li>
+<li>Elementos interativos: <code>SignScript</code>, <code>FlipPage</code></li>
+<li>Navegação: <code>MenuScripts</code>, <code>ExitButtonScript</code></li>
+<li>Feedback visual consistente</li>
+</ol>
+<h3 id="padroes-de-design-utilizados">🛠️ Padrões de Design Utilizados</h3>
+<ul>
+<li><strong>🔗 Component Pattern:</strong> Scripts como componentes Unity modulares</li>
+<li><strong>👨‍👩‍👧‍👦 Inheritance Pattern:</strong> NPCScript como classe base reutilizável  </li>
+<li><strong>👁️ Observer Pattern:</strong> Eventos de trigger para detecção de colisões</li>
+<li><strong>🎭 State Pattern:</strong> Estados de movimento, ataque e vida</li>
+<li><strong>🏭 Singleton Pattern:</strong> Gerenciadores de sistema únicos (implícito)</li>
+</ul>
+<h3 id="dependencias-unity">🔌 Dependências Unity</h3>
+<ul>
+<li><strong>🎮 UnityEngine:</strong> Funcionalidades core do Unity</li>
+<li><strong>🖥️ UnityEngine.UI:</strong> Sistema de interface gráfica</li>
+<li><strong>🌍 UnityEngine.SceneManagement:</strong> Gerenciamento de cenas</li>
+<li><strong>⏱️ System.Collections:</strong> Para Coroutines e estruturas de dados</li>
+<li><strong>🎵 UnityEngine.Audio:</strong> Sistema de áudio integrado</li>
+</ul>
+<h3 id="metricas-do-projeto">📊 Métricas do Projeto</h3>
+<ul>
+<li><strong>📁 Total de Scripts:</strong> 20 arquivos C#</li>
+<li><strong>🎯 Classes Principais:</strong> 7 controladores core</li>
+<li><strong>👥 NPCs Implementados:</strong> 3 tipos diferentes</li>
+<li><strong>👹 Sistemas de IA:</strong> 2 tipos de inimigos</li>
+<li><strong>🖥️ Componentes UI:</strong> 5 scripts de interface</li>
+<li><strong>🔧 Scripts de Sistema:</strong> 8 utilitários</li>
+</ul>
+<h3 id="conceitos-de-game-development">🎓 Conceitos de Game Development</h3>
+<p><strong>🎮 Gameplay Programming:</strong>
+- Input handling com joystick virtual
+- State machines para personagens
+- Physics integration com Rigidbody2D</p>
+<p><strong>🎨 UI/UX Programming:</strong>
+- Sistema de diálogo com typewriter effect
+- Responsive interface elements
+- Scene transition animations</p>
+<p><strong>🤖 AI Programming:</strong>
+- Pathfinding básico para inimigos
+- Behavior trees para NPCs
+- Player awareness systems</p>
+<p><strong>🔧 Systems Programming:</strong>
+- Save/load system com PlayerPrefs
+- Scene management e persistence
+- Audio management integrado</p>
+<hr />
+<h2 id="guia-de-contribuicao-para-scripts">📚 Guia de Contribuição para Scripts</h2>
+<h3 id="adicionando-novos-scripts">🆕 Adicionando Novos Scripts</h3>
+<ol>
+<li><strong>📁 Organização:</strong> Coloque scripts na pasta apropriada</li>
+<li><strong>📝 Nomenclatura:</strong> Use nomes descritivos em PascalCase</li>
+<li><strong>📖 Documentação:</strong> Adicione XML comments nos métodos públicos</li>
+<li><strong>🔗 Herança:</strong> Use classes base quando apropriado (ex: NPCScript)</li>
+</ol>
+<h3 id="modificando-scripts-existentes">✏️ Modificando Scripts Existentes</h3>
+<ol>
+<li><strong>⚠️ Backup:</strong> Sempre teste mudanças em branch separada</li>
+<li><strong>🔍 Compatibilidade:</strong> Verifique impacto em outros sistemas</li>
+<li><strong>📝 Changelog:</strong> Documente alterações significativas</li>
+<li><strong>🧪 Testes:</strong> Teste todas as funcionalidades afetadas</li>
+</ol>
+<h3 id="boas-praticas">🎯 Boas Práticas</h3>
+<ul>
+<li><strong>🔒 Encapsulamento:</strong> Use [SerializeField] ao invés de public</li>
+<li><strong>⚡ Performance:</strong> Evite chamadas custosas em Update()</li>
+<li><strong>🏷️ Organização:</strong> Agrupe variáveis com [Header("Nome")]</li>
+<li><strong>🚫 Null Checks:</strong> Sempre verifique referências antes de usar</li>
+<li><strong>📱 Mobile-Friendly:</strong> Considere performance em dispositivos móveis</li>
+</ul>
+<hr />
+<p><em>Documentação atualizada em {{date}} - Projeto Diários de Sofia</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
