@@ -3,21 +3,20 @@ site_name: Projeto BOSS - Unity
 # Navegação principal
 nav:
   - BOSS:
-    - Landing Page: 'index.md'
-    - Checklist Software Livre: 'checklist_oss.md'
-    - Código de Conduta: 'CODE_OF_CONDUCT.md'
-    - Contribuindo: 'CONTRIBUTING.md'
-    - Onboarding: 'ONBOARDING.md'
-    - Licença: 'LICENSE'
-    - Changelog: 'CHANGELOG.md'
-    - Boas Práticas: 'BOAS_PRATICAS.md'
+      - Landing Page: "index.md"
+      - Checklist Software Livre: "checklist_oss.md"
+      - Código de Conduta: "CODE_OF_CONDUCT.md"
+      - Contribuindo: "CONTRIBUTING.md"
+      - Onboarding: "ONBOARDING.md"
+      - Licença: "LICENSE"
+      - Changelog: "CHANGELOG.md"
+      - Boas Práticas: "BOAS_PRATICAS.md"
   - Diários de Sofia:
-      - Jogo: 'jogo/game.md'
-      - Conceitos: 'projeto/concepts.md'
-      - Clean Code: 'jogo/clean_code.md'
-      - Good Issues: 'jogo/good_issues.md'
-      - Scripts: 'jogo/scripts.md'
-      - Backlog: 'jogo/backlog.md' 
+      - Jogo: "jogo/game.md"
+      - Conceitos: "projeto/concepts.md"
+      - Clean Code: "jogo/clean_code.md"
+      - Scripts: "jogo/scripts.md"
+      - Backlog: "jogo/backlog.md"
   - Workshops:
       - Tutoriais:
           - Página Home do Workshop: "tutoriais/wokshop_home.md"
@@ -31,25 +30,23 @@ nav:
           - BRISA: "tutoriais/tutorials.md"
       - Cases:
           - Coral Quest: "tutoriais/coral_quest.md"
-      - Dificuldades Subir Ambiente: 'projeto/dificuldades_subir_ambiente.md'
+      - Dificuldades Subir Ambiente: "projeto/dificuldades_subir_ambiente.md"
   - GCES:
-    - Home: 'projeto/home.md'
-    - Visão de produto e projeto:
-        - Visão de produto e projeto: 'projeto/product.md'
-        - Processos de desenvolvimento de software: 'projeto/devprocess.md'
-        - Padrões de desenvolvimento: 'projeto/patterns.md'
-    - Artes e referências: 'projeto/references.md'
-    - Sprints: 'projeto/sprints.md'
-    - Roadmaps:
-        - Roadmap de desenvolvimento: 'projeto/desenvolvimento_roadmap.md'
-        - Roadmap de deploy contínuo: 'projeto/deploy_continuo_roadmap.md'
-        - Roadmap de proposta de contribuição: 'projeto/contribuicao_roadmap.md'
-    - Releases:
-        - Release 1 (22/04/2025): 'projeto/releases/release1.md'
-        - Release 2 (07/07/2025): 'projeto/releases/release2.md'
-        - Release 3: 'projeto/releases/release3.md'
-
-
+      - Home: "projeto/home.md"
+      - Visão de produto e projeto:
+          - Visão de produto e projeto: "projeto/product.md"
+          - Processos de desenvolvimento de software: "projeto/devprocess.md"
+          - Padrões de desenvolvimento: "projeto/patterns.md"
+      - Artes e referências: "projeto/references.md"
+      - Sprints: "projeto/sprints.md"
+      - Roadmaps:
+          - Roadmap de desenvolvimento: "projeto/desenvolvimento_roadmap.md"
+          - Roadmap de deploy contínuo: "projeto/deploy_continuo_roadmap.md"
+          - Roadmap de proposta de contribuição: "projeto/contribuicao_roadmap.md"
+      - Releases:
+          - Release 1 (22/04/2025): "projeto/releases/release1.md"
+          - Release 2 (07/07/2025): "projeto/releases/release2.md"
+          - Release 3: "projeto/releases/release3.md"
 
 # Configuração do tema Material
 theme:
@@ -64,8 +61,8 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tooltips
-    - navigation.sections   
-    - navigation.tabs       
+    - navigation.sections
+    - navigation.tabs
     - navigation.tracking
     - search.highlight
     - search.share

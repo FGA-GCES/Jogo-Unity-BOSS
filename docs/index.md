@@ -85,15 +85,13 @@ O **Diários de Sofia** é um projeto educacional open source desenvolvido para 
 
 1. Leia o [Código de Conduta](./CODE_OF_CONDUCT.md)
 2. Siga o [Guia de Contribuição](./CONTRIBUTING.md)
-3. Configure seu [ambiente de desenvolvimento](./projeto/dificuldades_subir_ambiente.md)
-4. Escolha uma [issue](./jogo/good_issues.md) e comece a contribuir!
+3. Configure seu [ambiente de desenvolvimento](./tutoriais/workshop_ambiente.md)
 
 ### 📖 **Quero aprender**
 
-1. Explore nossos [tutoriais](./tutoriais/README.md)
-2. Participe dos [workshops](./tutoriais/wokshop_home.md)
-3. Veja nosso [processo de desenvolvimento](./projeto/devprocess.md)
-4. Acompanhe nossos [roadmaps](./projeto/desenvolvimento_roadmap.md)
+1. Participe dos [workshops](./tutoriais/wokshop_home.md)
+2. Veja nosso [processo de desenvolvimento](./projeto/devprocess.md)
+3. Acompanhe nossos [roadmaps](./projeto/desenvolvimento_roadmap.md)
 
 ---
 
@@ -115,13 +113,6 @@ O **Diários de Sofia** é um projeto educacional open source desenvolvido para 
 - 🐛 Reporte bugs ou sugira melhorias
 - 💡 Compartilhe suas ideias
 - 📖 Contribua com a documentação
-
-### 🏆 **Reconhecimentos**
-
-- **Disciplina:** Gerenciamento de Configuração e Evolução de Software
-- **Instituição:** Universidade de Brasília (UnB)
-- **Semestre:** 2025.1
-- **Tema:** Unity for Women - Diversidade na Tecnologia
 
 ---
 
@@ -157,6 +148,7 @@ SOFTWARE.
 
 <div align="center">
 
-Desenvolvido com ❤️ pela comunidade Unity for Women <br> 
+Desenvolvido com ❤️ pela comunidade Unity for Women <br>
 Universidade de Brasília - 2025
+
 </div>

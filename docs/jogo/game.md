@@ -1,145 +1,106 @@
-# Diários de Sofia - Sobre o Jogo
+# 🎮 Diários de Sofia
 
-## Informações Básicas
+## 🌟 **Sobre o Jogo**
 
-**Nome do Jogo:**  
-Diários de Sofia
+**Diários de Sofia** é um RPG mobile em pixel art que conta a história de uma jovem que desafia as normas sociais de sua cidade. Em Ogama, mulheres são proibidas de estudar, mas Sofia decide mudar essa realidade coletando artefatos históricos que revelam a importância das mulheres na ciência e tecnologia.
 
-**High Concept:**  
-Um jogo narrativo e desafiador que combina puzzles e combate para conscientizar sobre igualdade e justiça social.
+### 📱 **Informações Básicas**
 
-**Plataformas de Produção:**  
-Computadores (PC)
-
-**Licença:**  
-Open Source (Licença MIT)
-
----
-
-## Visão Geral
-
-**Gênero:**  
-RPG, Aventura
-
-**Plataforma(s):**  
-Computadores (PC)
-
-**Público-alvo:**  
-Adolescentes e adultos interessados em narrativas sociais e jogos desafiadores.
-
-**Estilo Estético:**  
-Arte 2D em Pixel Art com perspectiva top-down, inspirada em jogos clássicos.
-
-**Justificativa:**  
-O jogo foi desenvolvido como um projeto open source para promover reflexão e conscientização sobre igualdade e justiça social, utilizando uma narrativa envolvente e mecânicas interativas.
-
-**Modelo de Distribuição:**  
-Gratuito e open source, disponível para download no GitHub.
-
-**Estratégia de Divulgação:**
-
-- Compartilhamento em comunidades de desenvolvimento de jogos open source.
-- Divulgação em redes sociais e fóruns de jogos indie.
-- Participação em eventos de tecnologia e hackathons.
+| 🎮 **Elemento** | 📝 **Detalhes**     |
+| --------------- | ------------------- |
+| **Gênero**      | RPG 2D, Aventura    |
+| **Plataforma**  | Android             |
+| **Estilo**      | Pixel Art, top-down |
+| **Licença**     | MIT (Open Source)   |
 
 ---
 
-## Aspectos Inovadores
+## 🎯 **Como Jogar**
 
-**Inovação na Jogabilidade:**  
-Combinação única de puzzles narrativos e combate estratégico, com progressão não linear.
+### 🧩 **Mecânicas Principais**
 
-**Inovação na Arte, Narrativa ou Elementos Simbólicos:**  
-Narrativa centrada em temas de igualdade e justiça social, com referências históricas e culturais.
+- **Exploração**: Navegue pela cidade de Ogama usando controles touch
+- **Puzzles**: Resolva enigmas e organize elementos no ambiente
+- **Combate**: Enfrente robôs policiais em batalhas estratégicas
+- **Coleta**: Encontre itens especiais que contam histórias inspiradoras
 
-**Uso Criativo de Tecnologias:**
+### 📍 **Três Áreas para Explorar**
 
-- Engine 2D otimizada para performance em computadores.
-- Sistema de física para puzzles dinâmicos e interativos.
+#### 🏛️ **Biblioteca de Ogama**
 
----
+Organize livros e descubra a biografia de **Ada Lovelace**, primeira programadora da história.
 
-## Gameplay e Mecânicas
+#### 🌲 **Bosque e Fliperama**
 
-**Descrição do Gameplay:**  
-Os jogadores assumem o papel de Sofia, uma jovem determinada que desafia as normas sociais de Ogama. Eles exploram a cidade, resolvem puzzles, enfrentam inimigos e coletam itens que ajudam a mudar a sociedade.
+Enfrente robôs guardiões e encontre o disquete do clássico jogo **River Raid**.
 
-**Estrutura de Progressão e Objetivos:**
+#### 🏫 **Universidade de Ogama**
 
-- O jogo é dividido em três fases: duas iniciais e uma final.
-- O jogador escolhe a ordem das duas primeiras fases, mas ambas devem ser concluídas para desbloquear a fase final.
-
-**Mecânicas Principais:**
-
-- **Puzzles:** Resolver enigmas e interagir com o ambiente.
-- **Combate:** Enfrentar inimigos em batalhas estratégicas, utilizando habilidades e reflexos.
-- **Sistema de XP:** Aumentar o nível melhora atributos como vida, ataque e velocidade.
-
-**Sistema de Economia e Salvamento:**
-
-- Sistema de salvamento automático em checkpoints.
-- Itens colecionáveis que desbloqueiam diários com histórias adicionais.
+Use os itens coletados para confrontar o sistema e inspirar uma revolução social.
 
 ---
 
-## Arte e Direção Criativa
+## 🎨 **Visual e Som**
 
-**Estilo Visual e Inspirações Artísticas:**  
-Arte 2D com perspectiva top-down, inspirada em jogos clássicos como _The Legend of Zelda_.
+### 🖼️ **Arte**
 
-**Elementos Sonoros e Referências Musicais:**  
-Trilha sonora original com influências de música clássica e eletrônica.
+- **Pixel Art** nostálgico inspirado em clássicos dos anos 90
+- **Perspectiva top-down** como The Legend of Zelda
+- **Paleta de cores** que reflete as emoções de cada área
+- **Animações suaves** otimizadas para dispositivos móveis
 
-**Estratégias de Desenvolvimento Artístico:**
+### 🎵 **Áudio**
 
-- Uso de paletas de cores para diferenciar áreas e emoções.
-- Design de personagens com foco em representatividade.
-
----
-
-## Narrativa e Ambientação
-
-**Enredo Principal e Contexto do Game:**  
-Na cidade fictícia de Ogama, as mulheres são proibidas de acessar o ensino superior. Sofia decide desafiar as normas sociais, coletando itens que revelam a história da cidade e lutando para mudar o paradigma de segregação.
-
-**Descrição do Universo, Cenários e Fases:**
-
-- **Fase 1 - Biblioteca de Ogama:** Resolver puzzles organizando livros e encontrar o primeiro Item de Consciência, a biografia de Ada Lovelace.
-- **Fase 2 - Bosque e Fliperama:** Combater robôs enquanto explora o bosque e encontrar o disquete do jogo _River Raid_.
-- **Fase Final - Universidade de Ogama:** Enfrentar o governante da cidade e apresentar os Itens de Consciência à população.
-
-**Personagens Principais e Papel Narrativo:**
-
-- **Sofia:** Protagonista que lidera a mudança social.
-- **Robôs Policiais:** Inimigos que representam a opressão.
-- **Prefeito:** Antagonista final que simboliza o sistema opressor.
+- **Trilha sonora original** com influências clássicas e eletrônicas
+- **Efeitos sonoros** imersivos para cada ação
+- **Temas musicais únicos** para cada área do jogo
 
 ---
 
-## Requisitos Gerais
+## 👥 **Personagens**
 
-- Jogo 2D com profundidade.
-- Gênero RPG, com fases de dificuldade variada.
-- Sistema de inventário para os diários.
-- Loja de itens e sistema de XP.
-- Possibilidade de personalizar o personagem.
-- Contar histórias de brasileiros relevantes.
-- Estilo visual em Pixel Art / 8-bit.
+### 🧙‍♀️ **Sofia**
 
----
+Protagonista corajosa que questiona as injustiças sociais e luta pelo direito à educação.
 
-## Histórico de Versão
+### 🤖 **Robôs Policiais**
 
-| Data       | Versão | Descrição                                   | Autores                                    |
-| ---------- | ------ | ------------------------------------------- | ------------------------------------------ |
-| 25/04/2025 | 0.1    | Formatação da página sobre o jogo           | [Mateus Vieira](https://github.com/matix0) |
-| 04/04/2024 | 0.2    | Adicionando informações sobre o jogo        | Miguel Arthur                              |
-| 07/04/2024 | 0.3    | Descrição a partir de tópicos do livro      | Miguel Arthur, Júlia Yoshida               |
-| 06/05/2024 | 0.4    | Atualizando o game design document          | Lucas Gobbi                                |
-| 18/08/2024 | 0.5    | Atualizando mecânicas e experiência de jogo | Júlia Yoshida                              |
+Inimigos que representam a opressão sistemática e mantêm a ordem através da força.
+
+### 👨‍💼 **Prefeito**
+
+Antagonista final que simboliza o sistema estabelecido e resiste às mudanças.
 
 ---
 
-## Referências Bibliográficas
+## 🎓 **Objetivo Educacional**
 
-- Schell, Jesse. _Level Up: Um Guia para o Design de Grandes Jogos_. Tradução de Simone Ávila. 2. ed Porto Alegre: Bookman, 2008.
+Este jogo foi criado para:
+
+- ✊ **Conscientizar** sobre igualdade de gênero na educação
+- 📚 **Destacar** contribuições femininas na ciência e tecnologia
+- 🤔 **Provocar reflexão** sobre estruturas sociais injustas
+- 💪 **Inspirar** ação na vida real
+
+---
+
+## 📚 **Inspirações**
+
+- **The Legend of Zelda** - Mecânicas de exploração
+- **Undertale** - Narrativa com mensagem social
+- **Ada Lovelace** - Primeira programadora da história
+- **River Raid** - Clássico dos videogames
+
+---
+
+## 📝 **Histórico de Versões**
+
+| 📅 **Data** | 🔢 **Versão** | 📝 **Descrição**                       | 👤 **Autores**                             |
+| ----------- | ------------- | -------------------------------------- | ------------------------------------------ |
+| 25/04/2025  | 0.6           | Formatação da página sobre o jogo      | [Mateus Vieira](https://github.com/matix0) |
+| 18/08/2024  | 0.5           | Atualizando mecânicas e experiência    | Júlia Yoshida                              |
+| 06/05/2024  | 0.4           | Atualizando game design document       | Lucas Gobbi                                |
+| 07/04/2024  | 0.3           | Descrição a partir de tópicos do livro | Miguel Arthur, Júlia Yoshida               |
+| 04/04/2024  | 0.2           | Adicionando informações sobre o jogo   | Miguel Arthur                              |
+
+---
