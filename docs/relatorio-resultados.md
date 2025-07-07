@@ -1,5 +1,5 @@
 
-# 📈 Relatório de Resultados e Sugestões Futuras — Projeto BOSS
+# Relatório de Resultados e Sugestões Futuras — Projeto BOSS
 
 O grupo realizou diversas ações significativas no desenvolvimento do projeto Jogo-Unity-BOSS, com foco na melhoria da documentação, organização do repositório e suporte à contribuição colaborativa.
 
@@ -18,7 +18,10 @@ Como sugestões para os próximos passos, recomenda-se:
 - Desenvolver templates personalizados para issues e pull requests.
 - Incluir testes de usabilidade e coleta de feedback de usuários.
 
-O projeto já demonstra um bom grau de maturidade em sua estrutura organizacional e está pronto para avançar em direção à automação, qualidade de código e fortalecimento da comunidade colaboradora.
+---
 
-**Autores:** @Julio1099, @macieljuniormax, @Vini47 e equipe BOSS  
-**Data:** Julho de 2025
+## Histórico de versão
+
+|Data|Versão|Descrição|Autores|
+|--|--|--|--|
+|07/07/2025|1.0|Adicionando versão inicial do guia de boas práticas |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
