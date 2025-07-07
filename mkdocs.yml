@@ -45,8 +45,8 @@ nav:
           - Roadmap de proposta de contribuição: "projeto/contribuicao_roadmap.md"
       - Releases:
           - Release 1 (22/04/2025): "projeto/releases/release1.md"
-          - Release 2 (07/07/2025): "projeto/releases/release2.md"
-          - Release 3: "projeto/releases/release3.md"
+          - Release 2 (02/06/2025): "projeto/releases/release2.md"
+          - Release 3 (07/07/2025): "projeto/releases/release3.md"
 
 # Configuração do tema Material
 theme:
