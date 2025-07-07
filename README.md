@@ -1,33 +1,55 @@
-# <div align="center"> **BOSS - Unity for Women**
+# <div align="center"> 🎮 Diários de Sofia</div>
 
-#### <div align="center">_Comunidade de desenvolvimento de jogos com Unity para promoção de diversidade e inclusão na tecnologia_</div>
+<div align="center">
 
-# Estrutura de Pastas da documentação
+### _Jogo educacional mobile open source sobre inclusão no ensino superior_
+
+**Unity · Open Source · Educação · Diversidade · Mobile**
+
+[![Made with Unity](https://img.shields.io/badge/Unity-2022.3.20f1-000000?logo=unity&logoColor=white)](https://unity.com/)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%F0%9F%92%96-blue)](./LICENSE)
+[![Mobile Ready](https://img.shields.io/badge/Mobile-Android%20%7C%20iOS-green)](./docs/jogo/game.md)
+[![Educational](https://img.shields.io/badge/Educational-%F0%9F%93%9A-orange)](./docs/index.md)
+
+[🎮 Jogar](#-como-jogar) • [👩‍💻 Contribuir](#-como-contribuir) • [📚 Documentação](https://fga-gces.github.io/Jogo-Unity-BOSS/) • [🎯 Good First Issues](./docs/jogo/good_issues.md)
+
+</div>
+
+---
+
+## 📖 Sobre o Jogo
+
+Na cidade de Ogama, as mulheres não têm direito ao ensino superior. Sofia, uma jovem inconformada com essa realidade, embarca em uma jornada para questionar as regras estabelecidas e lutar pelo seu direito à educação.
+
+**"Diários de Sofia"** é um jogo narrativo 2D que combina:
+- 🎭 Storytelling envolvente sobre inclusão educacional
+- 🎮 Gameplay mobile-first com mecânicas acessíveis
+- 🎓 Objetivo educacional de promover discussões sobre diversidade
+- 🌟 Desenvolvimento aberto e colaborativo
+
+📱 **[Saiba mais sobre o jogo →](./docs/jogo/game.md)**
+
+## 📁 Estrutura da Documentação
 
 ```plaintext
 docs/
-├── images/                  # Pasta onde ficam localizadas as imagens utilizadas na documentação
-├── landingpage/             # Diretório onde está localizada a landing page do projeto
-├── backlog.md
-├── concepts.md
-├── contribuicao_roadmap.md
-├── deploy_continuo_roadmap.md
-├── desenvolvimento_roadmap.md
-├── devprocess.md
-├── game.md
-├── index.md                 # Página inicial da documentação
-├── patterns.md
-├── product.md
-├── project.md
-├── references.md
-├── release1.md
-├── release2.md
-├── release3.md
-├── release4.md
-├── roadmap.md
-├── sprints.md
-├── timeline.md
-└── tutorials.md
+├── index.md                      # 🏠 Landing page da documentação
+├── jogo/                         # 🎮 Documentação do jogo
+│   ├── game.md                   # Sobre o jogo e requisitos
+│   ├── scripts.md                # Arquitetura e sistemas
+│   ├── good_issues.md            # First good issues para novos contribuidores
+│   ├── backlog.md                # Backlog e funcionalidades
+│   └── clean_code.md             # Padrões de código
+├── projeto/                      # 📋 Gestão do projeto
+│   ├── concepts.md               # Conceitos e metodologia
+│   ├── devprocess.md             # Processo de desenvolvimento
+│   ├── sprints.md                # Planejamento de sprints
+│   └── releases/                 # Documentação das releases
+├── tutoriais/                    # 📚 Tutoriais Unity for Women
+├── CONTRIBUTING.md               # 🤝 Guia de contribuição
+├── CODE_OF_CONDUCT.md            # 📜 Código de conduta
+├── ONBOARDING.md                 # 🚀 Onboarding para novos membros
+└── checklist_oss.md              # ✅ Checklist open source
 ```
 ---
 
@@ -90,7 +112,7 @@ Ele irá rodar em: http://localhost:8000
 | Projeto      | Descrição                                                                                                                                                                                                                                                                       | Links Úteis                                                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Jogo**     | Na cidade de Ogama, as coisas são como são e ninguém discorda de nenhuma das regras. A principal delas: mulheres não têm direito ao ensino superior. Para Sofia, isso sempre foi motivo de incômodo, mas nunca viu ninguém ao seu redor lutar para que algo diferente aconteça. | [Documentação](https://fga-gces.github.io/Jogo-Unity-BOSS/)                                                                               |
-| **Workshop** | Aprenda Unity do zero criando um jogo 2D passo a passo.                                                                                                                                                                                                                         | [Tutoriais](./unity-for-women/tutoriais/README.md)</br>[Roadmap](./unity-for-women/RoadmapWorkshop.md) </br> [Glossário](./Unity-for-Women/glossario.md) |
+| **Workshop** | Aprenda Unity do zero criando um jogo 2D passo a passo.                                                                                                                                                                                                                         | [Tutoriais](./docs/tutoriais/README.md)</br>[Roadmap](./docs/tutoriais/workshop_roadmap.md) </br> [Glossário](./docs/tutoriais/workshop_glossario.md) |
 
 ---
 
@@ -98,7 +120,7 @@ Ele irá rodar em: http://localhost:8000
 
 ## Como contribuir com o jogo Diários de Sofia
  > Você pode contribuir com o jogo Diários de Sofia de várias maneiras, como reportando bugs, sugerindo melhorias ou até mesmo contribuindo com código.
- Para começar, você precisará estar em conformidade com os [Guias de Conduta](./docs/patterns.md) e [Contribuição do projeto](./docs/patterns.md). 
+ Para começar, você precisará estar em conformidade com os [Guias de Conduta](./docs/CODE_OF_CONDUCT.md) e [Contribuição do projeto](./docs/CONTRIBUTING.md). 
 
 ## Instalação do Jogo
 ### 🧰 Pré-requisitos
@@ -138,7 +160,7 @@ Para compilar o jogo, siga os seguintes passos:
 
 ### Informações Adicionais
 - Atualmente, o jogo está em desenvolvimento, então cada cena pode conter elementos que ainda não estão finalizados. Sinta-se à vontade para explorar as cenas e contribuir com melhorias, correções de bugs ou novas funcionalidades.
-- Erros conhecidos na hora de rodar o jogo localmente podem ser encontrados na [página de Erros Conhecidos](./docs/dificuldades_subir_ambiente.md).
+- Erros conhecidos na hora de rodar o jogo localmente podem ser encontrados na [página de Erros Conhecidos](./docs/projeto/dificuldades_subir_ambiente.md).
 - Se quiser contribuir com o jogo, talvez seja interessante começar por uma ```GoodFirstIssue``` ou uma ```HelpWanted```, que são issues mais fáceis de resolver e podem te ajudar a entender melhor o projeto. Você pode encontrar essas issues na [página de Issues](https://github.com/FGA-GCES/Jogo-Unity-BOSS/issues) do repositório.
 - Para acessar as fases (cenas) disponíveis atualmente, você pode navegar até a pasta `Assets/Scenes` dentro do projeto Unity. Lá, você encontrará as cenas disponíveis para jogar e contribuir.
   1. **Menu Principal**: A cena inicial do jogo, onde você pode iniciar a jornada de Sofia e acessar as configurações.
