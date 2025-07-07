@@ -8,7 +8,7 @@ nav:
       - Código de Conduta: "CODE_OF_CONDUCT.md"
       - Contribuindo: "CONTRIBUTING.md"
       - Onboarding: "ONBOARDING.md"
-      - Licença: "LICENSE"
+      # - Licença: "LICENSE"
       - Changelog: "CHANGELOG.md"
       - Boas Práticas: "BOAS_PRATICAS.md"
   - Diários de Sofia:
