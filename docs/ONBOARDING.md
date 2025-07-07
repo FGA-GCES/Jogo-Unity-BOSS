@@ -1,4 +1,3 @@
-
 # Guia de Onboarding — Projeto BOSS
 
 Bem-vindo(a) ao projeto **BOSS - BigOpen Source Sibling**! Este guia tem como objetivo te ajudar a dar os primeiros passos como contribuidor(a) deste projeto de código aberto, explicando como configurar o ambiente, entender o fluxo de trabalho e fazer sua primeira contribuição com segurança.
@@ -8,6 +7,7 @@ Bem-vindo(a) ao projeto **BOSS - BigOpen Source Sibling**! Este guia tem como ob
 ## Sobre o Projeto
 
 O **BOSS** é um jogo desenvolvido com Unity como plataforma de aprendizado prático para a disciplina de **Gerência de Configuração e Evolução de Software**. Aqui, você vai colocar em prática conceitos como:
+
 - Controle de versão com **Git**
 - Estratégias de branching (como **Git Flow**)
 - Integração Contínua (**CI**) e Entrega Contínua (**CD**)
@@ -31,19 +31,19 @@ Além disso, o BOSS também é um espaço inclusivo e colaborativo, construído 
 
 Antes de começar, você precisará ter instalado no seu computador:
 
-| Ferramenta | Versão mínima recomendada |
-|------------|----------------------------|
-| Unity      | 2022.x ou superior         |
-| Git        | 2.30+                      |
+| Ferramenta              | Versão mínima recomendada |
+| ----------------------- | ------------------------- |
+| Unity                   | 2022.x ou superior        |
+| Git                     | 2.30+                     |
 | Visual Studio / VS Code | Qualquer com suporte a C# |
-| Conta no GitHub | (gratuita)             |
+| Conta no GitHub         | (gratuita)                |
 
 ---
 
 ## hecklist de Configuração
 
 1. [ ] Faça um fork deste repositório em sua conta GitHub
-2. [ ] Clone seu fork localmente  
+2. [ ] Clone seu fork localmente
    ```bash
    git clone https://github.com/seu-usuario/Jogo-Unity-BOSS.git
    ```
@@ -96,6 +96,7 @@ Nosso projeto segue uma estrutura baseada em Git Flow. Veja como contribuir:
 ## Comunicação e Suporte
 
 Caso tenha dúvidas ou precise de ajuda:
+
 - Abra uma issue com a tag `question`
 - Entre em contato com mentores e mantenedores via comentários no GitHub
 
@@ -103,7 +104,7 @@ Caso tenha dúvidas ou precise de ajuda:
 
 ## Código de Conduta
 
-Nos comprometemos com um ambiente respeitoso e acolhedor para todos os colaboradores. Leia nosso [Código de Conduta](docs\CODE_OF_CONDUCT.md) antes de contribuir.
+Nos comprometemos com um ambiente respeitoso e acolhedor para todos os colaboradores. Leia nosso [Código de Conduta](CODE_OF_CONDUCT.md) antes de contribuir.
 
 ---
 
@@ -121,9 +122,8 @@ Se for sua **primeira contribuição**, recomendamos:
 **Bem-vindo(a) à equipe BOSS!** 🚀  
 Sua colaboração faz toda a diferença 💙
 
-
 ## Histórico de versão
 
-|Data|Versão|Descrição|Autores|
-|--|--|--|--|
-|03/07/2025|1.0|Adicionando versão inicial do Onboarding |[Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax)|
+| Data       | Versão | Descrição                                | Autores                                                                                          |
+| ---------- | ------ | ---------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 03/07/2025 | 1.0    | Adicionando versão inicial do Onboarding | [Júlio Cesar](https://github.com/Julio1099), [Maciel Júnior](https://github.com/macieljuniormax) |

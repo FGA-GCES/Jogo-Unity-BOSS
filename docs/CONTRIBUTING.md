@@ -81,7 +81,7 @@ git push origin tipo/nome-da-branch
 ## Critérios de Aceitação
 
 - ✅ A PR deve passar em todos os testes automatizados
-- ✅ Seguir o [padrão de código](./patterns.md) do projeto
+- ✅ Seguir o [padrão de código](./projeto/patterns.md) do projeto
 - ✅ Ter aprovação de pelo menos **um mantenedor**
 
 ---

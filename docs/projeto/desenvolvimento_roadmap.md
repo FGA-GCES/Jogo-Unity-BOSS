@@ -16,7 +16,7 @@ Esta nova versão do roadmap apresenta uma reformulação nas fases e redistribu
 
 Abaixo, apresenta-se a versão anterior do roadmap de desenvolvimento do projeto (v1.1), estruturada em fases e semanas, contemplando as principais etapas do desenvolvimento. A imagem fornece uma visualização geral do planejamento, enquanto o quadro interativo do Miro, disponível em seguida, permite uma exploração mais detalhada da evolução do projeto.
 
-![Roadmap de Desenvolvimento](images/Roadmap_Desenvolvimento.png)
+![Roadmap de Desenvolvimento](../images/Roadmap_Desenvolvimento.png)
 
 ---
 

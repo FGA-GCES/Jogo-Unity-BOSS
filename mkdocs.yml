@@ -4,9 +4,13 @@ site_name: Projeto BOSS - Unity
 nav:
   - BOSS:
     - Landing Page: 'index.md'
-    - Checklist Software Livre: 'checklist_software_livre.md'
+    - Checklist Software Livre: 'checklist_oss.md'
     - Código de Conduta: 'CODE_OF_CONDUCT.md'
     - Contribuindo: 'CONTRIBUTING.md'
+    - Onboarding: 'ONBOARDING.md'
+    - Licença: 'LICENSE'
+    - Changelog: 'CHANGELOG.md'
+    - Boas Práticas: 'BOAS_PRATICAS.md'
   - Diários de Sofia:
       - Jogo: 'jogo/game.md'
       - Conceitos: 'projeto/concepts.md'
@@ -44,9 +48,6 @@ nav:
         - Release 1 (22/04/2025): 'projeto/releases/release1.md'
         - Release 2 (07/07/2025): 'projeto/releases/release2.md'
         - Release 3: 'projeto/releases/release3.md'
-    - Timeline:
-        - Timeline: 'timeline.md'
-        - Timeline do Projeto: 'projeto/timeline.md'
 
 
 

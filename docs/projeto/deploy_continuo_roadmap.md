@@ -16,7 +16,7 @@ Este roadmap descreve os passos necessários para implementar **Integração e E
 
 A imagem a seguir apresenta uma visão geral das etapas envolvidas na implementação de integração e entrega contínuas (CI/CD), bem como das práticas associadas à escalabilidade e manutenção do projeto. O quadro interativo no Miro, disponibilizado em sequência, permite uma análise mais aprofundada das fases e atividades propostas.
 
-![Roadmap de Desenvolvimento](images/deploy_continuo_roadmap.png)
+![Roadmap de Desenvolvimento](../images/deploy_continuo_roadmap.png)
 
 ---
 

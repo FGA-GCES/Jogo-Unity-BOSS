@@ -16,7 +16,7 @@ Esta versão (1.1) do roadmap atualiza as estratégias de contribuição ao proj
 
 Este roadmap propôs ações estratégicas para contribuir com o desenvolvimento contínuo e sustentável do projeto Jogo-Unity-BOSS. A proposta estava dividida em 5 fases principais, visando desde a estruturação até o monitoramento do projeto.
 
-![Roadmap de Desenvolvimento v1.1](images/Roadmap_Proposta_Contribuição.jpg)
+![Roadmap de Desenvolvimento v1.0](../images/Roadmap_Proposta_Contribuição.jpg)
 
 ---
 

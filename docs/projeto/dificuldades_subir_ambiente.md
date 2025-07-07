@@ -28,15 +28,15 @@ Esse tipo de problema pode causar falhas na renderização do prefab na hierarqu
 
 ### 📌 Erro apresentado imagem 1:
 
-![imagem1](images/erro1.png)
+![imagem1](../images/erro1.png)
 
 ### 📌 Erro apresentado imagem 2:
 
-![imagem2](images/erro2.png)
+![imagem2](../images/erro2.png)
 
 ### 📌 Erro apresentado imagem 3:
 
-![imagem3](images/erro3.png)
+![imagem3](../images/erro3.png)
 
 ---
 

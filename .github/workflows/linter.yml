@@ -43,6 +43,3 @@ jobs:
           
           # Diretórios a ignorar
           IGNORE_GITIGNORED_FILES: true
-          
-          # Apenas arquivos modificados
-          VALIDATE_ALL_CODEBASE: false
